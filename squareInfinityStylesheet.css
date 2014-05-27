@@ -211,25 +211,34 @@ img{
 	top:50%;
 	margin-top:-10px;
 	margin-left:-250px;
-	background:#0099cc;
-	color:#ffd800;
+	/*background:#0099cc;
+	color:#ffd800;*/
 }
 
-#game:hover{
+/*#game:hover{
 	background:#ffd800;
 	color:#0099cc;
-}
+}*/
 #tech{
 	position:absolute;
 	left:50%;
 	top:50%;
 	margin-top:-10px;
 	margin-left:50px;
-	background:#ffffff;
+	/*background:#ffffff;*/
 }
-#tech:hover{
+/*#tech:hover{
 	background:#000000;
 	color:#ffffff;
+}*/
+.gamesBanner{
+	
+	
+}
+
+.techBanner{
+	
+	
 }
 
 .gameBackground{
@@ -239,6 +248,11 @@ img{
 	height:100%;
 	width:50%;
 	z-index:-1;
+	opacity: 0.6;
+}
+
+.gameBackground:hover{
+	opacity: 1.0;
 }
 
 .techBackground{
@@ -248,6 +262,11 @@ img{
 	width:50%;
 	right:0%;
 	z-index:-1;
+	opacity: 0.6;
+}
+
+.techBackground:hover{
+	opacity: 1.0;
 }
 
 .centerImage{

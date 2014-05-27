@@ -17,12 +17,29 @@
 
 <body>
 	<div class="main">
-		<div class="gameBackground"></div>
-		<div class="techBackground"></div>
+		<div class="gameBackground">
+			<div class="gamesBanner" >
+				<img src="images/fakegamebanner.png" style="box-shadow:none; display: block; margin-left: auto; margin-right:auto;"/>
+			</div>
+		</div>
+		<div class="techBackground">
+			<div class="techBanner" >
+				<img src="images/faketechbanner.png" style="box-shadow:none; display: block; margin-left: auto; margin-right:auto;"/>
+			</div>
+		</div>
 		<div class="centerImage"><img src="images/SIsplitLogo.png" style="box-shadow:none;"/></div>
-		<a href="games/index.php"><div class="button" id="game">Square Infinity Games</div></a>
-		<a href="tech/index.php"><div class="button" id="tech">Square Infinity Technology</div></a>
+		<!--<a href="games/index.php"><div class="button" id="game">Square Infinity Games</div><!--/a>
+		<a href="tech/index.php"><div class="button" id="tech">Square Infinity Technology</div><!--</a>-->
 	</div>
 </body>
-
+<script>
+	$('.gameBackground').click(function() {
+		window.location.href = "games/index.php";
+	});
+	
+	$('.techBackground').click(function() {
+		window.location.href = "tech/index.php";
+	});
+	
+</script>
 </html>
