@@ -27,12 +27,12 @@
 				<img src="images/faketechbanner.png" style="box-shadow:none; display: block; margin-left: auto; margin-right:auto; "/>
 			</div>
 		</div>
-		<img src="images/line.png" style="box-shadow:none; height:100%; display: block; margin-left: auto; margin-right:auto; z-index:-1;" />
-		<div class="centerImage">
+		<img src="images/biggerLine.png" style="box-shadow:none; height:100%; display: block; margin-left: auto; margin-right:auto; z-index:-1;" />
+		<!--<div class="centerImage">
 			<img src="images/SIsplitLogo.png" style="box-shadow:none; z-index:1;"/>
 		</div>
-		<!--<a href="games/index.php"><div class="button" id="game">Square Infinity Games</div><!--/a>
-		<a href="tech/index.php"><div class="button" id="tech">Square Infinity Technology</div><!--</a>-->
+		<a href="games/index.php"><div class="button" id="game">Square Infinity Games</div></a>
+		<a href="tech/index.php"><div class="button" id="tech">Square Infinity Technology</div></a>-->
 	</div>
 </body>
 <script>
