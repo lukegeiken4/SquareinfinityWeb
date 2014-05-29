@@ -18,7 +18,7 @@
 
 <body >
 	<div style="position: absolute; width: 100%; height:20%; z-index:5;">
-		<img src="img/whitelogo.png" style="display: block; width: 20%; height:70%; z-index:5; margin-left: auto; margin-right: auto;" />
+		<img src="img/whitestretchLogo3.png" style="display: block; width: 20%; height:40%; z-index:5; margin-left: auto; margin-right: auto; margin-top: 3%;" />
 		<div "nav-headers" id="home-head"></div>
 		<div "nav-headers" id="games-head"></div>
 		<div "nav-headers" id="team-head"></div>
