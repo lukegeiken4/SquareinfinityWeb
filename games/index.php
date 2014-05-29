@@ -18,11 +18,11 @@
 
 <body >
 	<div style="position: absolute; width: 100%; height:20%; z-index:1;">
-		<img src="img/whiteSILOGOICON.png" style="margin-top:2%; display: block; width: 10%; height:60%; z-index:1; margin-left: auto; margin-right: auto;" />
-		<a class="nav-headers" id="home-head" href= "../tech/index.php"><div style="margin-top: 6%;">HOME</div></a>
-		<a class="nav-headers" id="games-head" href= "../tech/index.php"><div style="margin-top: 6%;">GAMES</div></a>
-		<a class="nav-headers" id="team-head" href= "../tech/index.php"><div style="margin-top: 6%;">TEAM</div></a>
-		<a class="nav-headers" id="contact-head" href= "../tech/index.php"><div style="margin-top: 6%;">CONTACT</div></a>
+		<img src="img/whitelogo.png" style="display: block; width: 20%; height:70%; z-index:1; margin-left: auto; margin-right: auto;" />
+		<div "nav-headers" id="home-head"></div>
+		<div "nav-headers" id="games-head"></div>
+		<div "nav-headers" id="team-head"></div>
+		<div "nav-headers" id="contact-head"></div>
 	</div>
 	<div class="top-navbar" style="position: absolute; z-index:2;">
 		<div class="top-navbar-bdiv" style="margin-right:5%; border-right:1px solid white;";>
@@ -37,5 +37,26 @@
 	</div>
 	<div class="header">headerImageHere</div>
 </body>
-
+<script>
+	$('#home-head').click(function() {
+		//window.location.href = "games/index.php";
+		alert("Home");
+	});
+	
+	$('#games-head').click(function() {
+		//window.location.href = "tech/index.php";
+		alert("Games");
+	});
+	
+	$('#team-head').click(function() {
+		//window.location.href = "games/index.php";
+		alert("Team");
+	});
+	
+	$('#contact-head').click(function() {
+		//window.location.href = "tech/index.php";
+		alert("Contact");
+	});
+	
+</script>
 </html>
