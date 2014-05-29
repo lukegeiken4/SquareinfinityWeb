@@ -55,11 +55,6 @@
 		
 	});
 	
-	$('#games-head').click(function() {
-		window.location.href = "games.php";
-		
-	});
-	
 	$('#team-head').click(function() {
 		window.location.href = "team.php";
 		

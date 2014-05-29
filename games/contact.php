@@ -65,11 +65,6 @@
 		
 	});
 	
-	$('#contact-head').click(function() {
-		window.location.href = "contact.php";
-		
-	});
-	
 	$('#hidden-link').click(function() {
 		window.location.href = "hidden.php";
 		

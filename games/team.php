@@ -60,11 +60,6 @@
 		
 	});
 	
-	$('#team-head').click(function() {
-		window.location.href = "team.php";
-		
-	});
-	
 	$('#contact-head').click(function() {
 		window.location.href = "contact.php";
 		

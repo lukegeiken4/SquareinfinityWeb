@@ -50,11 +50,6 @@
 	<div id="hidden-link" style="z-index: 1;"></div>
 </body>
 <script>
-	$('#home-head').click(function() {
-		window.location.href = "index.php";
-		
-	});
-	
 	$('#games-head').click(function() {
 		window.location.href = "games.php";
 		
