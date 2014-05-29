@@ -17,14 +17,14 @@
 </head>
 
 <body >
-	<div style="position: absolute; width: 100%; height:20%; z-index:1;">
-		<img src="img/whitelogo.png" style="display: block; width: 20%; height:70%; z-index:1; margin-left: auto; margin-right: auto;" />
+	<div style="position: absolute; width: 100%; height:20%; z-index:5;">
+		<img src="img/whitelogo.png" style="display: block; width: 20%; height:70%; z-index:5; margin-left: auto; margin-right: auto;" />
 		<div "nav-headers" id="home-head"></div>
 		<div "nav-headers" id="games-head"></div>
 		<div "nav-headers" id="team-head"></div>
 		<div "nav-headers" id="contact-head"></div>
 	</div>
-	<div class="top-navbar" style="position: absolute; z-index:2;">
+	<div class="top-navbar" style="position: absolute; z-index:5;">
 		<div class="top-navbar-bdiv" style="margin-right:5%; border-right:1px solid white;";>
 			<a class="other-sites" href= "../tech/index.php"> <div class="topnavbutton">Square Infinity Tech</div></a>
 		</div>
@@ -32,10 +32,20 @@
 			<a class="other-sites" href="http://blog.squareinfinity.com"><div class="topnavbutton">Square Infinity Blog</div></a>
 		</div>
 	</div>
-	<div class="main-navbar" style="position: absolute; z-index:-2;">
+	<div class="main-navbar" style="position: absolute; z-index:1;">
 		<img src="img/gamebanner.png" style="width:100%; height:230%;" />
 	</div>
-	<div class="header">headerImageHere</div>
+	
+	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
+		<img src="img/placeholder1.png" style="display: block; width: 100%;"/>
+		<img src="img/placeholder2.png" style="display: block; width: 100%;"/>
+		<img src="img/placeholder3.png" style="display: block; width: 100%;"/>
+		<img src="img/placeholder4.png" style="display: block; width: 100%;"/>
+		<img src="img/placeholder5.png" style="display: block; width: 100%;"/>
+		<img src="img/placeholder6.png" style="display: block; width: 100%;"/>
+		<img src="img/placeholder7.png" style="display: block; width: 100%;"/>
+	</div>
+	
 </body>
 <script>
 	$('#home-head').click(function() {
