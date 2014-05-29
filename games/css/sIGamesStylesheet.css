@@ -148,6 +148,22 @@ body{
 	background-size: 100% 100%;	
 }
 
+#hidden-link {
+	width:6%;
+	height:15%;
+	
+	top:85%;
+	left:90%;
+	
+	background-size: 100% 100%;
+	position: fixed;
+}
+
+#hidden-link:hover {
+	background-image:url('../img/hidden_img_hover.png');
+	background-size: 100% 100%;
+}
+
 
 
 
