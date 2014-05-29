@@ -33,7 +33,7 @@
 		</div>
 	</div>
 	<div class="main-navbar" style="position: absolute; z-index:1;">
-		<img src="img/gamebanner.png" style="width:100%; height:230%;" />
+		<img src="img/gamebanner2.png" style="width:100%; height:230%;" />
 	</div>
 	
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">

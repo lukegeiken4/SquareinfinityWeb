@@ -20,7 +20,7 @@
 	<div style="position: absolute; width: 100%; height:20%; z-index:5;">
 		<img src="img/whitestretchLogo3.png" style="display: block; width: 20%; height:40%; z-index:5; margin-left: auto; margin-right: auto; margin-top: 3%;" />
 		<div nav-headers" id="home-head"></div>
-		<img src="img/placemarker.png" style="position: absolute; width:8%; height:50%; top:63%; left:61%;" />
+		<img src="img/placemarker.png" style="position: absolute; width:8%; height:40%; top:63%; left:61%;" />
 		<div "nav-headers" id="games-head"></div>
 		<div "nav-headers" id="team-head"></div>
 		<div "nav-headers" id="contact-head"></div>
@@ -34,7 +34,7 @@
 		</div>
 	</div>
 	<div class="main-navbar" style="position: absolute; z-index:1;">
-		<img src="img/gamebanner.png" style="width:100%; height:230%;" />
+		<img src="img/gamebanner2.png" style="width:100%; height:230%;" />
 	</div>
 	
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
