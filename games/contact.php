@@ -38,15 +38,20 @@
 	</div>
 	
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
-		<img src="img/placeholder1.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder2.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder3.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder4.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder5.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder6.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder7.png" style="display: block; width: 100%;"/>
+		<div style="width:100%; height:100%; background: #BBBD8A;">
+			<div class="socialMedia" style="width:50%;right:0px;top:150px;position:absolute">
+				<p>Follow our social media profiles to stay up to date on the latest projects and happenings at <strong>Square Infinity</strong>.
+				There is always something new happening, and we have some truly amazing projects in the works!</p>
+				<a href="https://www.facebook.com/squareInfinityTech" target="_blank"><div class="social" style="background-image: url(img/46-facebook.svg)"></div></a>
+				<a href="http://www.twitter.com/squareInfinity" target="_blank"><div class="social" style="background-image: url(img/45-twitter.svg)"></div></a>
+				<a href="https://plus.google.com/103430757959795440005" target="_blank"><div class="social" style="background-image: url(img/80-google-plus.svg)"></div></a>
+				<a href="http://www.linkedin.com/company/square-infinity-technologies?report%2Esuccess=KJ_KkFGTDCfMt-A7wV3Fn9Yvgwr02Kd6AZHGx4bQCDiP6-2rfP2oxyVoEQiPrcAQ7Bf" target="_blank"><div class="social" style="background-image: url(img/51-linkedin.svg)"></div></a>
+			</div>
+		</div>
+		<div style="width:100%; height:100%; background: #83B0DE;">
+			
+		</div>	
 	</div>
-	
 	<div id="hidden-link" style="z-index: 1;"></div>
 </body>
 <script>
