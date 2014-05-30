@@ -39,13 +39,15 @@
 	
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
 		<div style="width:100%; height:100%; background: #BBBD8A;">
-			<div class="socialMedia" style="width:50%;right:0px;top:150px;position:absolute">
-				<p>Follow our social media profiles to stay up to date on the latest projects and happenings at <strong>Square Infinity</strong>.
+			<div class="socialMedia" style="height:100%; width:50%;right:0px;top:150px;position:absolute">
+				<a href="https://www.facebook.com/squareInfinityTech" target="_blank"><div class="social" style="background-image: url(img/46-facebook.svg); top:0%; left:40%;"></div></a>
+				<a href="http://www.twitter.com/squareInfinity" target="_blank"><div class="social" style="background-image: url(img/45-twitter.svg); top:25%; left:10%;"></div></a>
+				<a href="https://plus.google.com/103430757959795440005" target="_blank"><div class="social" style="background-image: url(img/80-google-plus.svg); top:50%; left:40%;"></div></a>
+				<a href="http://www.linkedin.com/company/square-infinity-technologies?report%2Esuccess=KJ_KkFGTDCfMt-A7wV3Fn9Yvgwr02Kd6AZHGx4bQCDiP6-2rfP2oxyVoEQiPrcAQ7Bf" target="_blank"><div class="social" style="background-image: url(img/51-linkedin.svg); top:25%; left:70%;"></div></a>
+			</div>
+			<div class="socialMedia" style="height:100%; width:50%;left:0px;top:150px;position:absolute">
+				<p style="position: absolute;">Follow our social media profiles to stay up to date on the latest projects and happenings at <strong>Square Infinity</strong>.
 				There is always something new happening, and we have some truly amazing projects in the works!</p>
-				<a href="https://www.facebook.com/squareInfinityTech" target="_blank"><div class="social" style="background-image: url(img/46-facebook.svg)"></div></a>
-				<a href="http://www.twitter.com/squareInfinity" target="_blank"><div class="social" style="background-image: url(img/45-twitter.svg)"></div></a>
-				<a href="https://plus.google.com/103430757959795440005" target="_blank"><div class="social" style="background-image: url(img/80-google-plus.svg)"></div></a>
-				<a href="http://www.linkedin.com/company/square-infinity-technologies?report%2Esuccess=KJ_KkFGTDCfMt-A7wV3Fn9Yvgwr02Kd6AZHGx4bQCDiP6-2rfP2oxyVoEQiPrcAQ7Bf" target="_blank"><div class="social" style="background-image: url(img/51-linkedin.svg)"></div></a>
 			</div>
 		</div>
 		<div style="width:100%; height:100%; background: #83B0DE;">
