@@ -38,13 +38,12 @@
 	</div>
 	
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
-		<img src="img/placeholder1.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder2.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder3.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder4.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder5.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder6.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder7.png" style="display: block; width: 100%;"/>
+		<div style="width:100%; height:100%; background: #8A5DF6; position: relative;">
+			
+		</div>
+		<div style="width:100%; height:100%; background: #4CF872; position: relative;">
+			
+		</div>
 	</div>
 	
 	<div id="hidden-link" style="z-index: 1;"></div>

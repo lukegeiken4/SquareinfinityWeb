@@ -38,13 +38,13 @@
 	</div>
 	
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
-		<img src="img/placeholder1.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder2.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder3.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder4.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder5.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder6.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder7.png" style="display: block; width: 100%;"/>
+		<div style="width:100%; height:100%; background: #4CF78C; position: relative;">
+			<div style="position: absolute; height:20%; width:100%; text-align: center; margin-top: 15%;">
+				<h1>We Just Announce Our First Major Game!</h1>
+				<h2>We Will Have More Information To Tell You In The Future But For Now Here Is The Game's Logo</h1>
+			</div>
+			<img src="img/travelquestlogo.png" style="position: absolute; width:70%; height:55%; margin-left:auto; margin-right:auto; bottom: 0; margin-left: 18%;" />
+		</div>
 	</div>
 	
 	<div id="hidden-link" style="z-index: 1;"></div>
