@@ -69,6 +69,5 @@
 		window.location.href = "hidden.php";
 		
 	});
-	
 </script>
 </html>

@@ -38,7 +38,7 @@
 	</div>
 	
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
-		<div style="width:100%; height:100%; background: #4CF78C; position: relative;">
+		<div style="width:100%; height:100%; background: #38B76C; position: relative;">
 			<div style="position: absolute; height:20%; width:100%; text-align: center; margin-top: 15%;">
 				<h1>We Just Announce Our First Major Game!</h1>
 				<h2>We Will Have More Information To Tell You In The Future But For Now Here Is The Game's Logo</h1>
