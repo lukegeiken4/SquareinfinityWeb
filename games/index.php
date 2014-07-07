@@ -37,9 +37,9 @@
 		<img src="img/gamebanner2.png" style="width:100%; height:230%;" />
 	</div>
 	
-	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
-		<img src="img/placeholder1.png" style="display: block; width: 100%;"/>
-		<img src="img/placeholder2.png" style="display: block; width: 100%;"/>
+	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0; background: #e6dcbf;">
+		<img src="img/team_talk.jpg" style="display: block; width: 100%;"/>
+		<img src="img/team_talk2.jpg" style="display: block; width: 100%;"/>
 		<img src="img/placeholder3.png" style="display: block; width: 100%;"/>
 		<img src="img/placeholder4.png" style="display: block; width: 100%;"/>
 		<img src="img/placeholder5.png" style="display: block; width: 100%;"/>

@@ -154,13 +154,13 @@
 				</p>
 			</div>
 			<div style="float:right;width:60%;background-color:transparent;">
-				<h1 style="margin-0px;margin-top:20px;"> What can we do for you?</h1>
+				<h1 style="margin:0px;margin-top:20px;"> What can we do for you?</h1>
 				<p style="padding-top:10px;border-left:2px solid black">
 					&nbsp;&nbsp;&nbsp;&nbsp;At Square Infinity we are passionate about technology and innovation. We have experience developing in Android, iOS, Java, Web tools, and more. We'd love to help create any product in mind and are always willing
 					to learn to tools for the job. If there's a problem you need solved, we can find the solution and get a superior product out to you. Check out our past projects and send us an email. 
 				</p>
 			</div>
-		<img src="images/SILOGOCropped.png" style="width:270px;display:block;margin-left:auto;margin-right:auto;box-shadow:none;margin-top:350px;"/>
+		<img src="images/SILogo.png" style="width:270px;display:block;margin-left:auto;margin-right:auto;box-shadow:none;margin-top:350px;"/>
 		</div>
 	</div>
 	
