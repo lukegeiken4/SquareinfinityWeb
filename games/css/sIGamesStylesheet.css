@@ -250,4 +250,56 @@ twitter-follow-button{
 	margin-left:10px;
 }
 
+/**
+ * This is for the home page game content
+ */
+
+.content{
+	letter-spacing:0px;
+	width:100%;
+	/*background-color:#FF0000;*/
+	font-size:30px;
+	position:relative;
+	color:#000000;
+	min-height:500px;
+	overflow:hidden;
+}
+
+.projContent{
+	letter-spacing:0px;
+	width:80%;
+	height:100%;
+	font-size:30px;
+	position:absolute;
+	margin-left:10%;
+	color:#000000;
+	overflow:hidden;
+	background-color:transparent;
+	/*border-left:1px solid black;
+	border-right:1px solid black;*/
+}
+
+.projectButton{
+	position:absolute;
+	height:100%;
+	width:10%;
+	top:0%;
+	cursor:pointer;
+	z-index:2;
+}
+
+.headBar{
+	position:relative;
+	height:40px;
+	width:100%;
+	font-size:30px;
+	text-align:center;
+	margin:0px;
+	padding-top:5px;
+	letter-spacing:0px;
+	left:0%;
+	right:98%;
+	box-shadow:0px 2px 5px black;
+	z-index:3;
+}
 
