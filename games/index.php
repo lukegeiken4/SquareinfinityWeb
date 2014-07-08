@@ -15,7 +15,6 @@
 	<meta property="og:title" content="Square Infinity Games"/>
 	<meta property="og:url" content = "http://www.squareinfinity.com/"/>
 </head>
-
 <body >
 	<div style="position: absolute; width: 100%; height:20%; z-index:5;">
 		<img src="img/whitestretchLogo3.png" style="display: block; width: 20%; height:40%; z-index:5; margin-left: auto; margin-right: auto; margin-top: 3%;" />
@@ -86,11 +85,47 @@
 		<div style="width:100%; height:10%; background: white; border-top:2px solid black; border-bottom:2px solid black; margin-top:10%;">
 			<h1 style="text-align: center;">News</h1>
 		</div>
-		<div>
+		<?php
+		$hostname = "mysql.squareinfinity.com";   // eg. mysql.yourdomain.com (unique)
+		$username = "aeolingamenfel";   // the username specified when setting-up the database
+		$password = "@b1237ilol";   // the password specified when setting-up the database
+		$database = "si_website";   // the database name chosen when setting-up the database (unique)
+		
+		$link = mysql_connect($hostname,$username,$password);
+		mysql_select_db($database) or die("Unable to select database");
+		
+		if(!$link) {
+			 throw new Exception("unable to connect");
+		} else {
+			$query = "SELECT * FROM news";
+			$result = mysql_query($query);
 			
+			if ( $row = mysql_fetch_assoc ($result)) {
+			    $firstRow = $row;
+			    mysql_data_seek($result, 0);
+			
+			    while($row = mysql_fetch_assoc($result)) {
+				$title = $row['title'];
+				$content = $row['content'];
+				$date = $row['date'];
+				$url = $row['url'];
+				?>
+				<div style="width:100%; padding-bottom:20px; border-bottom:1px solid black;">
+					<h1 style="text-align: center"><?php echo $title; ?></h1>
+					<h3 style="text-align: center"><?php echo $date; ?></h3>
+					
+					<h2 style="text-align: center"><?php echo $content; ?></h2>
+					<h4 style="text-align: center"><?php echo $url; ?></h4>
+				</div>
+				<?php
+			    }
+			}
+		}	
+		?>
+		<div style="width:100%; padding-bottom:10%;">
+			<h1 style="text-align: center">Footer</h1>		
 		</div>
 	</div>
-	
 	<div id="hidden-link" style="z-index: 1;"></div>
 </body>
 <script>
