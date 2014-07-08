@@ -97,7 +97,7 @@
 		if(!$link) {
 			 throw new Exception("unable to connect");
 		} else {
-			$query = "SELECT * FROM news";
+			$query = "SELECT * FROM news ORDER BY id DESC;";
 			$result = mysql_query($query);
 			
 			if ( $row = mysql_fetch_assoc ($result)) {
@@ -110,12 +110,12 @@
 				$date = $row['date'];
 				$url = $row['url'];
 				?>
-				<div style="width:100%; padding-bottom:20px; border-bottom:1px solid black;">
+				<div style="width:100%; padding-bottom:5%; border-bottom:1px solid black;">
+					<img style="position: absolute; float: left; margin-left: 100px; width: 200px; height:200px;" src="news_images/<?php echo $url ?>" alt="">
 					<h1 style="text-align: center"><?php echo $title; ?></h1>
 					<h3 style="text-align: center"><?php echo $date; ?></h3>
 					
 					<h2 style="text-align: center"><?php echo $content; ?></h2>
-					<h4 style="text-align: center"><?php echo $url; ?></h4>
 				</div>
 				<?php
 			    }

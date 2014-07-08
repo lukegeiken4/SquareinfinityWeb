@@ -36,7 +36,7 @@
 					Title: <input type="text" name="title"><br>
 					Content: <br><textarea name="content" rows="10" cols="100" form="news_form"></textarea><br>
 					Todays Date (Format: July 8, 2014): <input type="text" name="date"><br>
-					Url for photo (upload it yourself man) <input type="text" name="url"><br>
+					Photo name and extension (upload it yourself man) <input type="text" name="url"><br>
 					!!!NOTE: Uploaded photos go in /games/news_images or else it won't be found!!!
 					<br><input type="submit" value="Submit">
 				</form>
