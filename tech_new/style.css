@@ -1,3 +1,30 @@
+/*
+
+|-----------------------------------------------|
+|Square Infinity Technologies					|
+|												|
+|Author(s): Ivan Mattie							|
+|Last Update: 7/7/2014							|
+|Description: Stylesheet for Square Infinity	|
+| Tech site and related website(s)				|
+|-----------------------------------------------|
+
+*/
+
+
+/* ===== GENERAL STYLING ===== */
+
+body{
+	margin: 0px 0px 0px 0px;
+	background: url("http://squareinfinity.com/images/48.jpg");
+}
+
+.shadow{
+	box-shadow: 1px 1px 1px #000000;
+}
+
+/* ===== TOP AREA ===== */
+
 .top-bar{
 	background: #000000;
 	height: 40px;
@@ -11,22 +38,166 @@
 }
 
 .center-image-container{
-	margin-left: auto;
-	margin-right: auto;
 	width: 430px;
 	border: #000000 solid thin;
+	margin-left: auto;
+	margin-right: auto;
 	
 	margin-top: -30px;
-	background: #E0EEEE;
+	background: #fefefe; /* #e0eeee is also a nice light blue */
 	
 	border-radius: 3px 3px 3px 3px;
 }
 
-.shadow{
-	box-shadow: 1px 1px 1px #000000;
+.top-nav-button{
+	border-radius: 0px 0px 5px 5px;
+	border: #000000 solid 2px;
+	background: #fefefe;
+	padding-top: 50px;
+	margin-top: -50px;
 }
 
-body{
-	margin: 0px 0px 0px 0px;
-	background: url("http://squareinfinity.com/images/48.jpg");
+.top-nav-button:hover{
+	background: #cccccc;
+}
+
+.nav-button-start-left{
+	margin-left: 20%;
+}
+
+@media screen and (max-width:1320px){
+	.nav-button-start-left{
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width:975px){
+	.center-image{
+		width: 250px;
+		height: 40px;
+		padding-left: 20px;
+	}
+	
+	.center-image-container{
+		margin-top: 30px;
+		width: 95%;
+	}
+	
+	.top-nav-button{
+		font-size: 12pt;
+		float: left;
+	}
+	
+	.nav-button-start-left{
+		margin-left: auto;
+	}
+	
+	.mobile-div{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* ===== CENTER CONTENT ===== */
+
+.main-content{
+	background: #fefefe;
+	width: 75%;
+	padding: 10px 10px 10px 10px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 2px 2px 5px #000000;
+}
+
+.floating-sidebar{
+	background: #fefefe;
+	width: 100px;
+	float: left;
+	margin-left: 10px;
+	box-shadow: 2px 2px 5px #000000;
+	padding: 5px 5px  5px 5px;
+	
+	border-radius: 5px 0px 0px 5px;
+}
+
+.sidebar-link{
+	color: #555555;
+	background: #fefefe;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	
+	margin-left: auto;
+	margin-right: auto;
+	border: #fefefe solid thin; /* fixes slight offset with the :hover */
+}
+
+.sidebar-link:hover{
+	color: #000000;
+	border: #000000 solid thin;
+	box-shadow: 1px 1px 3px #000000;
+}
+
+.top-division{
+	margin-top: 30px;
+}
+
+@media screen and (max-width: 1090px){
+	.main-content{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width:975px){
+	.floating-sidebar{
+		width: 95%;
+		margin-left: 2%;
+		margin-right: 2.5%;
+		border-radius: 0px 0px 0px 0px;
+		float: none;
+	}
+	
+	.main-content{
+		width: 95%;
+	}
+	
+	.sidebar-link{
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 20pt;
+		
+		border: #000000 solid 4px;
+		border-radius: 10px 10px 10px 10px;
+	}
+	
+	.sidebar-link:hover{
+		border: #000000 solid 4px;
+	}
+}
+
+/* === GENERAL CONTENT === */
+
+h1{
+	font-size: 14pt;
+	margin-top: 0px;
+	padding-left: 5px;
+}
+
+@media screen and (max-width: 975px){
+	.mobile-center{
+		width: 90%;
+		padding-left: 4.5%;
+		padding-right: 5%;
+		text-align: center;
+	}
+	
+	h1{
+		font-size: 16pt;
+	}
 }
