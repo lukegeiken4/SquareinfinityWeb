@@ -114,8 +114,7 @@
 					<img style="position: absolute; float: left; margin-left: 100px; width: 200px; height:200px;" src="news_images/<?php echo $url ?>" alt="">
 					<h1 style="text-align: center"><?php echo $title; ?></h1>
 					<h3 style="text-align: center"><?php echo $date; ?></h3>
-					
-					<h2 style="text-align: center"><?php echo $content; ?></h2>
+					<h2 style="text-align: left; margin-left: 25%;"><?php echo $content; ?></h2>
 				</div>
 				<?php
 			    }
