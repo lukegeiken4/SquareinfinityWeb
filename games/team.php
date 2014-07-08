@@ -21,6 +21,10 @@
 					spread across a country, we are more than capable of high quality work.
 				</p>
 			</div>
+		</div>
+		</div>
+		<div style="width:100%; height:100%; background: #3C70A6; position: relative;">
+			<div class="content" style="margin-top:15%; position: absolute;">	
 			<div class='profile' style="position:relative;">
 				<img src="img/ivanMattie.jpg"/>
 				<h1>Ivan Mattie</h1>
@@ -34,7 +38,7 @@
 			</div>
 		</div>
 		</div>
-		<div style="width:100%; height:100%; background: #3C70A6; position: relative;">
+		<div style="width:100%; height:100%; background: #FF704E; position: relative;">
 			<div class="content" style="margin-top:15%; position: absolute;">	
 			<div class='profile' style="right:0;">
 				<img src="img/garretMeier.jpg"/>
@@ -48,6 +52,10 @@
 					really enjoy spending my time enjoying great clouds, blogging, and reading.
 				</p>
 			</div>
+		</div>
+		</div>
+		<div style="width:100%; height:100%; background: #3C70A6; position: relative;">
+			<div class="content" style="margin-top:15%; position: absolute;">	
 			<div class='profile' style="position:relative;">
 				<img src="img/davidLindenbaum.jpg"/>
 				<h1>David <span style="font-size:40px">Lindenbaum</span></h1>
@@ -59,8 +67,7 @@
 					science. When I am not programming, I enjoy the outdoors, reading sci-fi, gaming.
 				</p>
 			</div>
-			</div>
-			</div>
+		</div>
 		</div>
 	</div>
 	
