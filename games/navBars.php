@@ -4,7 +4,6 @@
 	<title><?php echo $name ?> | SI Games</title>
 	<link rel="shortcut icon" href="img/favicon.gif" />
 	<link href="css/sIGamesStylesheet.css" rel="stylesheet" type="text/css"/>
-	<!--<link href="../css/topNavbarStyle.css" rel="stylesheet" type="text/css">-->
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
 	<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<meta name = "description" content="As an Independent game creator, the Square Infinity games team is looking to push the limits of storytelling and gameplay from where the best games are created, our parent's basement."/>
@@ -23,21 +22,21 @@
 <?php function getMainBar( $name ) { 
 $alignment = 0;
 if ($name == 'Headquarters'){
-	$alignment = 10;
+	$alignment = 13;
 }else if ($name == 'Games'){
-	$alignment = 26;
+	$alignment = 29;
 }else if ($name == 'The Party'){
-	$alignment = 60;
+	$alignment = 63;
 }else if ($name == 'Mail'){
-	$alignment = 76;
+	$alignment = 79;
 }else {
-	$alignment = 110; 
+	$alignment = 113; 
 }
 ?>
 <html>
 	<div style="position: absolute; width: 100%; height:20%; z-index:5;">
 		<div class="nav-headers" id="home-head">HOME</div>
-		<img src="img/placemarker.png" style="position: absolute; width:15%;  top:30%; left:<?php echo $alignment; ?>%;" />
+		<img src="img/marker.png" style="position: absolute; width:9%;  top:25%; left:<?php echo $alignment; ?>%;" />
 		<div class="nav-headers" id="games-head">GAMES</div>
 		<div class="nav-headers" id="about-head"><img src="./img/whitestretchLogo3.png" style="height:100%" /></div>
 		<div class="nav-headers" id="team-head">TEAM</div>
