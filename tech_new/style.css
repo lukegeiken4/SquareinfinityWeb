@@ -110,6 +110,13 @@ body{
 	box-shadow: 2px 2px 5px #000000;
 }
 
+.main-content-header{
+	background: #fefefe;
+	width: 75%;
+	padding: 10px 10px 10px 10px;
+	
+}
+
 .floating-sidebar{
 	background: #fefefe;
 	width: 100px;
