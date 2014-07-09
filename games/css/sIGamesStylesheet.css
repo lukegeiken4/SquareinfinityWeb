@@ -110,16 +110,10 @@ body{
 }
 
 #about-head {
-	display:block;
 	margin-left:auto;
 	margin-right:auto;
 	width:21%;
-}
-
-
-#about-head:hover{
-	
-	background-color:transparent;
+	display: block;
 }
 
 #team-head {
@@ -148,6 +142,13 @@ body{
 	background-size: 100% 100%;
 }
 
+.newsWrapper{
+	width:70%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 .newsImage{
 	position: absolute;
 	float: left;
@@ -157,15 +158,11 @@ body{
 }
 
 .newsHeader{
-	width:80%;
 	min-width:500px;
 	display:block;
-	margin-left:auto;
-	margin-right:auto;
 	height:50px;
 	background: white; 
-	border-top:2px solid black;
-	border-bottom:2px solid black; 
+
 	margin-top:0%;
 }
 
@@ -174,6 +171,14 @@ body{
 	margin:0px;
 	line-height:50px;
 	vertical-align:middle;
+}
+
+.newsContent{
+	min-width:500px;
+	display:block;
+	width:
+	padding-bottom:5%;
+	border-bottom:1px solid black;
 }
 
 .social{
@@ -308,6 +313,7 @@ twitter-follow-button{
 	left:48%;
 	bottom:-1.5%;
 	/*box-shadow:2px 2px 5px black;*/
+	padding-bottom:15px;
 	z-index:6;
 	border-radius:2px;
 	overflow:hidden;

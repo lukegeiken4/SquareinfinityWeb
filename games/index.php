@@ -77,6 +77,7 @@
 			</div>
 		</div>
 		</div>
+		<div class="newsWrapper">
 		<div class="newsHeader">
 			<h1>News</h1>
 		</div>
@@ -106,7 +107,7 @@
 				$date = $row['date'];
 				$url = $row['url'];
 				?>
-				<div style="width:100%; padding-bottom:5%; border-bottom:1px solid black;">
+				<div class="newsContent" style="">
 					<img class="newsImage" src="news_images/<?php echo $url ?>" alt="">
 					<h1 style="text-align: center"><?php echo $title; ?></h1>
 					<h3 style="text-align: center"><?php echo $date; ?></h3>
@@ -126,6 +127,8 @@
 			}
 		}	
 		?>
+		</div>
+		
 		<div style="width:100%; padding-bottom:10%;">
 			<h1 style="text-align: center">Footer</h1>
 		</div>
