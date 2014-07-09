@@ -106,12 +106,16 @@
 				$content = $row['content'];
 				$date = $row['date'];
 				$url = $row['url'];
+				$imageType = $row['image_type'];//0 is portrait, 1 is landscape
 				?>
 				<div class="newsContent" style="">
-					<img class="newsImage" src="news_images/<?php echo $url ?>" alt="">
-					<h1 style="text-align: center"><?php echo $title; ?></h1>
-					<h3 style="text-align: center"><?php echo $date; ?></h3>
-					<h2 style="text-align: left; margin-left: 25%;">
+					<h1><?php echo $title; ?></h1>
+					<h3 class="newsDate"> <?php echo $date; ?> </h3>
+					<div class="newsImage-full" style="background-image:url('news_images/<?php echo $url ?>')" alt=""></div>
+					
+					
+					<h2 class="newsDesc">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<?php
 					$statement = custom_echo($content);
 					echo strip_tags($statement[0]);
