@@ -6,7 +6,7 @@
 <body >
 	<?php getMainBar('Headquarters'); ?>
 	
-	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0; background: #e6dcbf;">
+	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0; background: #e6dcbf;min-width:500px;">
 		<div class="content" id="projectStuff" style="height:250px;">
 		<div class="projectButton" onclick="switchProject()"> <!--<h1 style = "display:block;margin-top:275px;margin-bottom:auto"> < </h1>--> </div>
 		<div class="projectButton" onclick="backProject()" style="right:0px"> <!--<h1 style="display:block;margin-top:275px;margin-bottom:auto"> > </h1>--> </div>
@@ -182,7 +182,7 @@
 				$("#"+projects[currentProject]).siblings().stop();
 				$("#"+projects[currentProject]).stop();
 				$("#"+projects[nextProject]).stop();
-				$("#"+projects[prevProject]).animate({left:"100%",opacity:"1.0"},1000);			
+				$("#"+projects[prevProject]).animate({left:"100%",opacity:"1.0"},1000);	
 				$("#"+projects[currentProject]).show().css("left","-100%").animate({left:"0%",opacity:"1.0"},1000);	
 			}
 		}
@@ -202,7 +202,7 @@
 				$("#"+projects[currentProject]).siblings().stop();
 				$("#"+projects[currentProject]).stop();
 				$("#"+projects[nextProject]).stop();
-				$("#"+projects[prevProject]).animate({left:"-100%",opacity:"1.0"},1000);			
+				$("#"+projects[prevProject]).animate({left:"-100%",opacity:"1.0"},1000);				
 				$("#"+projects[currentProject]).show().css("left","100%").animate({left:"0%",opacity:"1.0"},1000);
 			}
 		}

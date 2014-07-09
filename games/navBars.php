@@ -30,11 +30,14 @@ if ($name == 'Headquarters'){
 }
 ?>
 <html>
-	<div style="position: absolute; width: 100%; height:20%; z-index:5;">
+	<div style="position: absolute; width: 100%; height:60px; z-index:5;">
 		<div class="nav-headers" id="home-head">HOME</div>
-		<img src="img/marker.png" style="position: absolute; width:9%;  top:25%; left:<?php echo $alignment; ?>%;" />
+		<img src="img/marker.png" style="position: absolute; width:9%; min-width:100px;  top:50px; left:<?php echo $alignment; ?>%;" />
 		<div class="nav-headers" id="games-head">GAMES</div>
-		<div class="nav-headers" id="about-head"><img src="./img/whitestretchLogo3.png" style="height:100%" /></div>
+		<div class="nav-headers" id="about-head">
+			<img src="./img/logoBanner.png" style="position:relative;display:block;margin-left:auto;margin-right:auto;width:100%;min-width:190px;z-index:-5;"/>
+			<img src="./img/stretchLogo3.png" style="display:block;margin-left:auto;margin-top:-50px;margin-right:auto;width:90%;min-width:140px;z-index:10;" />
+			</div>
 		<div class="nav-headers" id="team-head">TEAM</div>
 		<div class="nav-headers" id="contact-head">CONTACT</div>
 	</div>
