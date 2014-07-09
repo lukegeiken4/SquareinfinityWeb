@@ -2,8 +2,21 @@
 <!DOCTYPE html>
 
 <html>
+<?php
+	function custom_echo($text) {
+		if(strlen($text)<=330)
+		{
+		  return array($text, false);
+		}
+		else
+		{
+		  $new_text=substr($text,0,330) . '...';
+		  return array($new_text, true);
+		}
+	}
+?>
 <?php getHead('Headquarters'); ?>
-<body >
+<body>
 	<?php getMainBar('Headquarters'); ?>
 	
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0; background: #e6dcbf;">
@@ -75,6 +88,7 @@
 			    mysql_data_seek($result, 0);
 			
 			    while($row = mysql_fetch_assoc($result)) {
+				$id = $row['id'];
 				$title = $row['title'];
 				$content = $row['content'];
 				$date = $row['date'];
@@ -84,7 +98,16 @@
 					<img style="position: absolute; float: left; margin-left: 100px; width: 200px; height:200px;" src="news_images/<?php echo $url ?>" alt="">
 					<h1 style="text-align: center"><?php echo $title; ?></h1>
 					<h3 style="text-align: center"><?php echo $date; ?></h3>
-					<h2 style="text-align: left; margin-left: 25%;"><?php echo $content; ?></h2>
+					<h2 style="text-align: left; margin-left: 25%;">
+					<?php
+					$statement = custom_echo($content);
+					echo strip_tags($statement[0]);
+					if($statement[1]) {
+						?>
+						<a class="simple-ajax-popup-align-top" href="news_images/fullStory.php?id=<?php echo $id ?>"> Read More</a><br>
+						<?php
+					}
+					?></h2>
 				</div>
 				<?php
 			    }
@@ -92,12 +115,64 @@
 		}	
 		?>
 		<div style="width:100%; padding-bottom:10%;">
-			<h1 style="text-align: center">Footer</h1>		
+			<h1 style="text-align: center">Footer</h1>
 		</div>
 	</div>
 	<div id="hidden-link" style="z-index: 1;"></div>
 </body>
 <script>
+	var numProjects = 3;
+	var currentProject = 0;
+	var prevProject = 3;
+	var nextProject = 1;
+	var projects = new Array("LostHope","UtterDark","TakeTheTower");
+	var time = Date.now();
+	var hasPressed = false;
+	
+	$(document).ready(function() {
+	
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+			$("#LostHope").siblings().css("left","100%");
+			
+			
+			$(".projectButton").hover(function() {
+				$(this).css('background-color','#494a4a');
+				$(this).css('color','#FFFFFF');
+			},function() {
+				$(this).css('background-color','transparent');
+				$(this).css('color','#000000');
+		});
+		
+		setInterval( function() {
+			if (time+9000<Date.now() && !hasPressed) {
+				switchProject();
+				time = Date.now();
+			}		
+			if (time+90000<Date.now()) {
+				hasPressed = false;
+				time = Date.now();
+			}
+		},10000);
+		
+		
+		$('.simple-ajax-popup-align-top').magnificPopup({
+			type: 'ajax',
+			alignTop: true,
+			overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+		});
+		
+		$('.image-popup-vertical-fit').magnificPopup({
+			type: 'image',
+			closeOnContentClick: true,
+			mainClass: 'mfp-img-mobile',
+			image: {
+				verticalFit: true
+			}
+			
+		});
+	});
+	
 	$('#games-head').click(function() {
 		window.location.href = "games.php";
 		
@@ -118,82 +193,47 @@
 		
 	});
 	
-	var numProjects = 3;
-	var currentProject = 0;
-	var prevProject = 3;
-	var nextProject = 1;
-	var projects = new Array("LostHope","UtterDark","TakeTheTower");
-	var time = Date.now();
-	var hasPressed = false;
-	
-	$(document).ready(function() {
-	
-	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-
-		$("#LostHope").siblings().css("left","100%");
-		
-		
-		$(".projectButton").hover(function() {
-			$(this).css('background-color','#494a4a');
-			$(this).css('color','#FFFFFF');
-		},function() {
-			$(this).css('background-color','transparent');
-			$(this).css('color','#000000');
-		});
-		
-		setInterval( function() {
-			if (time+9000<Date.now() && !hasPressed) {
-				switchProject();
-				time = Date.now();
-			}		
-			if (time+90000<Date.now()) {
-				hasPressed = false;
-				time = Date.now();
+	function switchProject() {
+		hasPressed = true;
+		if (time+1000<Date.now()) {
+			time = Date.now();
+			currentProject++;
+			prevProject = currentProject-1;
+			nextProject = currentProject+1;
+			if (currentProject>=numProjects) {
+				currentProject = 0;
+				prevProject = numProjects-1;
+				nextProject = 1;
 			}
-		},10000);
-	});
-	
-		
-		function switchProject() {
-			hasPressed = true;
-			if (time+1000<Date.now()) {
-				time = Date.now();
-				currentProject++;
-				prevProject = currentProject-1;
-				nextProject = currentProject+1;
-				if (currentProject>=numProjects) {
-					currentProject = 0;
-					prevProject = numProjects-1;
-					nextProject = 1;
-				}
-				
-				$("#"+projects[currentProject]).siblings().stop();
-				$("#"+projects[currentProject]).stop();
-				$("#"+projects[nextProject]).stop();
-				$("#"+projects[prevProject]).animate({left:"100%",opacity:"0.0"},1000);			
-				$("#"+projects[currentProject]).show().css("left","-100%").animate({left:"0%",opacity:"1.0"},1000);	
-			}
-		}
 			
-		function backProject() {
-			hasPressed = true;
-			if (time+1000<Date.now()) {
-				time = Date.now();
-				currentProject--;
-				prevProject = currentProject+1;
-				nextProject = currentProject-1;
-				if (currentProject<0) {
-					currentProject = numProjects-1;
-					prevProject = 0;
-					nextProject = numProjects-2;
-				}			
-				$("#"+projects[currentProject]).siblings().stop();
-				$("#"+projects[currentProject]).stop();
-				$("#"+projects[nextProject]).stop();
-				$("#"+projects[prevProject]).animate({left:"-100%",opacity:"0.0"},1000);			
-				$("#"+projects[currentProject]).show().css("left","100%").animate({left:"0%",opacity:"1.0"},1000);
-			}
+			$("#"+projects[currentProject]).siblings().stop();
+			$("#"+projects[currentProject]).stop();
+			$("#"+projects[nextProject]).stop();
+			$("#"+projects[prevProject]).animate({left:"100%",opacity:"0.0"},1000);			
+			$("#"+projects[currentProject]).show().css("left","-100%").animate({left:"0%",opacity:"1.0"},1000);	
 		}
+	}
+		
+	function backProject() {
+		hasPressed = true;
+		if (time+1000<Date.now()) {
+			time = Date.now();
+			currentProject--;
+			prevProject = currentProject+1;
+			nextProject = currentProject-1;
+			if (currentProject<0) {
+				currentProject = numProjects-1;
+				prevProject = 0;
+				nextProject = numProjects-2;
+			}			
+			$("#"+projects[currentProject]).siblings().stop();
+			$("#"+projects[currentProject]).stop();
+			$("#"+projects[nextProject]).stop();
+			$("#"+projects[prevProject]).animate({left:"-100%",opacity:"0.0"},1000);			
+			$("#"+projects[currentProject]).show().css("left","100%").animate({left:"0%",opacity:"1.0"},1000);
+		}
+	}
 
+	
 </script>
 </html>
