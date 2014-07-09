@@ -38,12 +38,16 @@
 	</div>
 	
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
-		<div style="width:100%; height:100%; background: #38B76C; position: relative;">
-			<div style="position: absolute; height:20%; width:100%; text-align: center; margin-top: 15%;">
-				<h1>We Just Announce Our First Major Game!</h1>
-				<h2>We Will Have More Information To Tell You In The Future But For Now Here Is The Game's Logo</h1>
+		<div class="games_div" id="games_div_1">
+			<div class="games_div_opacity">
+				
 			</div>
-			<img src="img/travelquestlogo.png" style="position: absolute; width:70%; height:55%; margin-left:auto; margin-right:auto; bottom: 0; margin-left: 18%;" />
+		</div>
+		
+		<div class="games_div" id="games_div_2">
+			<div class="games_div_opacity">
+				
+			</div>
 		</div>
 	</div>
 	
