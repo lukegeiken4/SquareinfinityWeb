@@ -13,7 +13,7 @@
 		$unhashed_password = $_POST['password'];
 		
 		if($dbusername == null || $unhashed_password == null) {
-			header('Location: /~lucasgeiken/squareinfinity/SquareinfinityWeb/games/crazy_news_login.php');
+			header('Location: /~lucasgeiken/squareinfinity/SquareinfinityWeb/crazy_news_login.php');
 			exit;
 		}
 		
@@ -41,7 +41,7 @@
 					?>
 						<form name="input" action="create_awesome_news_story.php" method="post"  id="news_form">
 							Title: <input type="text" name="title"><br>
-							Content: <br><textarea name="content" rows="10" cols="100" form="news_form"></textarea><br>
+							Content (For new paragraph type &lt;br&gt;&lt;br&gt; ) : <br><textarea name="content" rows="10" cols="100" form="news_form"></textarea><br>
 							Todays Date (Format: July 8, 2014): <input type="text" name="date"><br>
 							Photo name and extension (upload it yourself man) <input type="text" name="url"><br>
 							!!!NOTE: Uploaded photos go in /games/news_images or else it won't be found!!!

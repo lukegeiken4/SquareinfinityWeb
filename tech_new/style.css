@@ -24,6 +24,27 @@ body{
 	box-shadow: 1px 1px 1px #000000;
 }
 
+/* ===== FONT AWESOME ===== */
+
+.fa-extra-spacing{
+	margin-right: 10px;
+}
+
+.fa-small-spacing{
+	margin-right: 3px;
+}
+
+.fa-float-top{
+	margin-top: -40px;
+	background: #fefefe;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	padding: 1px 1px 1px 1px;
+	box-shadow: 2px 2px 2px #000000;
+	border-radius: 16px 16px 16px 16px;
+}
+
 /* ===== TOP AREA ===== */
 
 .top-bar{
@@ -157,6 +178,12 @@ body{
 	margin-top: 30px;
 }
 
+.design-area{
+	background: none;
+	margin-top: 10px;
+	box-shadow: none;
+}
+
 @media screen and (max-width: 1090px){
 	.main-content{
 		width: 70%;
@@ -196,10 +223,48 @@ body{
 
 /* === GENERAL CONTENT === */
 
+.center-content{
+	text-align: center;
+}
+
+.circle{
+	width: 250px;
+	height: 250px;
+	text-align: center;
+	background: #fefefe;
+	border-radius: 250px 250px 250px 250px;
+	box-shadow: 3px 3px 2px #000000;
+	padding: 50px 50px 50px 50px;
+	float: left;
+	margin-right: 10px;
+}
+
+.circle-content{
+	color: #444444;
+	font-size: 11pt;
+	text-align: left;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
 h1{
 	font-size: 14pt;
 	margin-top: 0px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+	font-size: 22pt;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h3{
+	font-size: 15pt;
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 0px;
+	margin-bottom: 3px;
 }
 
 @media screen and (max-width: 975px){

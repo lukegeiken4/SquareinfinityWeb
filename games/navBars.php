@@ -11,6 +11,10 @@
 	<meta property="og:site_name" content="Square Infinity Games"/>
 	<meta property="og:title" content="Square Infinity Games"/>
 	<meta property="og:url" content = "http://www.squareinfinity.com/"/>
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="magnificPopup/magnificPopup.css"> 
+	<!-- Magnific Popup core JS file -->
+	<script src="magnificPopup/jquery.magnificPopup.js"></script>
 </head>
 </html>
 <?php } ?>
@@ -36,7 +40,7 @@ if ($name == 'Headquarters'){
 		<div class="nav-headers" id="games-head">GAMES</div>
 		<div class="nav-headers" id="about-head">
 			<img src="./img/logoBanner.png" style="position:relative;display:block;margin-left:auto;margin-right:auto;width:100%;min-width:190px;z-index:-5;"/>
-			<img src="./img/stretchLogo3.png" style="display:block;margin-left:auto;margin-top:-50px;margin-right:auto;width:90%;min-width:140px;z-index:10;" />
+			<img src="./img/stretchLogo3.png" style="display:block;margin-left:auto;margin-right:auto;width:90%;min-width:140px;z-index:10;" />
 			</div>
 		<div class="nav-headers" id="team-head">TEAM</div>
 		<div class="nav-headers" id="contact-head">CONTACT</div>
