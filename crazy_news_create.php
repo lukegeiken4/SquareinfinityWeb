@@ -44,6 +44,7 @@
 							Content (For new paragraph type &lt;br&gt;&lt;br&gt; ) : <br><textarea name="content" rows="10" cols="100" form="news_form"></textarea><br>
 							Todays Date (Format: July 8, 2014): <input type="text" name="date"><br>
 							Photo name and extension (upload it yourself man) <input type="text" name="url"><br>
+							Portrait (Enter 0) or Landscape (Enter 1) <input type="text" name="image_type" maxlength="1"><br>
 							!!!NOTE: Uploaded photos go in /games/news_images or else it won't be found!!!
 							<br><input type="submit" value="Submit">
 						</form>
