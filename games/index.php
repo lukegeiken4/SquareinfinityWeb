@@ -7,49 +7,61 @@
 	<?php getMainBar('Headquarters'); ?>
 	
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0; background: #e6dcbf;">
-		<div class="content" id="projectStuff" style="background: url(images/ProjectContent.jpg) no-repeat center center fixed;height:550px;">
-		<div class="headBar" style="background-color:#929292;" >Projects</div>
-		<div class="projectButton" onclick="switchProject()"> <h1 style = "display:block;margin-top:275px;margin-bottom:auto"> < </h1> </div>
-		<div class="projectButton" onclick="backProject()" style="right:0px"> <h1 style="display:block;margin-top:275px;margin-bottom:auto"> > </h1> </div>
-		<div style="margin-top:10%;">
-			
+		<div class="content" id="projectStuff" style="height:250px;">
+		<div class="projectButton" onclick="switchProject()"> <!--<h1 style = "display:block;margin-top:275px;margin-bottom:auto"> < </h1>--> </div>
+		<div class="projectButton" onclick="backProject()" style="right:0px"> <!--<h1 style="display:block;margin-top:275px;margin-bottom:auto"> > </h1>--> </div>
+		<div style="height:100%;width:100%;overflow-y:visible;">		
 			<div class="projContent" id="LostHope">
-				
-				<h1>Lost Hope</h1>
+				<div class="projTitle" id="LostHopeTitle">
+				</div>
+				<div class="projTitle">
+					<h1>Lost Hope</h1>
+				</div>
+				<div class="projDesc" id="LostHopeDesc"> 
+				</div>
+				<div class="projDesc">
 				<p>
-					<img src="https://scontent-b.xx.fbcdn.net/hphotos-frc3/t1/385225_575948972419532_1585616576_n.jpg" style = "float:left;height:300px;margin:10px"/>
-					Lost Hope is a free form, world exploration RPG. <img src="images/lostHopeTitle.jpg" style="float:right;width:300px;margin:15px;"/>Taking a fresh 
+					Lost Hope is a free form, world exploration RPG. Taking a fresh 
 					perspective on the world building games, Lost Hope allows the player to create their own templates and designs for new weapons, extravagant spells
 					and useful tools. As players progress they gain more and more potential for modifying their templates until they can create truly new items. There
 					is a whole world to explore, filled with dangerous enemies and mysterious locales.
 				</p>
+				</div>
 			</div>
+			
 			<div class="projContent" id="UtterDark">
-				
-				<h1>Utter Dark</h1>
+				<div class="projTitle" id="UtterDarkTitle">	
+				</div>
+				<div class="projTitle">
+					<h1>Utter Dark</h1>
+				</div>
+				<div class="projDesc" id="UtterDarkDesc">
+				</div>
+				<div class="projDesc">
 				<p>
-					Utterdark is a horror-inspired first-person shooter. <img src = "images/UDLogo0.jpg" style="float:right;width:300px;margin:15px;"/>The pitch black
+					Utterdark is a horror-inspired first-person shooter.The pitch black
 					combat and constant threat of detection should make players think before acting,
 					slowing down and strategizing before leaping into the fray. All soldiers are equipped with sonar HUDs that translate nearby sound into visual input, 
 					however, the comfort (and danger) of a flashlight is only a button-press away. Players will experience round based combat across a variety of maps, 
 					each with unique objectives and features, each round players will earn money that can be spent on new weapons and equipment for the following rounds.
 
 				</p>
+				</div>
 			</div>
-			<div class="projContent" id="TakeTheTower">
-				
-				<h1>Take the Tower</h1>
-				<p>
-				<img src="images/takethetowerlogo.png" style="border-radius:63px;float:left;height:300px;margin-right:15px;"/>
-					For fans and non-fans of the renowned University of Texas alike, keep tabs on the latest happenings at the university with Take the Tower. An Android
-					and iOS application developed for Bryte Networks, Take the Tower provides notifications of the current status of the University of Texas Tower from the
-					comfort of the app. Soon to be released on both the Apple and Google Play stores, keep an eye out for our first app release and be sure to find out more
-					from the Tower's <a href="htttps://www.facebook.com/takethetower">facebook</a> page.
-				</p>
+			<div class="projContent" id="TravelQuest">
+				<div class="projTitle" id="TravelQuestTitle" style="width:240px">	
+				</div>
+				<div class="projTitle">
+					<h1>TravelQuest</h1>
+				</div>
+				<div class="projDesc" id="TravelQuestDesc">
+				</div>
+				<div class="projDesc">
+					<p>
+					hey there travelquest!
+					</p>
+				</div>
 			</div>
-			<!--<div class="projContent" id="WebDesign">
-				<h1>SO i can internetz gud.</h1>
-			</div>-->
 		</div>
 		</div>
 		<div style="width:100%; height:10%; background: white; border-top:2px solid black; border-bottom:2px solid black; margin-top:10%;">
@@ -122,7 +134,7 @@
 	var currentProject = 0;
 	var prevProject = 3;
 	var nextProject = 1;
-	var projects = new Array("LostHope","UtterDark","TakeTheTower");
+	var projects = new Array("LostHope","UtterDark","TravelQuest");
 	var time = Date.now();
 	var hasPressed = false;
 	
@@ -170,7 +182,7 @@
 				$("#"+projects[currentProject]).siblings().stop();
 				$("#"+projects[currentProject]).stop();
 				$("#"+projects[nextProject]).stop();
-				$("#"+projects[prevProject]).animate({left:"100%",opacity:"0.0"},1000);			
+				$("#"+projects[prevProject]).animate({left:"100%",opacity:"1.0"},1000);			
 				$("#"+projects[currentProject]).show().css("left","-100%").animate({left:"0%",opacity:"1.0"},1000);	
 			}
 		}
@@ -190,7 +202,7 @@
 				$("#"+projects[currentProject]).siblings().stop();
 				$("#"+projects[currentProject]).stop();
 				$("#"+projects[nextProject]).stop();
-				$("#"+projects[prevProject]).animate({left:"-100%",opacity:"0.0"},1000);			
+				$("#"+projects[prevProject]).animate({left:"-100%",opacity:"1.0"},1000);			
 				$("#"+projects[currentProject]).show().css("left","100%").animate({left:"0%",opacity:"1.0"},1000);
 			}
 		}
