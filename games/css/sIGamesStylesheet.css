@@ -1,8 +1,7 @@
 body{
-	/*background-image:url('../img/gameBack.jpg');*/
 	background: #7A7A7A;
 	overflow-y:scroll;
-	overflow-x:hide;
+	overflow-x:hidden;
 	font-family: 'Ubuntu', sans-serif;
 	display:block;
 	position:absolute;
@@ -14,7 +13,6 @@ body{
 }
 
 @media (min-width:1025px) {
-
 	.header{
 		position:fixed;
 		top:30px;
@@ -116,7 +114,6 @@ body{
 	margin-left:auto;
 	margin-right:auto;
 	width:21%;
-	height:10%;
 }
 
 

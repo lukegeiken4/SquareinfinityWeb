@@ -19,7 +19,7 @@
 <body>
 	<?php getMainBar('Headquarters'); ?>
 	
-	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0; background: #e6dcbf;min-width:500px;">
+	<div style="position: absolute; width:100%; height:100%; top:0; z-index: 0; background: #e6dcbf;min-width:500px;">
 		<div class="content" id="projectStuff" style="height:250px;">
 		<div class="projectButton" onclick="switchProject()"> <!--<h1 style = "display:block;margin-top:275px;margin-bottom:auto"> < </h1>--> </div>
 		<div class="projectButton" onclick="backProject()" style="right:0px"> <!--<h1 style="display:block;margin-top:275px;margin-bottom:auto"> > </h1>--> </div>
@@ -146,6 +146,7 @@
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
 			$("#LostHope").siblings().css("left","100%");
+			$("#LostHope").siblings().hide();
 			
 			
 			$(".projectButton").hover(function() {
