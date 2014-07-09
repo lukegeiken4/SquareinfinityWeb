@@ -7,9 +7,7 @@ if($return == "contact"){
 	getHead("Contact Square Infinity");
 	echo "<body>";
 	getTopBar();
-	getMainContent("Feel free to contact us. Find emails below or connect over social media. (this is where social media links go)<br>
-		       For contracts and quotes:  contracts@squareinfinity.com<br>
-		       For general questions and information: tech.contact@squareinfinity.com");
+	getMainContent("contact");
 	echo "</body>";
 } else if ($return  == "portfolio"){
 	getHead("Square Infinity Projects");
@@ -23,7 +21,7 @@ if($return == "contact"){
 	echo "<body>";
 	getTopBar();
 	getSideBar("main");
-	getMainContent(getFrontPageContent());
+	getMainContent("main-page");
 	getProjectSpecificsContent();
 	echo "</body>";
 }
@@ -42,6 +40,7 @@ function getHead($titleName){
 		
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> <!-- FontAwesome stuff -->
 		<!--
 		<link rel="shortcut icon" href="img/favicon.gif" />
 		<link href="css/sIGamesStylesheet.css" rel="stylesheet" type="text/css"/>
@@ -78,27 +77,78 @@ function getTopBar(){
 function getMainContent($someData){
 ?>
 <div class="main-content top-division">
-		<?php echo $someData; ?>
+		<?php 
+			if($someData == "main-page"){
+				getFrontPageContent();
+			}else if($someData == "contact"){
+				getContactContent();
+			}
+		?>
 	</div>
 <?php
 }
 
+function getContactContent(){
+	?>
+		Feel free to contact us. Find emails below or connect over social media. (this is where social media links go)<br>
+		For contracts and quotes:  contracts@squareinfinity.com<br>
+		For general questions and information: tech.contact@squareinfinity.com
+	<?php
+}
+
 function getFrontPageContent(){
-	return "At Square Infinity Technologies, we provide a wide array of software solutions customized to meet your needs.
-	With our small team and experience in the cutting edge of software design, Square Infinity Technologies offers fast turnaround times
-	while delivering a product that includes a sleek user experience. For each project we take an individual look at which elements
-	provide the greatest value to the specific project. Square Infinity Technologies is open to working on software projects of any
-	scope, style, or genre. A few of our specialties are listed below in more detail.";
+	?>
+		<div class="fa-float-top">
+			<i class="fa fa-globe fa-2x"></i>
+		</div>
+		<div>
+			At Square Infinity Technologies, we provide a wide array of software solutions customized to meet your needs.
+			With our small team and experience in the cutting edge of software design, Square Infinity Technologies offers fast turnaround times
+			while delivering a product that includes a sleek user experience. For each project we take an individual look at which elements
+			provide the greatest value to the specific project. Square Infinity Technologies is open to working on software projects of any
+			scope, style, or genre. A few of our specialties are listed below in more detail.
+		</div>
+	<?php
 }
 
 function getProjectSpecificsContent(){
 ?>
-<div class="main-content">
-	<h1 class="main-content-header" id="web-design">Web Design</h1>
-	This is where we will talk about all of the web desing things we do! Like PHP! And HTML! And JavaScript! Who knew that we were so
-	talented! Anyway, we could even talk about some basic price points if we wanted to here... But I don't really know if that is necessary.
-	<h1 class="main-content-header" id="software-design">Software Design</h1>
-	This is where I will talk about all of the software things that we do! Like android, iOS, 
+<!--<div class="main-content">
+	<h2 id="web-design"><i class="fa fa-check-circle-o fa-extra-spacing"></i>Web Design</h1>
+	<div class="center-content">
+		<h2>Dynamic Coding</h2>
+		<i class="fa fa-desktop fa-2x fa-extra-spacing"></i><i class="fa fa-laptop fa-2x fa-extra-spacing"></i><i class="fa fa-mobile fa-2x fa-extra-spacing"></i>
+	</div>
+	
+</div>-->
+<div class="design-area main-content">
+	<div class="circle">
+		<div style="color: #444444">
+		<i class="fa fa-desktop fa-2x fa-extra-spacing"></i>
+		<i class="fa fa-laptop fa-2x fa-extra-spacing"></i>
+		<i class="fa fa-mobile fa-2x fa-extra-spacing"></i>
+		</div>
+		<h3>DYNAMIC CODING</h3>
+		<div class="circle-content">
+			<i class="fa fa-users fa-small-spacing" style="color: #ff6600;"></i>In a world full of differing technologies and standards in the hands of your customers,
+			you must design for any possible device or screen size.<br />
+			<i class="fa fa-check-circle" style="color: #0062ff;"></i> At Square Infinity, 
+			we work hard to make your content look great no matter who is viewing it.
+		</div>
+	</div>
+	
+	<div class="circle">
+		<div style="color: #444444">
+		<i class="fa fa-group fa-2x"></i>
+		</div>
+		<h3>VARIOUS SKILLS</h3>
+		<div class="circle-content">
+			<i class="fa fa-users fa-small-spacing" style="color: #ff6600;"></i>In today's ever growing tech sector, knowledge of
+			multiple languages & technologies is a must to design & build for existing customer bases.<br />
+			<i class="fa fa-check-circle fa-small-spacing" style="color: #0062ff;"></i>Square Infinity hires
+			a variety of skills in modern web, mobile, and desktop application design.
+		</div>
+	</div>
 </div>
 <?php
 }
