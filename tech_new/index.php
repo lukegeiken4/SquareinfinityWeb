@@ -5,26 +5,33 @@ $return = $_GET['page'];
 
 if($return == "contact"){
 	getHead("Contact Square Infinity");
-	echo "<body>";
-	getTopBar();
-	getMainContent("contact");
-	echo "</body>";
 } else if ($return  == "portfolio"){
 	getHead("Square Infinity Projects");
-	echo "<body>";
+} else{
+	getHead("Square Infinity Technologies");
+}
+
+echo "<body>";
+
+if($return == "contact"){
+	getTopBar();
+	getMainContent("contact");
+}else if($return == "portfolio"){
 	getTopBar();
 	getSideBar("portfolio");
 	getPortfolioPageContent();
-	echo "</body>";
-} else{
-	getHead("Square Infinity Technologies");
-	echo "<body>";
+}else{
 	getTopBar();
 	getSideBar("main");
 	getMainContent("main-page");
 	getProjectSpecificsContent();
-	echo "</body>";
 }
+
+echo "</body>";
+
+getPageBottom();
+
+return;
 
 function getHead($titleName){
 	?>
@@ -63,14 +70,24 @@ function getTopBar(){
 			
 	</div>
 	<div class="mobile-div">
-		<button class="top-nav-button nav-button-start-left" onclick="href('http://dev.squareinfinity.com/tech/?page=portfolio')">PORTFOLIO</button>
-		<button class="top-nav-button" onclick="href('http://dev.squareinfinity.com/tech/?page=contact')">CONTACT</button>
+		<button class="top-nav-button nav-button-start-left" onclick="href('http://dev.squareinfinity.com/tech/new/?page=portfolio')">PORTFOLIO</button>
+		<button class="top-nav-button" onclick="href('http://dev.squareinfinity.com/tech/new/?page=contact')">CONTACT</button>
 	</div>
 	<div class="center-image-container shadow">
-		<a href="http://dev.squareinfinity.com/tech">
+		<a href="http://dev.squareinfinity.com/tech/new">
 		<img class="center-image" src="http://squareinfinity.com/images/stretchLogo3.png" />
 		</a>
 	</div>
+	<?php
+}
+
+function getPageBottom(){
+	?>
+		<div class="footer">
+			<div>
+				&copy;Square Infinity Technologies, 2014 | <a href="http://google.com/">LEGAL</a>
+			</div>
+		</div>
 	<?php
 }
 
@@ -101,12 +118,12 @@ function getFrontPageContent(){
 		<div class="fa-float-top">
 			<i class="fa fa-globe fa-2x"></i>
 		</div>
-		<div>
+		<div class="front-page-top-content">
 			At Square Infinity Technologies, we provide a wide array of software solutions customized to meet your needs.
 			With our small team and experience in the cutting edge of software design, Square Infinity Technologies offers fast turnaround times
 			while delivering a product that includes a sleek user experience. For each project we take an individual look at which elements
 			provide the greatest value to the specific project. Square Infinity Technologies is open to working on software projects of any
-			scope, style, or genre. A few of our specialties are listed below in more detail.
+			scope, style, or genre. A few of our specialities are listed below in more detail.
 		</div>
 	<?php
 }
@@ -122,7 +139,7 @@ function getProjectSpecificsContent(){
 	
 </div>-->
 <div class="design-area main-content">
-	<div class="circle">
+	<div class="circle" style="left:0px">
 		<div style="color: #444444">
 		<i class="fa fa-desktop fa-2x fa-extra-spacing"></i>
 		<i class="fa fa-laptop fa-2x fa-extra-spacing"></i>
@@ -138,8 +155,8 @@ function getProjectSpecificsContent(){
 	</div>
 	
 	<div class="circle">
-		<div style="color: #444444">
-		<i class="fa fa-group fa-2x"></i>
+		<div style="color: #444444;">
+			<i class="fa fa-group fa-2x"></i>
 		</div>
 		<h3>VARIOUS SKILLS</h3>
 		<div class="circle-content">
@@ -153,16 +170,24 @@ function getProjectSpecificsContent(){
 <?php
 }
 
+function getFooter(){
+	?>
+		<footer>
+			Footer words
+		</footer>
+	<?php
+}
+
 function getPortfolioPageContent(){
 ?>
-<div class="main-content top-division">
-<h1 class="main-content-header" id="project-one">Project One Name</h1>
-This is where we will have a blurb and also images associated with each project that we can list in our portfolio. So yeah.
-It will have the link and stuff like screenshots.
-<h1 class="main-content-header" id="project-two">Project Two Name</h1>
-And here we will talk about project two and include more images and links and stuff. Then below this there will be more projects,
-each with a tag and anchor.
-</div>
+	<div class="main-content top-division">
+		<h1 class="main-content-header" id="project-one">Project One Name</h1>
+		This is where we will have a blurb and also images associated with each project that we can list in our portfolio. So yeah.
+		It will have the link and stuff like screenshots.
+		<h1 class="main-content-header" id="project-two">Project Two Name</h1>
+		And here we will talk about project two and include more images and links and stuff. Then below this there will be more projects,
+		each with a tag and anchor.
+	</div>
 <?php
 }
 

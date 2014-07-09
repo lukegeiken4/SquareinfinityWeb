@@ -17,6 +17,8 @@
 body{
 	margin: 0px 0px 0px 0px;
 	background: url("http://squareinfinity.com/images/48.jpg");
+	background: url("http://crispme.com/wp-content/uploads/254497-1920x1080.jpg?pass");
+	background: url("https://scontent-a-sea.xx.fbcdn.net/hphotos-xfa1/t31.0-8/10382354_4399896612323_7255393296708134168_o.jpg");
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -124,6 +126,44 @@ body{
 
 /* ===== CENTER CONTENT ===== */
 
+.front-page-top-content{
+	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+}
+
+.footer{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fefefe;
+	border-radius: 2px 2px 2px 2px;
+	padding: 2px 2px 2px 5px;
+	margin-top: 40px;
+	font-size: 10pt;
+	box-shadow: 3px 3px 2px #000000;
+}
+
+.content-header{
+	background: #fefefe;
+	border: #000000 solid 1px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 35px;
+	position: absolute;
+}
+
+.content-box{
+	background: #fefefe;
+	padding: 10px 10px 10px 10px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+}
+
 .main-content{
 	background: #fefefe;
 	width: 75%;
@@ -201,6 +241,8 @@ body{
 	
 	.main-content{
 		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	.sidebar-link{
@@ -235,8 +277,7 @@ body{
 	border-radius: 250px 250px 250px 250px;
 	box-shadow: 3px 3px 2px #000000;
 	padding: 50px 50px 50px 50px;
-	float: left;
-	margin-right: 10px;
+	margin-right: 0px;
 }
 
 .circle-content{
@@ -267,11 +308,29 @@ h3{
 	margin-bottom: 3px;
 }
 
+a{
+	text-decoration: none;
+	color: #555555;
+}
+
+a:hover{
+	color: #000000;
+}
+
 @media screen and (max-width: 975px){
 	.mobile-center{
 		/* I have no clue what I'm doing here. Get somebody to look at this.*/
 		width: 100%;
 		text-align: center;
+	}
+	
+	.circle{
+		width: 100%;
+		border-radius: 50px 50px 50px 50px;
+		padding: 20px 20px 5px 20px;
+		margin-top: 5px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 }
