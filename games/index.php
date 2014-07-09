@@ -19,7 +19,7 @@
 <body>
 	<?php getMainBar('Headquarters'); ?>
 	
-	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0; background: #e6dcbf;">
+	<div style="position: absolute; width:100%; height:100%; top:0; z-index: 0; background: #e6dcbf;min-width:500px;">
 		<div class="content" id="projectStuff" style="height:250px;">
 		<div class="projectButton" onclick="switchProject()"> <!--<h1 style = "display:block;margin-top:275px;margin-bottom:auto"> < </h1>--> </div>
 		<div class="projectButton" onclick="backProject()" style="right:0px"> <!--<h1 style="display:block;margin-top:275px;margin-bottom:auto"> > </h1>--> </div>
@@ -77,8 +77,9 @@
 			</div>
 		</div>
 		</div>
-		<div style="width:100%; height:10%; background: white; border-top:2px solid black; border-bottom:2px solid black; margin-top:10%;">
-			<h1 style="text-align: center;">News</h1>
+		<div class="newsWrapper">
+		<div class="newsHeader">
+			<h1>News</h1>
 		</div>
 		<?php
 		$hostname = "mysql.squareinfinity.com";   // eg. mysql.yourdomain.com (unique)
@@ -106,8 +107,8 @@
 				$date = $row['date'];
 				$url = $row['url'];
 				?>
-				<div style="width:100%; padding-bottom:5%; border-bottom:1px solid black;">
-					<img style="position: absolute; float: left; margin-left: 100px; width: 200px; height:200px;" src="news_images/<?php echo $url ?>" alt="">
+				<div class="newsContent" style="">
+					<img class="newsImage" src="news_images/<?php echo $url ?>" alt="">
 					<h1 style="text-align: center"><?php echo $title; ?></h1>
 					<h3 style="text-align: center"><?php echo $date; ?></h3>
 					<h2 style="text-align: left; margin-left: 25%;">
@@ -126,6 +127,8 @@
 			}
 		}	
 		?>
+		</div>
+		
 		<div style="width:100%; padding-bottom:10%;">
 			<h1 style="text-align: center">Footer</h1>
 		</div>
@@ -146,6 +149,7 @@
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
 			$("#LostHope").siblings().css("left","100%");
+			$("#LostHope").siblings().hide();
 			
 			
 			$(".projectButton").hover(function() {
@@ -173,23 +177,13 @@
 			alignTop: true,
 			overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
 		});
-		
-		$('.image-popup-vertical-fit').magnificPopup({
-			type: 'image',
-			closeOnContentClick: true,
-			mainClass: 'mfp-img-mobile',
-			image: {
-				verticalFit: true
-			}
-			
-		});
 	});
 	
+
 	$('#games-head').click(function() {
 		window.location.href = "games.php";
-		
 	});
-	
+		
 	$('#team-head').click(function() {
 		window.location.href = "team.php";
 		
@@ -204,48 +198,47 @@
 		window.location.href = "hidden.php";
 		
 	});
-	
 
 	function switchProject() {
-		hasPressed = true;
-		if (time+1000<Date.now()) {
-			time = Date.now();
-			currentProject++;
-			prevProject = currentProject-1;
-			nextProject = currentProject+1;
-			if (currentProject>=numProjects) {
-				currentProject = 0;
-				prevProject = numProjects-1;
-				nextProject = 1;
+			hasPressed = true;
+			if (time+1000<Date.now()) {
+				time = Date.now();
+				currentProject++;
+				prevProject = currentProject-1;
+				nextProject = currentProject+1;
+				if (currentProject>=numProjects) {
+					currentProject = 0;
+					prevProject = numProjects-1;
+					nextProject = 1;
+				}
+				
+				$("#"+projects[currentProject]).siblings().stop();
+				$("#"+projects[currentProject]).stop();
+				$("#"+projects[nextProject]).stop();
+				$("#"+projects[prevProject]).animate({left:"100%",opacity:"1.0"},1000);	
+				$("#"+projects[currentProject]).show().css("left","-100%").animate({left:"0%",opacity:"1.0"},1000);
 			}
-			
-			$("#"+projects[currentProject]).siblings().stop();
-			$("#"+projects[currentProject]).stop();
-			$("#"+projects[nextProject]).stop();
-			$("#"+projects[prevProject]).animate({left:"100%",opacity:"1.0"},1000);			
-			$("#"+projects[currentProject]).show().css("left","-100%").animate({left:"0%",opacity:"1.0"},1000);	
 	}
-		
+	
 	function backProject() {
-		hasPressed = true;
-		if (time+1000<Date.now()) {
-			time = Date.now();
-			currentProject--;
-			prevProject = currentProject+1;
-			nextProject = currentProject-1;
-			if (currentProject<0) {
-				currentProject = numProjects-1;
-				prevProject = 0;
-				nextProject = numProjects-2;
-			}			
-			$("#"+projects[currentProject]).siblings().stop();
-			$("#"+projects[currentProject]).stop();
-			$("#"+projects[nextProject]).stop();
-			$("#"+projects[prevProject]).animate({left:"-100%",opacity:"0.0"},1000);			
-			$("#"+projects[currentProject]).show().css("left","100%").animate({left:"0%",opacity:"1.0"},1000);
-		}
+			hasPressed = true;
+			if (time+1000<Date.now()) {
+				time = Date.now();
+				currentProject--;
+				prevProject = currentProject+1;
+				nextProject = currentProject-1;
+				if (currentProject<0) {
+					currentProject = numProjects-1;
+					prevProject = 0;
+					nextProject = numProjects-2;
+				}			
+				$("#"+projects[currentProject]).siblings().stop();
+				$("#"+projects[currentProject]).stop();
+				$("#"+projects[nextProject]).stop();
+				$("#"+projects[prevProject]).animate({left:"-100%",opacity:"1.0"},1000);				
+				$("#"+projects[currentProject]).show().css("left","100%").animate({left:"0%",opacity:"1.0"},1000);
+			}
 	}
-}
 	
 </script>
 </html>
