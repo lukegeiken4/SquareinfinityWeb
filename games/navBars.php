@@ -38,9 +38,9 @@ if ($name == 'Headquarters'){
 		<div class="nav-headers" id="home-head">HOME</div>
 		<img src="img/marker.png" style="position: absolute; width:9%; min-width:100px;  top:50px; left:<?php echo $alignment; ?>%;" />
 		<div class="nav-headers" id="games-head">GAMES</div>
-		<div class="nav-headers" id="about-head">
-			<img src="./img/logoBanner.png" style="width:100%;min-width:190px;z-index:-5;"/>
-			<img src="./img/stretchLogo3.png" style="width:90%;min-width:140px;z-index:10;" />
+		<div class="" id="about-head">
+			<img src="./img/logoBanner.png" style="width:100%; height:400%; min-height: 120px; min-width:190px; z-index:-5; display: block;"/>
+			<img src="./img/stretchLogo3.png" style="width:90%; height:120%; min-height:50px; min-width:140px; z-index:10; display: block; margin-top:-28%; margin-left: auto; margin-right: auto" />
 		</div>
 		<div class="nav-headers" id="team-head">TEAM</div>
 		<div class="nav-headers" id="contact-head">CONTACT</div>
