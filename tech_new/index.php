@@ -16,15 +16,7 @@ if($return == "contact"){
 	echo "<body>";
 	getTopBar();
 	getSideBar("portfolio");
-	getMainContent("Web Projects:<br>
-		       Project 1 Name for example purposes.<br>
-		       Project blurb... Here we will describe the project if it needs any sort of description.<br>
-		       Link to the website from the project.<br>
-		       Somewhere off to one side will be a picture I am sure of the website.<br>
-		       
-		       Project 2 Name and stuff.<br>
-		       
-		       Then a ways down, Software Projects and the same format but for our apps and such.");
+	getPortfolioPageContent();
 	echo "</body>";
 } else{
 	getHead("Square Infinity Technologies");
@@ -39,6 +31,7 @@ if($return == "contact"){
 function getHead($titleName){
 	?>
 		<head>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
 		<title><?php echo $titleName; ?></title>
 		
 		<script>
@@ -110,6 +103,19 @@ function getProjectSpecificsContent(){
 <?php
 }
 
+function getPortfolioPageContent(){
+?>
+<div class="main-content top-division">
+<h1 class="main-content-header" id="project-one">Project One Name</h1>
+This is where we will have a blurb and also images associated with each project that we can list in our portfolio. So yeah.
+It will have the link and stuff like screenshots.
+<h1 class="main-content-header" id="project-two">Project Two Name</h1>
+And here we will talk about project two and include more images and links and stuff. Then below this there will be more projects,
+each with a tag and anchor.
+</div>
+<?php
+}
+
 function getSideBar($content){
 ?>
 <div class = "floating-sidebar top-division">
@@ -118,13 +124,13 @@ function getSideBar($content){
 			?>
 				<h1 class="mobile-center">Navigation</h1>
 				<button class="sidebar-link" onclick="href('http://dev.squareinfinity.com/tech/#web-design')">Web Design</button>
-				<button class="sidebar-link">App Design</button>
+				<button class="sidebar-link" onclick="href('http://dev.squareinfintiy.com/tech/#app-design')">App Design</button>
 			<?php
 		}else if($content == "portfolio"){
 			?>
 				<h1 class ="mobile-center">Navigation</h1>
-				<button class="sidebar-link">Project 1</button>
-				<button class="sidebar-link">Project 2</button>
+				<button class="sidebar-link" onclick="href('http://dev.squareinfinity.com/tech/?page=portfolio#project-one')">Project One</button>
+				<button class="sidebar-link" onclick="href('http://dev.squareinfinity.com/tech/?page=portfolio#project-two')">Project Two</button>
 			<?php
 		}
 	?>
