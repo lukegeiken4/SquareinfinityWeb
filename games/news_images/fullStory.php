@@ -7,7 +7,7 @@
 <body style="width:100%; height:100%; background: white;">
     <div style="width: 60%; margin: 0 auto; background: white; margin-top:10%; padding: 40px;">
 	<?php
-		$id = (int) $_GET['id'];
+		$id = (int) pg_escape_string($_GET['id']);
 		if(is_int($id)) {
 			if($id != null) {
 				$hostname = "mysql.squareinfinity.com";   // eg. mysql.yourdomain.com (unique)
@@ -21,7 +21,7 @@
 				if(!$link) {
 					 throw new Exception("unable to connect");
 				} else {
-					$query = "SELECT * FROM news where id = " . pg_escape_string($id);
+					$query = "SELECT * FROM news where id = " . $id;
 					$result = mysql_query($query);
 					if ( $row = mysql_fetch_assoc ($result)) {
 						$firstRow = $row;
