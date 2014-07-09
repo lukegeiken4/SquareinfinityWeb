@@ -16,8 +16,6 @@
 
 body{
 	margin: 0px 0px 0px 0px;
-	background: url("http://squareinfinity.com/images/48.jpg");
-	background: url("http://crispme.com/wp-content/uploads/254497-1920x1080.jpg?pass");
 	background: url("https://scontent-a-sea.xx.fbcdn.net/hphotos-xfa1/t31.0-8/10382354_4399896612323_7255393296708134168_o.jpg");
 	font-family: 'Open Sans', sans-serif;
 }
@@ -45,6 +43,63 @@ body{
 	padding: 1px 1px 1px 1px;
 	box-shadow: 2px 2px 2px #000000;
 	border-radius: 16px 16px 16px 16px;
+}
+
+/* ===== PORTFOLIO ===== */
+
+.portfolio-container{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+.portfolio-object{
+	width: 300px;
+	background: #fefefe;
+	padding: 10px 10px 5px 10px;
+}
+
+.portfolio-main{
+	width: 300px;
+}
+
+.portfolio-center{
+	margin-left: auto;
+	margin-right: auto;
+	
+	background: #fefefe;
+	text-align: center;
+	
+	width: 38px;
+	height: 36px;
+	padding-top: 2px;
+	border-radius: 19px 19px 19px 19px;
+}
+
+h4{
+	background: #fefefe;
+	width: 250px;
+	text-align: center;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h5{
+	width: 200px;
+	font-size: 9pt;
+	background: #fefefe;
+	text-align: center;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 /* ===== TOP AREA ===== */
@@ -83,7 +138,14 @@ body{
 }
 
 .top-nav-button:hover{
-	background: #cccccc;
+	background: rgb(254,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(221,241,249,1) 35%, rgba(160,216,239,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(35%,rgba(221,241,249,1)), color-stop(100%,rgba(160,216,239,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
 }
 
 .nav-button-start-left{
@@ -237,6 +299,9 @@ body{
 		margin-right: 2.5%;
 		border-radius: 0px 0px 0px 0px;
 		float: none;
+		height: 100px;
+		
+		margin-bottom: 10px;
 	}
 	
 	.main-content{
@@ -246,20 +311,29 @@ body{
 	}
 	
 	.sidebar-link{
-		width: 50%;
-		margin-left: 25%;
-		margin-right: 25%;
+		width: 49%;
+		right: 5px;
 		text-align: center;
 		padding-top: 5px;
 		padding-bottom: 5px;
-		font-size: 20pt;
+		font-size: 12pt;
+		float: left;
 		
-		border: #000000 solid 4px;
+		/*border: #000000 solid 4px;  I can't decide if this looks good or not*/
 		border-radius: 10px 10px 10px 10px;
+		
+		background: rgb(254,255,255); /* old browsers only */
+		background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(221,241,249,1) 35%, rgba(160,216,239,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(35%,rgba(221,241,249,1)), color-stop(100%,rgba(160,216,239,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
 	}
 	
 	.sidebar-link:hover{
-		border: #000000 solid 4px;
+		/*border: #000000 solid 4px;*/
 	}
 }
 
@@ -325,12 +399,17 @@ a:hover{
 	}
 	
 	.circle{
-		width: 100%;
+		width: 85%;
 		border-radius: 50px 50px 50px 50px;
 		padding: 20px 20px 5px 20px;
 		margin-top: 5px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	
+	body{
+		background: url("http://squareinfinity.com/images/48.jpg");
+		margin: 0px;
 	}
 	
 }

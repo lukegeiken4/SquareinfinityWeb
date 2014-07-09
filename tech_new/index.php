@@ -70,8 +70,8 @@ function getTopBar(){
 			
 	</div>
 	<div class="mobile-div">
-		<button class="top-nav-button nav-button-start-left" onclick="href('http://dev.squareinfinity.com/tech/new/?page=portfolio')">PORTFOLIO</button>
-		<button class="top-nav-button" onclick="href('http://dev.squareinfinity.com/tech/new/?page=contact')">CONTACT</button>
+		<button class="top-nav-button nav-button-start-left" onclick="href('../new/?page=portfolio')">PORTFOLIO</button>
+		<button class="top-nav-button" onclick="href('../new/?page=contact')">CONTACT</button>
 	</div>
 	<div class="center-image-container shadow">
 		<a href="http://dev.squareinfinity.com/tech/new">
@@ -145,7 +145,7 @@ function getProjectSpecificsContent(){
 		<i class="fa fa-laptop fa-2x fa-extra-spacing"></i>
 		<i class="fa fa-mobile fa-2x fa-extra-spacing"></i>
 		</div>
-		<h3>DYNAMIC CODING</h3>
+		<h3 id="dynamic-coding">DYNAMIC CODING</h3>
 		<div class="circle-content">
 			<i class="fa fa-users fa-small-spacing" style="color: #ff6600;"></i>In a world full of differing technologies and standards in the hands of your customers,
 			you must design for any possible device or screen size.<br />
@@ -158,7 +158,7 @@ function getProjectSpecificsContent(){
 		<div style="color: #444444;">
 			<i class="fa fa-group fa-2x"></i>
 		</div>
-		<h3>VARIOUS SKILLS</h3>
+		<h3 id="various-skills">VARIOUS SKILLS</h3>
 		<div class="circle-content">
 			<i class="fa fa-users fa-small-spacing" style="color: #ff6600;"></i>In today's ever growing tech sector, knowledge of
 			multiple languages & technologies is a must to design & build for existing customer bases.<br />
@@ -188,6 +188,18 @@ function getPortfolioPageContent(){
 		And here we will talk about project two and include more images and links and stuff. Then below this there will be more projects,
 		each with a tag and anchor.
 	</div>
+	
+	<div class="portfolio-container">
+		<div class="portfolio-main">
+			<div class="portfolio-center">
+				<i class="fa fa-globe fa-2x"></i>
+			</div>
+			<h4>Bare Mountain Outdoors</h4><h5><a href="http://baremountainoutdoors.com/">baremountainoutdoors.com</a></h5>
+			<div class="portfolio-object">
+				Here is some text and maybe an image about Bare Mountain Outdoors.
+			</div>
+		</div>
+	</div>
 <?php
 }
 
@@ -198,8 +210,8 @@ function getSideBar($content){
 		if($content == "main"){
 			?>
 				<h1 class="mobile-center">Navigation</h1>
-				<button class="sidebar-link" onclick="href('http://dev.squareinfinity.com/tech/#web-design')">Web Design</button>
-				<button class="sidebar-link" onclick="href('http://dev.squareinfintiy.com/tech/#app-design')">App Design</button>
+				<button class="sidebar-link" onclick="href('../new/#dynamic-coding')">Dynamic Coding</button>
+				<button class="sidebar-link" onclick="href('../new/#various-skills')">Various Skills</button>
 			<?php
 		}else if($content == "portfolio"){
 			?>
