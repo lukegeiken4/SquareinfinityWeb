@@ -20,11 +20,11 @@ body{
 }
 
 .main-navbar {
-	background: #58A6F5;
+	background: #00D4FF;
 	width: 100%;
 	min-width:500px;
 	height: 60px;
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid black;
 }
 
 .top-navbar{
@@ -32,11 +32,11 @@ body{
 	min-width:500px;
 	height:18px;
 	position:fixed;
-	background:#58A6F5;
+	background:#00D4FF;
 	color:#000000;
-	box-shadow:0px 0px 8px white;
+	/*box-shadow:0px 0px 8px white;*/
 	z-index:40;
-	border-bottom: 2px solid white;
+	/*border-bottom: 2px solid black;*/
 }
 
 .top-navbar-bdiv {
@@ -48,7 +48,7 @@ body{
 	border-left:1px solid white;
 	border-bottom: 1px solid white;
 	float:right;
-	background:#58A6F5;
+	background:#00D4FF;
 	box-shadow:0px -5px 10px white;
 }
 
@@ -146,6 +146,34 @@ body{
 #hidden-link:hover {
 	background-image:url('../img/hidden_img_hover.png');
 	background-size: 100% 100%;
+}
+
+.newsImage{
+	position: absolute;
+	float: left;
+	margin-left: 100px;
+	width: 200px;
+	height:200px;
+}
+
+.newsHeader{
+	width:80%;
+	min-width:500px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	height:50px;
+	background: white; 
+	border-top:2px solid black;
+	border-bottom:2px solid black; 
+	margin-top:0%;
+}
+
+.newsHeader h1{
+	text-align:center;
+	margin:0px;
+	line-height:50px;
+	vertical-align:middle;
 }
 
 .social{

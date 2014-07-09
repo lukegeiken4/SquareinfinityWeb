@@ -40,7 +40,7 @@ if ($name == 'Headquarters'){
 		<div class="nav-headers" id="games-head">GAMES</div>
 		<div class="nav-headers" id="about-head">
 			<img src="./img/logoBanner.png" style="width:100%;min-width:190px;z-index:-5;"/>
-			<img src="./img/stretchLogo3.png" style="width:90%;min-width:140px;z-index:10;" />
+			<img src="./img/stretchLogo3.png" style="width:100%;min-width:190px;z-index:10;" />
 		</div>
 		<div class="nav-headers" id="team-head">TEAM</div>
 		<div class="nav-headers" id="contact-head">CONTACT</div>

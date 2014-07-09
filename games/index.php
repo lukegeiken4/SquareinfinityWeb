@@ -77,8 +77,8 @@
 			</div>
 		</div>
 		</div>
-		<div style="width:100%; height:10%; background: white; border-top:2px solid black; border-bottom:2px solid black; margin-top:10%;">
-			<h1 style="text-align: center;">News</h1>
+		<div class="newsHeader">
+			<h1>News</h1>
 		</div>
 		<?php
 		$hostname = "mysql.squareinfinity.com";   // eg. mysql.yourdomain.com (unique)
@@ -107,7 +107,7 @@
 				$url = $row['url'];
 				?>
 				<div style="width:100%; padding-bottom:5%; border-bottom:1px solid black;">
-					<img style="position: absolute; float: left; margin-left: 100px; width: 200px; height:200px;" src="news_images/<?php echo $url ?>" alt="">
+					<img class="newsImage" src="news_images/<?php echo $url ?>" alt="">
 					<h1 style="text-align: center"><?php echo $title; ?></h1>
 					<h3 style="text-align: center"><?php echo $date; ?></h3>
 					<h2 style="text-align: left; margin-left: 25%;">
