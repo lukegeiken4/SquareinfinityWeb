@@ -185,13 +185,11 @@
 	});
 		
 	$('#team-head').click(function() {
-		window.location.href = "team.php";
-		
+		window.location.href = "team.php";	
 	});
 	
 	$('#contact-head').click(function() {
-		window.location.href = "contact.php";
-		
+		window.location.href = "contact.php";	
 	});
 	
 	$('#hidden-link').click(function() {
