@@ -15,10 +15,11 @@
 		$url = $_POST["url"];
 		$image_type = (int) $_POST["image_type"];
 		
-		if($title == null || $content == null || $date == null || $url == null || $image_type == null) {
+		if($title == null || $content == null || $date == null || $url == null || ($image_type == null && $image_type != 0)) {
 			header('Location: /~lucasgeiken/squareinfinity/SquareinfinityWeb/crazy_news_login.php');
 			exit;
 		}
+		
 		$hostname = "mysql.squareinfinity.com";   // eg. mysql.yourdomain.com (unique)
 		$username = "aeolingamenfel";   // the username specified when setting-up the database
 		$password = "@b1237ilol";   // the password specified when setting-up the database

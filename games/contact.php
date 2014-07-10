@@ -8,19 +8,8 @@
 	<?php getMainBar('Mail'); ?>
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
 		<div style="width:100%; height:100%; background: #FFB84E; position: relative;">
-			<div class="socialMedia" style="height:100%; width:50%;right:0px;top:150px;position:absolute">
-				<a href="https://www.facebook.com/squareInfinityTech" target="_blank"><div class="social" style="background-image: url(img/46-facebook.svg); top:0%; left:40%;"></div></a>
-				<a href="http://www.twitter.com/squareInfinity" target="_blank"><div class="social" style="background-image: url(img/45-twitter.svg); top:25%; left:10%;"></div></a>
-				<a href="https://plus.google.com/103430757959795440005" target="_blank"><div class="social" style="background-image: url(img/80-google-plus.svg); top:50%; left:40%;"></div></a>
-				<a href="http://www.linkedin.com/company/square-infinity-technologies?report%2Esuccess=KJ_KkFGTDCfMt-A7wV3Fn9Yvgwr02Kd6AZHGx4bQCDiP6-2rfP2oxyVoEQiPrcAQ7Bf" target="_blank"><div class="social" style="background-image: url(img/51-linkedin.svg); top:25%; left:70%;"></div></a>
-			</div>
-			<div class="socialMedia" style="height:100%; width:50%;left:0px;top:150px;position:absolute">
-				<img src="img/following.png" style="width:90%; height:75%; margin-left:10px;" />
-			</div>
-		</div>
-		<div style="width:100%; height:100%; background: #4BF5BE; position: relative;">
 			<div class="socialMedia" style="height:100%; width:50%;left:0px;position:absolute">
-				<div style="width:50%;left:0px;margin-left:20%; margin-top: 40%;">
+				<div style="width:50%;left:0px;margin-left:20%; margin-top: 30%;">
 					<?php
 					// display form if user has not clicked submit
 					if (!isset($_POST["submit"])){
@@ -64,8 +53,10 @@
 					}?>
 				</div>
 			</div>
-			<div class="socialMedia" style="height:100%; width:50%;right:0px;position:absolute">
-				<img src="img/contactus.png" style="width:90%; height:75%; margin-right:10px; position: absolute; top: 20%" />
+			<div class="socialMedia" style="height:100%; width:50%;right:0px; position:absolute">
+				<a href="https://www.facebook.com/squareInfinityTech" target="_blank"><div class="social" style="background-image: url(img/46-facebook.svg); top:20%; left:40%;"></div></a>
+				<a href="http://www.twitter.com/squareInfinity" target="_blank"><div class="social" style="background-image: url(img/45-twitter.svg); top:55%; left:10%;"></div></a>
+				<a href="https://plus.google.com/103430757959795440005" target="_blank"><div class="social" style="background-image: url(img/80-google-plus.svg); top:55%; left:70%;"></div></a>
 			</div>
 		</div>	
 	</div>
