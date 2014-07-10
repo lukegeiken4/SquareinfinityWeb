@@ -77,6 +77,30 @@
 				</h2>
 			</div>
 		</div>
+		<div class="team_profile">
+				<div class="team_content">
+				<img src="img/luke_pic.png" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>/>
+				<div class="team_name_div">
+					<h1 style="padding-top:1%; padding-left:15%; font-size: 100px;">Luke Geiken</h1>
+					<!--<span style="padding-left:15%;"><a href="https://twitter.com/headin_thecloud" class="twitter-follow-button" style="left:10px" data-related="Garret" data-show-count="true">Follow Garret</a></span>-->
+				</div>
+				<h2 style="margin: 10%; color:white;  margin-top:7%;">
+					&nbsp;&nbsp;&nbsp;&nbsp;I love lamp.
+				</h2>
+			</div>
+		</div>
+		<div class="team_profile" style="background: #FF704E;">
+				<div class="team_content">
+				<img src="img/taylor_pic.png" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>/>
+				<div class="team_name_div">
+					<h1 style="padding-top:1%; padding-left:15%; font-size: 100px;">Taylor Brown</h1>
+					<!--<span style="padding-left:15%;"><a href="https://twitter.com/headin_thecloud" class="twitter-follow-button" style="left:10px" data-related="Garret" data-show-count="true">Follow Garret</a></span>-->
+				</div>
+				<h2 style="margin: 10%; color:white;  margin-top:7%;">
+					&nbsp;&nbsp;&nbsp;&nbsp;Hey, I don't have a facebook.
+				</h2>
+			</div>
+		</div>
 	</div>
 	<div id="hidden-link" style="z-index: 1;"></div>
 </body>
