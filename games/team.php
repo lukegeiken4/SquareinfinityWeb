@@ -9,7 +9,7 @@
 	
 	<div style="position: absolute; width:100%; height:100%; top:0; z-index: 0;">
 		<div class="team_profile"  style="z-index: -5;">
-			<div style="position: absolute;  background: black; width:70%; height:80%; left: 0; right: 0; margin-top:10%; z-index: -3; margin-left: auto; margin-right: auto;"></div>
+			<div style="position: absolute;  background: black; width:70%; height:80%; left: 0; right: 0; margin-top:10%; z-index: -3; margin-left: auto; margin-right: auto; opacity: .8;"></div>
 			<div style="position: absolute; width:100%; height:25%; background-color: white; margin-top:5%; z-index: -2;">
 				<h1 style="text-align: center; font-size: 100px; margin-top:3%;">Meet The Team</h1>
 			</div>
@@ -52,7 +52,7 @@
 		</div>
 		<div class="team_profile">
 			<div class="team_content">
-				<img src="img/andrewEagle.jpg" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>/>
+				<img src="img/andrewEagle.jpg" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>
 				<div class="team_name_div">
 					<h1 style="padding-top:1%; padding-left:15%; font-size: 100px;">Andrew Eagle</h1>
 					<span style="padding-left:15%;"><a href="https://twitter.com/ace_the_eagle" class="twitter-follow-button" style="left:10px" data-related="Andrew" data-show-count="true">Follow Andrew</a></span>				
@@ -69,7 +69,7 @@
 		</div>
 		<div class="team_profile" style="">
 				<div class="team_content">
-				<img src="img/garretMeier.jpg" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>/>
+				<img src="img/garretMeier.jpg" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>
 				<div class="team_name_div">
 					<h1 style="padding-top:1%; padding-left:15%; font-size: 100px;">Garret Meier</h1>
 					<span style="padding-left:15%;"><a href="https://twitter.com/headin_thecloud" class="twitter-follow-button" style="left:10px" data-related="Garret" data-show-count="true">Follow Garret</a></span>
@@ -87,7 +87,7 @@
 		</div>
 		<div class="team_profile">
 				<div class="team_content">
-				<img src="img/luke_pic.png" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>/>
+				<img src="img/luke_pic.png" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>
 				<div class="team_name_div">
 					<h1 style="padding-top:1%; padding-left:15%; font-size: 100px;">Luke Geiken</h1>
 					<!--<span style="padding-left:15%;"><a href="https://twitter.com/headin_thecloud" class="twitter-follow-button" style="left:10px" data-related="Garret" data-show-count="true">Follow Garret</a></span>-->
@@ -101,7 +101,7 @@
 		</div>
 		<div class="team_profile" style="">
 				<div class="team_content">
-				<img src="img/taylor_pic.png" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>/>
+				<img src="img/taylor_pic.png" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>
 				<div class="team_name_div">
 					<h1 style="padding-top:1%; padding-left:15%; font-size: 100px;">Taylor Brown</h1>
 					<!--<span style="padding-left:15%;"><a href="https://twitter.com/headin_thecloud" class="twitter-follow-button" style="left:10px" data-related="Garret" data-show-count="true">Follow Garret</a></span>-->
