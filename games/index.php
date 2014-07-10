@@ -30,7 +30,7 @@
 				<div class="projTitle">
 					<h1>Lost Hope</h1>
 				</div>
-				<div class="projDesc" id="LostHopeDesc"> 
+				<div class="projDesc transparent" id="LostHopeDesc"> 
 				</div>
 				<div class="projDesc">
 				<p>
@@ -48,7 +48,7 @@
 				<div class="projTitle">
 					<h1>Utter Dark</h1>
 				</div>
-				<div class="projDesc" id="UtterDarkDesc">
+				<div class="projDesc transparent" id="UtterDarkDesc">
 				</div>
 				<div class="projDesc">
 				<p>
@@ -62,16 +62,30 @@
 				</div>
 			</div>
 			<div class="projContent" id="TravelQuest">
-				<div class="projTitle" id="TravelQuestTitle" style="width:240px">	
+				<div class="projTitle" id="TravelQuestTitle">	
 				</div>
 				<div class="projTitle">
 					<h1>TravelQuest</h1>
 				</div>
-				<div class="projDesc" id="TravelQuestDesc">
+				<div class="projDesc  transparent" id="TravelQuestDesc">
 				</div>
 				<div class="projDesc">
 					<p>
 					hey there travelquest!
+					</p>
+				</div>
+			</div>
+			<div class="projContent" id="DroidSnake">
+				<div class="projTitle" id="DroidSnakeTitle">	
+				</div>
+				<div class="projTitle">
+					<h1>Droid Snake</h1>
+				</div>
+				<div class="projDesc transparent" id="DroidSnakeDesc">
+				</div>
+				<div class="projDesc">
+					<p>
+					ooh a snakey snake! look a snake!
 					</p>
 				</div>
 			</div>
@@ -140,11 +154,11 @@
 	<div id="hidden-link" style="z-index: 1;"></div>
 </body>
 <script>
-	var numProjects = 3;
+	var numProjects = 4;
 	var currentProject = 0;
-	var prevProject = 3;
+	var prevProject = 4;
 	var nextProject = 1;
-	var projects = new Array("LostHope","UtterDark","TravelQuest");
+	var projects = new Array("LostHope","UtterDark","TravelQuest","DroidSnake");
 	var time = Date.now();
 	var hasPressed = false;
 	
