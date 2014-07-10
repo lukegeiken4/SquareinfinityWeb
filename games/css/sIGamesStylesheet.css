@@ -25,6 +25,7 @@ body{
 	min-width:500px;
 	height: 60px;
 	border-bottom: 2px solid black;
+	position:fixed;
 }
 
 .top-navbar{
@@ -62,6 +63,7 @@ body{
 	height:100%;
 	width:100%;
 	min-width:200px;
+	
 }
 
 .topnavbutton:hover{
@@ -97,6 +99,7 @@ body{
 .nav-headers:hover{
 	color:#000000;
 	background-color:#ffffff;
+		cursor: pointer;
 }
 
 #home-head {	
