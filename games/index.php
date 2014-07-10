@@ -125,10 +125,10 @@
 				<div class="newsContent" style="">
 					<h1><?php echo $title; ?></h1>
 					<h3 class="newsDate"> <?php echo $date; ?> </h3>
-					<div class="newsImage-full" style="background-image:url('news_images/<?php echo $url ?>')" alt=""></div>
+					<div class="newsImage-<?php if ($imageType == 1) { echo 'full';}else if ($imageType==0){echo 'left';}?>" style="background-image:url('news_images/<?php echo $url ?>')" alt=""></div>
 					
 					
-					<h2 class="newsDesc">
+					<div class="newsDesc-<?php if ($imageType == 1) { echo 'full';}else if ($imageType==0){echo 'left';}?>">
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<?php
 					$statement = custom_echo($content);
@@ -138,7 +138,7 @@
 						<a class="simple-ajax-popup-align-top" href="news_images/fullStory.php?id=<?php echo $id ?>"> Read More</a><br>
 						<?php
 					}
-					?></h2>
+					?></div>
 				</div>
 				<?php
 			    }
