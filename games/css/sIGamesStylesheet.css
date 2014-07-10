@@ -233,7 +233,6 @@ position:relative;
 }
 
 .content h1{
-	text-align:center;
 	font-size:40px;
 	/*color:#FFCC00;*/
 }
@@ -298,7 +297,6 @@ twitter-follow-button{
 	width:100%;
 	/*background-color:#FF0000;*/
 	font-size:30px;
-	position:relative;
 	color:#000000;
 	min-height:500px;
 }
@@ -482,4 +480,32 @@ uncomment this part if you haven't added this code anywhere else
 	background-position: center;
 	background-size: cover;
 	opacity: 0.6;
+}
+
+/**
+ * CSS for the team page
+ */
+.team_profile {
+	width:100%;
+	height:100%;
+	background: #3C70A6;
+	position: relative;
+}
+
+.team_content {
+	
+	width:100%;
+	height:100%;
+	position: absolute;
+}
+
+.team_name_div {
+	width:100%;
+	height:30%;
+	background-color: white;
+	margin-top: 10%;
+}
+
+.team_member_name {
+	
 }

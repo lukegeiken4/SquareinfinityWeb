@@ -4,73 +4,80 @@
 <html>
 <?php getHead('The Party') ?>
 
-<body >
+<body>
 <?php getMainBar('The Party'); ?>
 	
-	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
-		<div style="width:100%; height:100%; background: #3C70A6; position: relative;">
-			<div class="content" style="margin-top:15%; position: absolute;">	
-			<div class='profile' style="position:relative;">
-				<img src="img/ivanMattie.jpg"/>
-				<h1>Ivan Mattie</h1>
-				<span style="margin-top:-10px;margin-left:10px;"><a href="https://twitter.com/aeolingamenfel" class="twitter-follow-button" style="left:10px;" data-related="Ivan" data-show-count="true">Follow Ivan</a></span>
-				<p style="margin-top:-10px;">
+	<div style="position: absolute; width:100%; height:100%; top:0; z-index: 0;">
+		<div class="team_profile"  style="background: #FF704E; z-index: -5;">
+			<div style="position: absolute; width:100%; height:25%; background-color: white; margin-top:5%; z-index: -2;">
+				<h1 style="text-align: center; font-size: 100px; margin-top:3%;">Meet The Team</h1>
+			</div>
+			<div style="width:100%; height:100%; z-index: 10;">
+				<img src="img/team_collage.png" style="padding-top:12%; display: block; margin-left:auto; margin-right:auto;"/>
+		
+			</div>
+		<div class="team_profile">
+			<div class="team_content">
+				<img src="img/ivanMattie.jpg" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>
+				<div class="team_name_div">
+					<h1 style="padding-top:1%; padding-left:15%; font-size: 100px;">Ivan Mattie</h1>
+					<span style="padding-left:15%;"><a href="https://twitter.com/aeolingamenfel" class="twitter-follow-button" style="left:10px;" data-related="Ivan" data-show-count="true">Follow Ivan</a></span>
+				</div>
+				<h2 style="margin: 10%; color:white; margin-top:7%;">
 					&nbsp;&nbsp;&nbsp&nbsp;Hello, I am a Computer Science major at the University of Colorado, at Colorado Springs. My major passions are telling stories and writing code, so naturally Square 
 					Infinity is an extension of of these passions. My goal is to design cool, interesting new software and applications, as well as design interesting games. I have a lot of ideas I would love
 					to share with the world, and with the team I'm with, I'm sure anything is possible. I hope to further games as a new, powerful medium for art and complex narrative. I also love the outdoors,
 					reading, writing, and generally being with cool people doing interesting things.
-				</p>
+				</h2>
 			</div>
 		</div>
-		</div>
-		<div style="width:100%; height:100%; background: #FF704E; position: relative;">
-			<div class="content" style="margin-top:15%; position: absolute;">	
-			<div class='profile' style="position:relative;">
-				<img src="img/davidLindenbaum.jpg"/>
-				<h1>David <span style="font-size:40px">Lindenbaum</span></h1>
-				<span style="margin-top:-10px;margin-left:10px"><a href="https://twitter.com/Da5id2701" class="twitter-follow-button" style="left:10px" data-related="David" data-show-count="true">Follow David</a></span>
-				<p style="margin-top:-10px;">
+		<div class="team_profile"  style="background: #FF704E;">
+			<div class="team_content">
+				<img src="img/davidLindenbaum.jpg" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>
+				<div class="team_name_div">
+					<h1 style="padding-top:1%; padding-left:15%; font-size: 100px;">David <span style="font-size:40px">Lindenbaum</span></h1>
+					<span style="padding-left:15%;"><a href="https://twitter.com/Da5id2701" class="twitter-follow-button" style="left:10px" data-related="David" data-show-count="true">Follow David</a></span>
+				</div>
+				<h2 style="margin: 10%; color:white;  margin-top:7%;">
 					&nbsp;&nbsp;&nbsp&nbsp;I am a Computer Science major at Carnegie Mellon University. I have a long-standing passion for writing code, and above all I love a challenge. Square Infinity gives
 					me constant opportunities to challenge myself with interesting projects and produce real, useful products at the same time. I am excited to explore new technologies and create unique
 					applications and games with the rest of the team. I have particular experience with Android and Java development, as well as a very strong background in algorithms and theoretical computer
 					science. When I am not programming, I enjoy the outdoors, reading sci-fi, gaming.
-				</p>
+				</h2>
 			</div>
 		</div>
-		</div>
-		<div style="width:100%; height:100%; background: #3C70A6; position: relative;">
-			<div class="content" style="margin-top:15%; position: absolute;">	
-			<div class='profile' style="position:relative;">
-				<img src="img/andrewEagle.jpg" />
-				<h1>Andrew Eagle</h1>
-				<span style="margin-left:10px;margin-top:-10px"><a href="https://twitter.com/ace_the_eagle" class="twitter-follow-button" style="left:10px" data-related="Andrew" data-show-count="true">Follow Andrew</a></span>				
-				<p style="margin-top:-10px;">
+		<div class="team_profile">
+			<div class="team_content">
+				<img src="img/andrewEagle.jpg" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>/>
+				<div class="team_name_div">
+					<h1 style="padding-top:1%; padding-left:15%; font-size: 100px;">Andrew Eagle</h1>
+					<span style="padding-left:15%;"><a href="https://twitter.com/ace_the_eagle" class="twitter-follow-button" style="left:10px" data-related="Andrew" data-show-count="true">Follow Andrew</a></span>				
+				</div>
+				<h2 style="margin: 10%; color:white;  margin-top:7%;">
 					&nbsp;&nbsp;&nbsp;&nbspI am currently studying Game Design as well as Computer Security in the University of Colorado at Colorado Springs' Bachelor of Innovation program. My goal with Square Infinity is to 
 					not only produce quality software for utility, but also to design and produce games that tell interesting, meaningful stories in new ways. I hope that I can change the way people think
 					about games for the better and help to hasten their acceptance into a wider range of arts. I met the rest of the team while attending Billings West High School and although we are now
 					spread across a country, we are more than capable of high quality work.
-				</p>
+				</h2>
 			</div>
 		</div>
-		</div>
-		<div style="width:100%; height:100%; background: #FF704E; position: relative;">
-			<div class="content" style="margin-top:15%; position: absolute;">	
-			<div class='profile' style="position:relative;">
-				<img src="img/garretMeier.jpg"/>
-				<h1>Garret Meier</h1>
-				<span style="margin-top:-10px;margin-left:10px"><a href="https://twitter.com/headin_thecloud" class="twitter-follow-button" style="left:10px" data-related="Garret" data-show-count="true">Follow Garret</a></span>
-				<p style="margin-top:-10px;">
+		<div class="team_profile" style="background: #FF704E;">
+				<div class="team_content">
+				<img src="img/garretMeier.jpg" style="width:400px; height:400px; right: 0px; margin-right:10%; margin-top:5%; position: absolute;"/>/>
+				<div class="team_name_div">
+					<h1 style="padding-top:1%; padding-left:15%; font-size: 100px;">Garret Meier</h1>
+					<span style="padding-left:15%;"><a href="https://twitter.com/headin_thecloud" class="twitter-follow-button" style="left:10px" data-related="Garret" data-show-count="true">Follow Garret</a></span>
+				</div>
+				<h2 style="margin: 10%; color:white;  margin-top:7%;">
 					&nbsp;&nbsp;&nbsp;&nbsp;Hi, I'm currently a freshman studying Software Engineering and Philosophy at Iowa State University. If you want to learn more about me personally have a look at 
 					<a href="http://ghmeier.public.iastate.edu" target="_blank">my website</a>. I can't wait to see what the team can do with Square Infinity. Right now, helping other
 					companies express themselves through technology really makes me excited to get to work on every unique project. I am currently working mostly on web design and Android
 					projects for Square Infinity. My passion for the future comes from the amazing ability to utilize games as an art form to influence players through our story. Other than programming, I
 					really enjoy spending my time enjoying great clouds, blogging, and reading.
-				</p>
+				</h2>
 			</div>
 		</div>
-		</div>
 	</div>
-	
 	<div id="hidden-link" style="z-index: 1;"></div>
 </body>
 <script>
