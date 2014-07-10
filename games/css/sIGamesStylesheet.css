@@ -352,6 +352,7 @@ twitter-follow-button{
 	font-size:30px;
 	color:#000000;
 	min-height:500px;
+	position:relative;
 }
 
 .projContent{
