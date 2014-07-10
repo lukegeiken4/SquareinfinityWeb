@@ -19,6 +19,18 @@
 				
 			</div>
 		</div>
+		
+		<div class="games_div" id="games_div_3">
+			<div class="games_div_opacity">
+				
+			</div>
+		</div>
+		
+		<div class="games_div" id="games_div_4">
+			<div class="games_div_opacity">
+				
+			</div>
+		</div>
 	</div>
 	
 	<div id="hidden-link" style="z-index: 1;"></div>
