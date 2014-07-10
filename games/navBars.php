@@ -36,7 +36,7 @@ if ($name == 'Headquarters'){
 <html>
 	<div style="position: absolute; width: 100%; height:60px; z-index:5;">
 		<div class="nav-headers" id="home-head">HOME</div>
-		<img src="img/marker.png" style="position: absolute; width:9%; min-width:100px;  top:50px; left:<?php echo $alignment; ?>%;" />
+		<img class="marker" src="img/marker.png" style="position: absolute; width:9%; min-width:100px;  top:50px; left:<?php echo $alignment; ?>%;" />
 		<div class="nav-headers" id="games-head">GAMES</div>
 		<div class="" id="about-head">
 			<img src="./img/logoBanner.png" style="width:100%; height:400%; min-height: 120px; min-width:190px; z-index:-5; display: block;"/>
@@ -54,7 +54,7 @@ if ($name == 'Headquarters'){
 		</div>
 	</div>
 	<div class="main-navbar" style="position: absolute; z-index:1;">
-		<img src="img/gamebanner.png" style="width:100%; height:100%;" />
+		<img class="main-navbar-back" src="img/gamebanner.png" style="width:100%; height:100%;" />
 	</div>
 </html>
 <?php } ?>

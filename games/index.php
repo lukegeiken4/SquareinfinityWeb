@@ -10,7 +10,7 @@
 		}
 		else
 		{
-		  $new_text=substr($text,0,330) . '...';
+		  $new_text=substr($text,0,330) . ' . . . ';
 		  return array($new_text, true);
 		}
 	}
@@ -128,7 +128,7 @@
 					<div class="newsImage-<?php if ($imageType == 1) { echo 'full';}else if ($imageType==0){echo 'left';}?>" style="background-image:url('news_images/<?php echo $url ?>')" alt=""></div>
 					
 					
-					<div class="<?php if ($imageType == 1) { echo 'full';}else if ($imageType==0){echo 'right';}?> newsDesc">
+					<div class="newsDesc <?php if ($imageType == 1) { echo 'full';}else if ($imageType==0){echo 'right';}?>">
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<?php
 					$statement = custom_echo($content);
