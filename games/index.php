@@ -19,7 +19,7 @@
 <body>
 	<?php getMainBar('Headquarters'); ?>
 	
-	<div style="position: absolute; width:100%; height:100%; top:0; z-index: 0; background: #e6dcbf;min-width:500px;">
+	<div style="position: absolute; width:100%; height:100%; top:0; z-index: 0; min-width:500px;">
 		<div class="content" id="projectStuff" style="height:250px;">
 		<div class="projectButton" onclick="switchProject()"> <!--<h1 style = "display:block;margin-top:275px;margin-bottom:auto"> < </h1>--> </div>
 		<div class="projectButton" onclick="backProject()" style="right:0px"> <!--<h1 style="display:block;margin-top:275px;margin-bottom:auto"> > </h1>--> </div>
@@ -123,12 +123,12 @@
 				$imageType = $row['image_type'];//0 is portrait, 1 is landscape
 				?>
 				<div class="newsContent" style="">
-					<h1><?php echo $title; ?></h1>
-					<h3 class="newsDate"> <?php echo $date; ?> </h3>
-					<div class="newsImage-full" style="background-image:url('news_images/<?php echo $url ?>')" alt=""></div>
+					<div class="newsTitle <?php if ($imageType == 1) { echo 'full';}else if ($imageType==0){echo 'right';}?>"><?php echo $title; ?></div>
+					<div class="newsDate <?php if ($imageType == 1) { echo 'full';}else if ($imageType==0){echo 'right';}?>"> <?php echo $date; ?> </div>
+					<div class="newsImage-<?php if ($imageType == 1) { echo 'full';}else if ($imageType==0){echo 'left';}?>" style="background-image:url('news_images/<?php echo $url ?>')" alt=""></div>
 					
 					
-					<h2 class="newsDesc">
+					<div class="<?php if ($imageType == 1) { echo 'full';}else if ($imageType==0){echo 'right';}?> newsDesc">
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<?php
 					$statement = custom_echo($content);
@@ -138,7 +138,7 @@
 						<a class="simple-ajax-popup-align-top" href="news_images/fullStory.php?id=<?php echo $id ?>"> Read More</a><br>
 						<?php
 					}
-					?></h2>
+					?></div>
 				</div>
 				<?php
 			    }
