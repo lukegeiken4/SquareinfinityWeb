@@ -21,8 +21,8 @@
 	
 	<div style="position: absolute; width:100%; height:100%; top:0; z-index: 0; min-width:500px;">
 		<div class="content" id="projectStuff" style="height:250px;">
-		<div class="projectButton" onclick="switchProject()"> </div>
-		<div class="projectButton" onclick="backProject()" style="right:0px"> </div>
+		<div class="projectButton" onclick="switchProject()"><i class="fa fa-chevron-left fa-2x"></i> </div>
+		<div class="projectButton" onclick="backProject()" style="right:0px"> <i class="fa fa-chevron-right fa-2x"></i></div>
 		<div style="height:100%;width:100%;">		
 			<div class="projContent" id="LostHope">
 				<div class="projTitle" id="LostHopeTitle">
