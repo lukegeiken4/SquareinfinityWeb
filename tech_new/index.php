@@ -1,7 +1,10 @@
 <html>
 <?php
+$return = "";
 
-$return = $_GET['page'];
+if(isset($_GET['page'])){
+	$return = $_GET['page'];
+}
 
 if($return == "contact"){
 	getHead("Contact Square Infinity");
