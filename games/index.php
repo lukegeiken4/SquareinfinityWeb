@@ -184,10 +184,10 @@
 			
 			
 			$(".projectButton").hover(function() {
-				$(this).css('background-color','#494a4a');
+				//$(this).css('background-color','#494a4a');
 				$(this).css('color','#FFFFFF');
 			},function() {
-				$(this).css('background-color','transparent');
+				//$(this).css('background-color','transparent');
 				$(this).css('color','#000000');
 		});
 		
