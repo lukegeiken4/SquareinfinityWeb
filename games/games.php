@@ -31,9 +31,8 @@
 				
 			</div>
 		</div>
+		<?php getFooter(); ?>
 	</div>
-	
-	<div id="hidden-link" style="z-index: 1;"></div>
 </body>
 <script>
 	$('#home-head').click(function() {

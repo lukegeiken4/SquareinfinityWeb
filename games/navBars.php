@@ -58,3 +58,42 @@ if ($name == 'Headquarters'){
 	</div>
 </html>
 <?php } ?>
+
+<?php function getFooter(){ ?>
+<html>
+	<div style="width:100%; height:200px; background: black;">
+		<div style="position: absolute; right: 10px;">
+			<form method="post" action="http://scripts.dreamhost.com/add_list.cgi">
+				<input type="hidden" name="list" value="lexicon" />
+				<input type="hidden" name="domain" value="squareinfinity.com" />
+				<input type="hidden" name="emailconfirmurl" value="_http://localhost/~lucasgeiken/squareinfinity/SquareinfinityWeb/mailinglist/subscribe.php" />
+				<input type="hidden" name="unsuburl" value="_http://localhost/~lucasgeiken/squareinfinity/SquareinfinityWeb/mailinglist/subscribe.php" />
+				    <!-- Optional: -->
+				<!--
+				<input type="hidden" name="alreadyonurl" value="_http://AlreadyOnURL_" />
+				<input type="hidden" name="notonurl" value="_http://NotOnURL_" />
+				<input type="hidden" name="invalidurl" value="_http://InvalidURL_" />
+				<input type="hidden" name="emailit" value="1" />
+				Name: <input type="text" name="name" />-->
+				
+				    <!-- Required: -->
+				<div style="display: inline-block;">
+					<h2 style="color:white;">Subscribe to our newsletter!</h2>
+					<h2 style="color:white; position: absolute;">E-mail: <input id="newletter-input" type="text" name="email" /></h2><br />
+				</div>
+				<div style="display: inline-block;">
+					<!-- Optional: -->
+				    <!--Confirm E-mail: <input type="text" name="address2" /><br />-->
+				    
+					<!-- Required: -->
+				    <input type="submit" name="submit" value="Sign Up" id="newsletter-button"/>
+				</div>
+				    <!-- Optional: -->
+				<input type="submit" name="unsub" value="Unsubscribe" />
+			
+			    <!-- Required: -->
+			</form>
+		</div>
+	</div>
+</html>
+<?php } ?>
