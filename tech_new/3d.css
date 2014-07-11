@@ -1,0 +1,219 @@
+/* ===== PHYSICAL DESIGN ===== */
+
+.ipad{
+	background: url("http://upload.wikimedia.org/wikipedia/commons/a/a4/IPad_3.png");
+	background-size: 308px 407px;
+	background-repeat: none;
+	background-position: center;
+	width: 224px;
+	height: 335px;
+	border-radius: 11px;
+	-webkit-box-shadow: 3px 3px 12px -1px rgba(0, 0, 0, 0.64);
+	-moz-box-shadow:    3px 3px 12px -1px rgba(0, 0, 0, 0.64);
+	box-shadow:         3px 3px 12px -1px rgba(0, 0, 0, 0.64);
+	color: #fefefe;
+	padding: 33px;
+	margin: 10px;
+	-ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+
+.paper{
+	position:relative;
+	margin:0 auto;
+	background:#fff;
+	border:2px solid #ccc;
+	width:380px;
+	height:470px;
+	
+	padding: 7.5px;
+}
+
+.paper_foo1, .paper_foo2{
+	position:absolute;
+	background:#fff;
+	bottom:-6px;
+	height:2px;
+	width:390px;
+	margin-left:-7px;
+	border-bottom:2px solid #ccc;
+	border-left:2px solid #ccc;
+	border-right:2px solid #ccc;
+}
+
+.paper_foo2{
+	width:385px;
+	margin-left:1px;
+}
+
+.paper2{
+	width: 380px;
+	height: 300px;
+	margin-bottom: 30px;
+	margin-left: 20px;
+	position: relative;
+	background: #fff;
+	-webkit-box-shadow: 1px 2px 0px 0px rgb(255, 255, 255),
+						2px 3px 0px 0px #aaa,
+						3px 5px 0px 0px rgb(255, 255, 255),
+						4px 6px 0px 0px #aaa;
+	-moz-box-shadow:    3px 3px 0px 0px rgb(255, 255, 255);
+}
+
+.texture-clean{
+	background-color:#fff;
+    border-width:1px;
+    border-style:solid;
+    border-bottom-color:#aaa;
+    border-right-color:#aaa;
+    border-top-color:#ddd;
+    border-left-color:#ddd;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.paper-shadow{
+	z-index: 1;
+	-webkit-box-shadow:	0px 11px 5px 0px rgba(100, 100, 100, .39);
+	-moz-box-shadow:	0px 11px 5px 0px rgba(100, 100, 100, .39);
+	box-shadow:			0px 11px 5px 0px rgba(100, 100, 100, .39);
+}
+
+.stage-left{
+	background: #fefefe;
+	z-index: 1; /* #007d9a */
+	-webkit-box-shadow: 1px 1px 0px 0px rgb(150, 150, 150), 
+						2px 2px 0px 0px rgb(150, 150, 150),
+						3px 3px 0px 0px rgb(150, 150, 150),
+						-2px 6px 3px 0px rgba(150, 150, 150, .39),
+						2px 5px 3px 0px rgba(150, 150, 150, .39),
+						3.5px 5px 3px 0px rgba(150, 150, 150, .39);
+	-moz-box-shadow: 	2px 2px 0px 0px rgba(150, 150, 150)
+						2px 2px 0px 0px rgb(150, 150, 150),
+						3px 3px 0px 0px rgb(150, 150, 150),
+						-2px 6px 3px 0px rgba(150, 150, 150, .39),
+						2px 5px 3px 0px rgba(150, 150, 150, .39),
+						3.5px 5px 3px 0px rgba(150, 150, 150, .39);
+	box-shadow:	2px 2px 0px 0px rgba(150, 150, 150)
+				2px 2px 0px 0px rgb(150, 150, 150),
+				3px 3px 0px 0px rgb(150, 150, 150),
+				-2px 6px 3px 0px rgba(150, 150, 150, .39),
+				2px 5px 3px 0px rgba(150, 150, 150, .39),
+				3.5px 5px 3px 0px rgba(150, 150, 150, .39);
+}
+
+/* ===== GENERAL ===== */
+
+.shadow{
+	-webkit-box-shadow: 0px 7px 4px 2px rgba(0, 0, 0, 0.64);
+	-moz-box-shadow:    0px 7px 4px 2px rgba(0, 0, 0, 0.64);
+	box-shadow:         0px 7px 4px 2px rgba(0, 0, 0, 0.64);
+}
+
+/* ===== TOP AREA ===== */
+
+.top-bar{
+	background: #000000;
+	height: 40px;
+}
+
+.center-image{
+	width: 400px;
+	height: 70px;
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+.center-image-container{
+	width: 430px;
+	border: #000000 solid thin;
+	margin-left: auto;
+	margin-right: auto;
+	
+	margin-top: -50px;
+	background: #fefefe; /* #e0eeee is also a nice light blue */
+	
+	border-radius: 3px 3px 3px 3px;
+}
+
+.top-nav-button{
+	border-radius: 0px 0px 5px 5px;
+	border: #000000 solid 2px;
+	background: #fefefe;
+	padding-top: 50px;
+	margin-top: -50px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.top-nav-button:hover{
+	background: rgb(254,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(254,255,255,1) 0%, rgba(221,241,249,1) 35%, rgba(160,216,239,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,255,255,1)), color-stop(35%,rgba(221,241,249,1)), color-stop(100%,rgba(160,216,239,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(254,255,255,1) 0%,rgba(221,241,249,1) 35%,rgba(160,216,239,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#a0d8ef',GradientType=0 ); /* IE6-9 */
+}
+
+.nav-button-start-left{
+	margin-left: 20%;
+}
+
+@media screen and (max-width:1320px){
+	.nav-button-start-left{
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width:975px){
+	.center-image{
+		width: 250px;
+		height: 40px;
+		padding-left: 20px;
+	}
+	
+	.center-image-container{
+		margin-top: 30px;
+		width: 95%;
+	}
+	
+	.top-nav-button{
+		font-size: 12pt;
+		float: left;
+	}
+	
+	.nav-button-start-left{
+		margin-left: auto;
+	}
+}
+
+/* ===== MAIN ===== */
+
+.content{
+	width: 200px;
+	padding: 5px 5px 5px 5px;
+	margin-left: 100px;
+}
+
+.side-callout{
+	width: 400px;
+	font-size: 20pt;
+	padding: 10px 5px 10px 5px;
+	margin-left: 100px;
+	text-align: center;
+}
+
+.header-area{
+	padding-top: 40px;
+}
+
+body{
+	margin: 0px 0px 0px 0px;
+	/*background: url("https://scontent-a-sea.xx.fbcdn.net/hphotos-xfa1/t31.0-8/10382354_4399896612323_7255393296708134168_o.jpg");*/
+	background: #F4EF79;
+	background: url("http://www.pixeden.com/media/k2/galleries/220/001-wood-melamine-subttle-pattern-background-pat.jpg");
+	font-family: 'Open Sans', sans-serif;
+}
