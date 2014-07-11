@@ -14,6 +14,7 @@
 	<meta property="og:url" content = "http://www.squareinfinity.com/"/>
 	<!-- Magnific Popup core CSS file -->
 	<link rel="stylesheet" href="magnificPopup/magnificPopup.css"> 
+	<script src="jqueryDarken.js"></script>
 	<!-- Magnific Popup core JS file -->
 	<script src="magnificPopup/jquery.magnificPopup.js"></script>
 </head>

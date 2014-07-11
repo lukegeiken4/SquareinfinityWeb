@@ -70,7 +70,7 @@
 				<div class="projTitle">
 					<h1>TravelQuest</h1>
 				</div>
-				<div class="projDesc  transparent" id="TravelQuestDesc">
+				<div class="projDesc TravelQuestDesc" id="">
 				</div>
 				<div class="projDesc">
 					<p>
@@ -94,7 +94,8 @@
 				</div>
 				<div class="projDesc">
 					<p>
-					A throw back to the Square Infinity of years past
+					A throw back to the Square Infinity of years past, our take on the classic snake
+					game complete with plenty of planned features.
 					</p>
 				</div>
 				<div class="projButton hoverable" id="DroidSnakeButton">
