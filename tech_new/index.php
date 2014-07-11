@@ -73,11 +73,11 @@ function getTopBar(){
 			
 	</div>
 	<div class="mobile-div">
-		<button class="top-nav-button nav-button-start-left" onclick="href('../new/?page=portfolio')">PORTFOLIO</button>
-		<button class="top-nav-button" onclick="href('../new/?page=contact')">CONTACT</button>
+		<button class="top-nav-button nav-button-start-left" onclick="href('?page=portfolio')">PORTFOLIO</button>
+		<button class="top-nav-button" onclick="href('?page=contact')">CONTACT</button>
 	</div>
 	<div class="center-image-container shadow">
-		<a href="http://dev.squareinfinity.com/tech/new">
+		<a href="index.php">
 		<img class="center-image" src="http://squareinfinity.com/images/stretchLogo3.png" />
 		</a>
 	</div>
@@ -213,14 +213,14 @@ function getSideBar($content){
 		if($content == "main"){
 			?>
 				<h1 class="mobile-center">Navigation</h1>
-				<button class="sidebar-link" onclick="href('../new/#dynamic-coding')">Dynamic Coding</button>
-				<button class="sidebar-link" onclick="href('../new/#various-skills')">Various Skills</button>
+				<button class="sidebar-link" onclick="href('#dynamic-coding')">Dynamic Coding</button>
+				<button class="sidebar-link" onclick="href('#various-skills')">Various Skills</button>
 			<?php
 		}else if($content == "portfolio"){
 			?>
 				<h1 class ="mobile-center">Navigation</h1>
-				<button class="sidebar-link" onclick="href('http://dev.squareinfinity.com/tech/?page=portfolio#project-one')">Project One</button>
-				<button class="sidebar-link" onclick="href('http://dev.squareinfinity.com/tech/?page=portfolio#project-two')">Project Two</button>
+				<button class="sidebar-link" onclick="href('#project-one')">Project One</button>
+				<button class="sidebar-link" onclick="href('#project-two')">Project Two</button>
 			<?php
 		}
 	?>

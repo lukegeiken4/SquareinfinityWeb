@@ -3,7 +3,7 @@
 |-----------------------------------------------|
 |Square Infinity Technologies					|
 |												|
-|Author(s): Ivan Mattie							|
+|Author(s): Ivan Mattie, Andy Eagle				|
 |Last Update: 7/7/2014							|
 |Description: Stylesheet for Square Infinity	|
 | Tech site and related website(s)				|
@@ -284,6 +284,7 @@ h5{
 	background: none;
 	margin-top: 10px;
 	box-shadow: none;
+	height: 400px;
 }
 
 @media screen and (max-width: 1090px){
@@ -293,6 +294,10 @@ h5{
 }
 
 @media screen and (max-width:975px){
+	.design-area{
+		height: auto; 
+	}
+
 	.floating-sidebar{
 		width: 95%;
 		margin-left: 2%;
@@ -352,6 +357,7 @@ h5{
 	box-shadow: 3px 3px 2px #000000;
 	padding: 50px 50px 50px 50px;
 	margin-right: 0px;
+	float: left;
 }
 
 .circle-content{
@@ -405,6 +411,7 @@ a:hover{
 		margin-top: 5px;
 		margin-left: auto;
 		margin-right: auto;
+		float: none;
 	}
 	
 	body{
