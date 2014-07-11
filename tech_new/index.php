@@ -96,7 +96,7 @@ function getPageBottom(){
 
 function getMainContent($someData){
 ?>
-<div class="main-content top-division">
+<div class="top-division">
 		<?php 
 			if($someData == "main-page"){
 				getFrontPageContent();
@@ -118,15 +118,16 @@ function getContactContent(){
 
 function getFrontPageContent(){
 	?>
-		<div class="fa-float-top">
+		<!--<div class="fa-float-top">
 			<i class="fa fa-globe fa-2x"></i>
-		</div>
-		<div class="front-page-top-content">
+		</div>-->
+		<div class="front-page-top-content paper">
 			At Square Infinity Technologies, we provide a wide array of software solutions customized to meet your needs.
 			With our small team and experience in the cutting edge of software design, Square Infinity Technologies offers fast turnaround times
 			while delivering a product that includes a sleek user experience. For each project we take an individual look at which elements
 			provide the greatest value to the specific project. Square Infinity Technologies is open to working on software projects of any
 			scope, style, or genre. A few of our specialities are listed below in more detail.
+			<div class="paper_foo1"><div class="paper_foo2"></div></div>
 		</div>
 	<?php
 }
@@ -188,7 +189,7 @@ function getProjectSpecificsContent(){
 	
 	<div class="skill-entry">
 		<div class="skill-icons">
-			<i class="fa fa-group fa-2x"></i>
+			<i class="fa fa-group fa-3x"></i>
 		</div>
 		<div class="skill-entry-body">
 			<div class="skill-entry-header">VARIOUS SKILLS</div>
