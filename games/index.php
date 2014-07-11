@@ -160,11 +160,8 @@
 		?>
 		</div>
 		
-		<div style="width:100%; padding-bottom:10%;">
-			<h1 style="text-align: center">Footer</h1>
-		</div>
+		<?php getFooter(); ?>
 	</div>
-	<div id="hidden-link" style="z-index: 1;"></div>
 </body>
 <script>
 	var numProjects = 4;
