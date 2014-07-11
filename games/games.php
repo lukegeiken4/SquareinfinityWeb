@@ -2,38 +2,37 @@
 <!DOCTYPE html>
 
 <html>
-<?php getHead('Games') ?>
+<?php getHead('Entertainments') ?>
 
 <body >
-<?php getMainBar('Games'); ?>
+<?php getMainBar('Entertainments'); ?>
 	
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
-		<div class="games_div" id="games_div_1">
+		<div class="games_div" id="travelquest">
 			<div class="games_div_opacity">
 				
 			</div>
 		</div>
 		
-		<div class="games_div" id="games_div_2">
+		<div class="games_div" id="losthope">
 			<div class="games_div_opacity">
 				
 			</div>
 		</div>
 		
-		<div class="games_div" id="games_div_3">
+		<div class="games_div" id="utterdark">
 			<div class="games_div_opacity">
 				
 			</div>
 		</div>
 		
-		<div class="games_div" id="games_div_4">
+		<div class="games_div" id="droidsnake">
 			<div class="games_div_opacity">
 				
 			</div>
 		</div>
+		<?php getFooter(); ?>
 	</div>
-	
-	<div id="hidden-link" style="z-index: 1;"></div>
 </body>
 <script>
 	$('#home-head').click(function() {
