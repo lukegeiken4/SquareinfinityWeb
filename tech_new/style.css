@@ -3,7 +3,7 @@
 |-----------------------------------------------|
 |Square Infinity Technologies					|
 |												|
-|Author(s): Ivan Mattie							|
+|Author(s): Ivan Mattie, Andy Eagle				|
 |Last Update: 7/7/2014							|
 |Description: Stylesheet for Square Infinity	|
 | Tech site and related website(s)				|
@@ -122,7 +122,7 @@ h5{
 	margin-left: auto;
 	margin-right: auto;
 	
-	margin-top: -30px;
+	margin-top: -50px;
 	background: #fefefe; /* #e0eeee is also a nice light blue */
 	
 	border-radius: 3px 3px 3px 3px;
@@ -284,6 +284,7 @@ h5{
 	background: none;
 	margin-top: 10px;
 	box-shadow: none;
+	height: 400px;
 }
 
 @media screen and (max-width: 1090px){
@@ -293,6 +294,10 @@ h5{
 }
 
 @media screen and (max-width:975px){
+	.design-area{
+		height: auto; 
+	}
+
 	.floating-sidebar{
 		width: 95%;
 		margin-left: 2%;
@@ -352,6 +357,7 @@ h5{
 	box-shadow: 3px 3px 2px #000000;
 	padding: 50px 50px 50px 50px;
 	margin-right: 0px;
+	float: left;
 }
 
 .circle-content{
@@ -360,6 +366,38 @@ h5{
 	text-align: left;
 	margin-left: 10px;
 	vertical-align: middle;
+}
+
+.skill-area{
+	background: none;
+	border: none;
+	box-shadow: none;
+	margin-top: 30px;
+}
+
+.skill-entry{
+	width: 300px;
+	display: inline-block;
+}
+
+.skill-entry-body{
+	color: #444444;
+	background: #fefefe;
+	padding: 5px 5px 5px 10px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.skill-entry-header{
+	text-align: center;
+	color: #000000;
+	margin-bottom: 10px;
+	font-size: 14pt;
+}
+
+.skill-icons{
+	color: #fefefe;
+	text-align: center;
+	margin-bottom: 3px;
 }
 
 h1{
@@ -405,6 +443,7 @@ a:hover{
 		margin-top: 5px;
 		margin-left: auto;
 		margin-right: auto;
+		float: none;
 	}
 	
 	body{

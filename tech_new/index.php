@@ -1,7 +1,10 @@
 <html>
 <?php
+$return = "";
 
-$return = $_GET['page'];
+if(isset($_GET['page'])){
+	$return = $_GET['page'];
+}
 
 if($return == "contact"){
 	getHead("Contact Square Infinity");
@@ -37,6 +40,7 @@ function getHead($titleName){
 	?>
 		<head>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
 		<title><?php echo $titleName; ?></title>
 		
 		<script>
@@ -51,7 +55,6 @@ function getHead($titleName){
 		<!--
 		<link rel="shortcut icon" href="img/favicon.gif" />
 		<link href="css/sIGamesStylesheet.css" rel="stylesheet" type="text/css"/>
-		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
 		<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<meta name = "description" content="As an Independent game creator, the Square Infinity games team is looking to push the limits of storytelling and gameplay from where the best games are created, our parent's basement."/>
 		<meta property="og:image" content="http://www.squareinfinity.com/gmeier/images/stretchLogo3.png"/>
@@ -70,11 +73,11 @@ function getTopBar(){
 			
 	</div>
 	<div class="mobile-div">
-		<button class="top-nav-button nav-button-start-left" onclick="href('../new/?page=portfolio')">PORTFOLIO</button>
-		<button class="top-nav-button" onclick="href('../new/?page=contact')">CONTACT</button>
+		<button class="top-nav-button nav-button-start-left" onclick="href('?page=portfolio')">PORTFOLIO</button>
+		<button class="top-nav-button" onclick="href('?page=contact')">CONTACT</button>
 	</div>
 	<div class="center-image-container shadow">
-		<a href="http://dev.squareinfinity.com/tech/new">
+		<a href="index.php">
 		<img class="center-image" src="http://squareinfinity.com/images/stretchLogo3.png" />
 		</a>
 	</div>
@@ -138,7 +141,7 @@ function getProjectSpecificsContent(){
 	</div>
 	
 </div>-->
-<div class="design-area main-content">
+<!--<div class="design-area main-content">
 	<div class="circle" style="left:0px">
 		<div style="color: #444444">
 		<i class="fa fa-desktop fa-2x fa-extra-spacing"></i>
@@ -160,6 +163,35 @@ function getProjectSpecificsContent(){
 		</div>
 		<h3 id="various-skills">VARIOUS SKILLS</h3>
 		<div class="circle-content">
+			<i class="fa fa-users fa-small-spacing" style="color: #ff6600;"></i>In today's ever growing tech sector, knowledge of
+			multiple languages & technologies is a must to design & build for existing customer bases.<br />
+			<i class="fa fa-check-circle fa-small-spacing" style="color: #0062ff;"></i>Square Infinity hires
+			a variety of skills in modern web, mobile, and desktop application design.
+		</div>
+	</div>
+</div>-->
+<div class="skill-area main-content">
+	<div class="skill-entry">
+		<div class="skill-icons">
+			<i class="fa fa-desktop fa-3x fa-extra-spacing"></i>
+			<i class="fa fa-laptop fa-3x fa-extra-spacing"></i>
+			<i class="fa fa-mobile fa-3x fa-extra-spacing"></i>
+		</div>
+		<div class="skill-entry-body">
+			<div class="skill-entry-header">DYNAMIC CODING</div>
+			<i class="fa fa-users fa-small-spacing" style="color: #ff6600;"></i>In a world full of differing technologies and standards in the hands of your customers,
+			you must design for any possible device or screen size.<br />
+			<i class="fa fa-check-circle" style="color: #0062ff;"></i> At Square Infinity, 
+			we work hard to make your content look great no matter who is viewing it.
+		</div>
+	</div>
+	
+	<div class="skill-entry">
+		<div class="skill-icons">
+			<i class="fa fa-group fa-2x"></i>
+		</div>
+		<div class="skill-entry-body">
+			<div class="skill-entry-header">VARIOUS SKILLS</div>
 			<i class="fa fa-users fa-small-spacing" style="color: #ff6600;"></i>In today's ever growing tech sector, knowledge of
 			multiple languages & technologies is a must to design & build for existing customer bases.<br />
 			<i class="fa fa-check-circle fa-small-spacing" style="color: #0062ff;"></i>Square Infinity hires
@@ -210,14 +242,14 @@ function getSideBar($content){
 		if($content == "main"){
 			?>
 				<h1 class="mobile-center">Navigation</h1>
-				<button class="sidebar-link" onclick="href('../new/#dynamic-coding')">Dynamic Coding</button>
-				<button class="sidebar-link" onclick="href('../new/#various-skills')">Various Skills</button>
+				<button class="sidebar-link" onclick="href('#dynamic-coding')">Dynamic Coding</button>
+				<button class="sidebar-link" onclick="href('#various-skills')">Various Skills</button>
 			<?php
 		}else if($content == "portfolio"){
 			?>
 				<h1 class ="mobile-center">Navigation</h1>
-				<button class="sidebar-link" onclick="href('http://dev.squareinfinity.com/tech/?page=portfolio#project-one')">Project One</button>
-				<button class="sidebar-link" onclick="href('http://dev.squareinfinity.com/tech/?page=portfolio#project-two')">Project Two</button>
+				<button class="sidebar-link" onclick="href('#project-one')">Project One</button>
+				<button class="sidebar-link" onclick="href('#project-two')">Project Two</button>
 			<?php
 		}
 	?>

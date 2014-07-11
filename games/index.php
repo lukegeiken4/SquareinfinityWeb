@@ -21,8 +21,8 @@
 	
 	<div style="position: absolute; width:100%; height:100%; top:0; z-index: 0; min-width:500px;">
 		<div class="content" id="projectStuff" style="height:250px;">
-		<div class="projectButton" onclick="switchProject()"> <!--<h1 style = "display:block;margin-top:275px;margin-bottom:auto"> < </h1>--> </div>
-		<div class="projectButton" onclick="backProject()" style="right:0px"> <!--<h1 style="display:block;margin-top:275px;margin-bottom:auto"> > </h1>--> </div>
+		<div class="projectButton" onclick="switchProject()"><i class="fa fa-chevron-left fa-2x"></i> </div>
+		<div class="projectButton" onclick="backProject()" style="right:0px"> <i class="fa fa-chevron-right fa-2x"></i></div>
 		<div style="height:100%;width:100%;">		
 			<div class="projContent" id="LostHope">
 				<div class="projTitle" id="LostHopeTitle">
@@ -34,11 +34,12 @@
 				</div>
 				<div class="projDesc">
 				<p>
-					Lost Hope is a free form, world exploration RPG. Taking a fresh 
-					perspective on the world building games, Lost Hope allows the player to create their own templates and designs for new weapons, extravagant spells
-					and useful tools. As players progress they gain more and more potential for modifying their templates until they can create truly new items. There
-					is a whole world to explore, filled with dangerous enemies and mysterious locales.
+					Lost Hope is a free form, world exploration RPG. 
 				</p>
+				</div>
+				<div class="projButton hoverable" id="LostHopeButton">
+					<i class="fa fa-plus"> </i>
+					Go Deeper
 				</div>
 			</div>
 			
@@ -48,17 +49,21 @@
 				<div class="projTitle">
 					<h1>Utter Dark</h1>
 				</div>
-				<div class="projDesc transparent" id="UtterDarkDesc">
+				<div class="projDesc " id="UtterDarkDesc">
 				</div>
 				<div class="projDesc">
 				<p>
-					Utterdark is a horror-inspired first-person shooter.The pitch black
+					Utter Dark is a horror-inspired first-person shooter.The pitch black
 					combat and constant threat of detection should make players think before acting,
 					slowing down and strategizing before leaping into the fray. All soldiers are equipped with sonar HUDs that translate nearby sound into visual input, 
 					however, the comfort (and danger) of a flashlight is only a button-press away. Players will experience round based combat across a variety of maps, 
 					each with unique objectives and features, each round players will earn money that can be spent on new weapons and equipment for the following rounds.
 
 				</p>
+				</div>
+				<div class="projButton hoverable" id="UtterDarkButton">
+					<i class="fa fa-plus"> </i>
+					Avert Eyes
 				</div>
 			</div>
 			<div class="projContent" id="TravelQuest">
@@ -74,6 +79,10 @@
 					hey there travelquest!
 					</p>
 				</div>
+				<div class="projButton hoverable" id="TravelQuestButton">
+					<i class="fa fa-plus"> </i>
+					Explore
+				</div>
 			</div>
 			<div class="projContent" id="DroidSnake">
 				<div class="projTitle" id="DroidSnakeTitle">	
@@ -87,6 +96,10 @@
 					<p>
 					ooh a snakey snake! look a snake!
 					</p>
+				</div>
+				<div class="projButton hoverable" id="DroidSnakeButton">
+					<i class="fa fa-plus"> </i>
+					Score More
 				</div>
 			</div>
 		</div>
@@ -168,10 +181,10 @@
 			
 			
 			$(".projectButton").hover(function() {
-				$(this).css('background-color','#494a4a');
+				//$(this).css('background-color','#494a4a');
 				$(this).css('color','#FFFFFF');
 			},function() {
-				$(this).css('background-color','transparent');
+				//$(this).css('background-color','transparent');
 				$(this).css('color','#000000');
 		});
 		
@@ -210,6 +223,22 @@
 	$('#hidden-link').click(function() {
 		window.location.href = "hidden.php";
 		
+	});
+	
+	$('#LostHopeButton').click(function(){
+		window.location.href = "games.php#losthope";
+	});
+	
+	$('#UtterDarkButton').click(function(){
+		window.location.href = "games.php#utterdark";
+	});
+	
+	$('#TravelQuestButton').click(function(){
+		window.location.href = "games.php#travelquest";
+	});
+	
+	$('#DroidSnakeButton').click(function(){
+		window.location.href = "games.php#droidsnake";
 	});
 
 	function switchProject() {
