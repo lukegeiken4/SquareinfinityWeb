@@ -104,12 +104,90 @@
 				3.5px 5px 3px 0px rgba(150, 150, 150, .39);
 }
 
+.coffee{
+	background: url("http://johnnyholland.org/wp-content/uploads/2011/12/coffee-mug.png")/*, url("img/napkin.png") adds napkin*/;
+	background-size: 270px 213.75px;
+	width: 270px;
+	height: 213.75px;
+	background-position: center;
+	float: right;
+}
+
+.side-spacing-1{
+	margin-top: -400px;
+	margin-left: 50px;
+}
+
+.buisness-card{
+	width: 265px;
+	height: 140px;
+	background: #fefefe;
+	border: rgba(150,150,150, .60) solid 1px;
+	box-shadow: 1px 1px 5px rgba(125,125,125, .60);
+	overflow: hidden;
+	
+	float:right;
+	margin-right: 12%;
+	margin-top: -250px;
+}
+
+.buisness-card-title{
+	color: #000000;
+	font-size: 11pt;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.buisness-card-subtitle{
+	color: #444444;
+	font-size: 8pt;
+	margin-left: 10px;
+}
+
+.buisness-card-small-line{
+	height: 4px;
+	width: 100%;
+	background: #000000;
+	
+	margin-top: 20px;
+}
+
+.buisness-card-bottom{
+	margin-top: 3px;
+	background: #000000;
+	width: 100%;
+	height: 100px;
+	color: #aaaaaa;
+	font-size: 9pt;
+	padding-left: 5px;
+	padding-top: 30px;
+}
+
 /* ===== GENERAL ===== */
+
+.si-symbol{
+	width: 100px;
+}
+
+.embedded-site{
+	width: inherit;
+	height: inherit;
+	overflow: hidden;
+}
+
+.embedded-site::-webkit-scrollbar{
+	display: none;
+}
 
 .shadow{
 	-webkit-box-shadow: 0px 7px 4px 2px rgba(0, 0, 0, 0.64);
 	-moz-box-shadow:    0px 7px 4px 2px rgba(0, 0, 0, 0.64);
 	box-shadow:         0px 7px 4px 2px rgba(0, 0, 0, 0.64);
+}
+
+.center-paper-contents{
+	font-size: 8pt;
+	padding-left: 5px;
 }
 
 /* ===== TOP AREA ===== */

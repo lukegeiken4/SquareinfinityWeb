@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 	<head>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
@@ -55,18 +57,73 @@
 			</a>
 		</div>
 		
-		<div class="header-area">
-			<div class="stage-left texture-clean side-callout">
+		<!-- CONTENT STARTS HERE -->
+		
+		<div class="header-area">			
+			<!--<div class="stage-left texture-clean side-callout">
 				Welcome to Square Infinity
-			</div>
+			</div>-->
 		</div>
 		<br />
 		<div class="paper paper-shadow">
-			paper information
+			<img src="img/Scaled Symbol.png" class="si-symbol"/>
+			<br />
+			<div class="center-paper-contents">
+				Square Infinity Tech.<br/>
+				2010 68th Street West<br />
+				Billings, MT, 59106-2222<br/ >
+				<br />
+				Our Future Customer<br />
+				Anywhere<br />
+				AnyCity, Terra, Milky Way<br/ >
+				<br />
+				To Whom it May Concern:<br />
+				&nbsp;&nbsp;&nbsp;
+				We are a really cool company that wants your money because money is cool and also allows us
+				to make cool things, so please give us your money and we will make you something cool,
+				like this site.<br />
+				<br />&nbsp;&nbsp;&nbsp;
+				In short, working with us is awesome because we are young, headstrong, and pretty smart, if
+				I do say so myself. We can make you cool tech things, including a site like this, cool apps,
+				<strike>doomsday weapons,</strike> and other tech stuff.<br />
+				<br />
+				<br />
+				Sincerely,<br /><br /><br /><br /><br /><br />
+				Square Infinity Tech.<br />
+				& it's Team
+			</div>
 		</div>
 		<br />
-		<div class="ipad" style="margin-top: -400px;margin-left: 50px;">
+		<div class="ipad side-spacing-1">
+			<?php
+			
+			if(isset($_GET["ipad"])){
+				?>
+				<object data=<?php echo $_GET["ipad"]; ?> class="embedded-site">
+					<embed src=<?php echo $_GET["ipad"]; ?> > </embed>
+				</object>
+				<?php
+			}else{
+				echo "&nbsp;";
+			}			
+			?>
+		</div>
+		<div class="coffee side-spacing-1">
 			&nbsp;
+		</div>
+		<br />
+		<div class="buisness-card">
+			<div class="buisness-card-title">
+				SQUARE INFINITY TECH.
+			</div>
+			<div class="buisness-card-subtitle">
+				Technology Today
+			</div>
+			<div class="buisness-card-small-line">&nbsp;</div>
+			<div class="buisness-card-bottom">
+				<i class="fa fa-building-o"></i>&nbsp;office: +1 (406) 281-2279<br />
+				<i class="fa fa-mobile-phone"></i>&nbsp;cell: +1 (999) 888-7777
+			</div>
 		</div>
 		
 		<!-- RETIRED PAPER TYPE
