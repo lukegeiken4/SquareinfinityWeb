@@ -387,4 +387,5 @@ body{
 	background: #F4EF79;
 	background: url("http://www.pixeden.com/media/k2/galleries/220/001-wood-melamine-subttle-pattern-background-pat.jpg");
 	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
 }
