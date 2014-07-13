@@ -90,12 +90,12 @@
 						-2px 6px 3px 0px rgba(150, 150, 150, .39),
 						2px 5px 3px 0px rgba(150, 150, 150, .39),
 						3.5px 5px 3px 0px rgba(150, 150, 150, .39);
-	-moz-box-shadow: 	2px 2px 0px 0px rgba(150, 150, 150),
-						2px 2px 0px 0px rgb(150, 150, 150),
-						3px 3px 0px 0px rgb(150, 150, 150),
-						-2px 6px 3px 0px rgba(150, 150, 150, .39),
-						2px 5px 3px 0px rgba(150, 150, 150, .39),
-						3.5px 5px 3px 0px rgba(150, 150, 150, .39);
+	-moz-box-shadow: 2px 2px 0px 0px rgba(150, 150, 150),
+					2px 2px 0px 0px rgb(150, 150, 150),
+					3px 3px 0px 0px rgb(150, 150, 150),
+					-2px 6px 3px 0px rgba(150, 150, 150, .39),
+					2px 5px 3px 0px rgba(150, 150, 150, .39),
+					3.5px 5px 3px 0px rgba(150, 150, 150, .39);
 	box-shadow:	2px 2px 0px 0px rgba(150, 150, 150),
 				2px 2px 0px 0px rgb(150, 150, 150),
 				3px 3px 0px 0px rgb(150, 150, 150),
@@ -123,7 +123,7 @@
 	height: 140px;
 	background: #fefefe;
 	border: rgba(150,150,150, .60) solid 1px;
-	box-shadow: 1px 1px 5px rgba(125,125,125, .60);
+	box-shadow: -2px 2px 5px rgba(125,125,125, .60);
 	overflow: hidden;
 	
 	float:right;
@@ -163,7 +163,100 @@
 	padding-top: 30px;
 }
 
+.yellow-manila-folder{
+	background: url("img/yellow-manila-folder-base-back.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 850px;
+	height: 695px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0px;
+	padding-left: 0px;
+	
+	-webkit-box-shadow:	0px	3px 5px -1px rgba(100, 100, 100, .39);
+	-moz-box-shadow:	0px 3px 5px -1px rgba(100, 100, 100, .39);
+	box-shadow:			0px 3px 5px -1px rgba(100, 100, 100, .39);
+}
+
+.yellow-manila-folder-tab{
+	background: url("img/yellow-manila-folder-tab.png");
+	background-repeat: no-repeat;
+	background-size: 260px 42px;
+	width: 260px;
+	height: 42px;
+	display: inline-block;
+	margin-top: -11px;
+	/*font-family: "Brush Script MT", cursive;*/
+	border: none;
+	font-size: 12pt;
+	
+	padding: 10px 20px 5px 35px;
+}
+
+.tab-darkened{
+	background: url("img/yellow-manila-folder-tab-dark.png");
+	background-repeat: no-repeat;
+	background-size: 260px 42px;
+}
+
+.tab-darkened:hover{
+	background: url("img/yellow-manila-folder-tab.png");
+	background-repeat: no-repeat;
+	background-size: 260px 42px;
+}
+
+.inset-information{
+	background: url("img/plaque.png");
+	background-size: 350px 150px;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 275px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 110px 40px 40px 40px;
+}
+
+.blueprint{
+	background: url("http://img2.wikia.nocookie.net/__cb20110416225555/half-life/en/images/1/1a/Ashpd_blueprint_1.jpg");
+	background-size: 640px 360px;
+	background-position: center;
+	width: 640px;
+	height: 360px;
+	float: right;
+	margin-top: -400px;
+	margin-right: -350px;
+	
+	-webkit-box-shadow:	-2px 1px 5px 0px rgba(100, 100, 100, .39);
+	-moz-box-shadow:	-2px 1px 5px 0px rgba(100, 100, 100, .39);
+	box-shadow:			-2px 1px 5px 0px rgba(100, 100, 100, .39);
+	
+	-ms-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+
 /* ===== GENERAL ===== */
+
+.footer{
+	margin-top: 30px;
+	color: #000;
+}
+
+.manila-content{
+	width: 90%;
+	height: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	padding: 10px;
+	
+	-webkit-box-shadow:	0px 2px 5px 0px rgba(100, 100, 100, .39);
+	-moz-box-shadow:	0px 2px 5px 0px rgba(100, 100, 100, .39);
+	box-shadow:			0px 2px 5px 0px rgba(100, 100, 100, .39);
+}
 
 .si-symbol{
 	width: 100px;
@@ -180,9 +273,9 @@
 }
 
 .shadow{
-	-webkit-box-shadow: 0px 7px 4px 2px rgba(0, 0, 0, 0.64);
-	-moz-box-shadow:    0px 7px 4px 2px rgba(0, 0, 0, 0.64);
-	box-shadow:         0px 7px 4px 2px rgba(0, 0, 0, 0.64);
+	-webkit-box-shadow: 0px 7px 4px 2px rgba(0, 0, 0, 0.44);
+	-moz-box-shadow:    0px 7px 4px 2px rgba(0, 0, 0, 0.44);
+	box-shadow:         0px 7px 4px 2px rgba(0, 0, 0, 0.44);
 }
 
 .center-paper-contents{

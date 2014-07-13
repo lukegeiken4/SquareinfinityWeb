@@ -11,6 +11,11 @@
 				document.location.href = location;
 			}
 			
+			init = function(){
+				addAllPaper();
+				changeTabTo("skills");
+			}
+			
 			addAllPaper = function(){ // add paper to 'paper' class
 				var elems = document.getElementsByTagName('*'), i;
 				for (i in elems) {
@@ -24,6 +29,36 @@
 						elems[i].appendChild(paper1);
 						paper1.appendChild(paper2);
 					}
+				}
+			}
+			
+			changeTabTo = function(newTab){
+				var skillsInformation = document.getElementById("skills-information");
+				var teamInformation = document.getElementById("team-information");
+				var resultsInformation = document.getElementById("results-information");
+				var skillsTab = document.getElementById("skills-tab");
+				var teamTab = document.getElementById("team-tab");
+				var resultsTab = document.getElementById("results-tab");
+				
+				skillsInformation.style.display = 'none';
+				teamInformation.style.display = 'none';
+				resultsInformation.style.display = 'none';
+				
+				skillsTab.setAttribute("class", "yellow-manila-folder-tab tab-darkened");
+				teamTab.setAttribute("class", "yellow-manila-folder-tab tab-darkened");
+				resultsTab.setAttribute("class", "yellow-manila-folder-tab tab-darkened");
+				
+				if(newTab == "skills"){
+					skillsInformation.style.display = 'block';
+					skillsTab.setAttribute("class", "yellow-manila-folder-tab");
+				}else if(newTab == "team"){
+					teamInformation.style.display = 'block';
+					teamTab.setAttribute("class", "yellow-manila-folder-tab");
+				}else if(newTab == "results"){
+					resultsInformation.style.display = 'block';
+					resultsTab.setAttribute("class", "yellow-manila-folder-tab");
+				}else{
+					skillsInformation.style.display = 'block';
 				}
 			}
 		</script>
@@ -43,7 +78,7 @@
 		
 		<link href="3d.css" rel="stylesheet" type="text/css" />
 	</head>
-	<body onload="addAllPaper();">	
+	<body onload="init();">	
 		<div class="top-bar shadow">
 				
 		</div>
@@ -126,9 +161,34 @@
 			</div>
 		</div>
 		
+		<div class="yellow-manila-folder">
+			<div>
+				<button id="skills-tab" class="yellow-manila-folder-tab" onclick="changeTabTo('skills');">Skills</button>
+				<button id="team-tab" class="yellow-manila-folder-tab tab-darkened" onclick="changeTabTo('team');">Team</button>
+				<button id="results-tab" class="yellow-manila-folder-tab tab-darkened" onclick="changeTabTo('results');">Results</button>
+			</div>
+			<div id="skills-information" class="texture-clean manila-content">
+				hello these are words about our skills
+			</div>
+			<div id="team-information" class="texture-clean manila-content">
+				hello these are words about our team
+			</div>
+			<div id="results-information" class="texture-clean manila-content">
+				hello these are words about our results...I don't know, I wanted a third tab for god's sake.
+			</div>
+		</div>
+		
+		<div class="blueprint">
+			&nbsp;
+		</div>
+		
 		<!-- RETIRED PAPER TYPE
 		<div class="paper2 texture-clean">
 			paper2 information
 		</div>-->
+		
+		<div class="inset-information footer">
+			&copy; Square Infinity Technologies 2014
+		</div>
 	</body>
 </html>
