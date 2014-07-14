@@ -6,7 +6,55 @@
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
 		<title>Square Infinity Technologies</title>
 		
-		<script>			
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+			$(window).resize(function(){
+				resizeEverything();
+			});
+			
+			resizeEverything = function(){
+				var width = $(window).width();
+				
+				if(width < 1075){
+					$("#blueprint").hide(500);
+				}else{
+					$("#blueprint").show(500);
+				}
+				
+				if(width >= 950){
+					$("#ipad").show(500);
+					$("#buisness-card").show(500);
+				
+					var slowSpeedOffset = ((1920 - width) / 5);
+					
+					$("#ipad").css("margin-left", 50 - slowSpeedOffset + "px");
+					$("#coffee").css("margin-right", 100 - slowSpeedOffset + "px");
+					$("#buisness-card").css("margin-right", (350 - ((1920 - width) / 2)) + "px");
+					if(parseInt($("#buisness-card").css("margin-right")) < 0){
+						// holds the buisness card on the edge
+						$("#buisness-card").css("margin-right", 0);
+					}
+					$("#blueprint").css("margin-right", (-300 - ((1920 - width) / 3)) + "px");
+				}else if(width < 875){
+					$("#ipad").hide(500);
+				}else if(width < 950){
+					$("#buisness-card").hide(500);
+				}
+				
+				if(width < 855){
+					$("#folder").css("width", "100%");
+				}else{
+					$("#folder").css("width", "850px");
+				}
+				
+				if(width < 395){
+					$('div[name=paper]').css("width", "100%");
+				}else{
+					$("div[name=paper]").css("width", "380px");
+				}
+			}
+		</script>
+		<script>		
 			function href(location){
 				document.location.href = location;
 			}
@@ -14,6 +62,7 @@
 			init = function(){
 				addAllPaper();
 				changeTabTo("skills");
+				resizeEverything();
 			}
 			
 			addAllPaper = function(){ // add paper to 'paper' class
@@ -24,7 +73,9 @@
 						var paper2 = document.createElement("div");
 						
 						paper1.setAttribute("class", "paper_foo1");
+						paper1.setAttribute("name", "paper");
 						paper2.setAttribute("class", "paper_foo2");
+						paper2.setAttribute("name", "paper");
 						
 						elems[i].appendChild(paper1);
 						paper1.appendChild(paper2);
@@ -79,8 +130,8 @@
 		<link href="3d.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body onload="init();">	
-		<div class="top-bar shadow">
-				
+		<div class="top-bar shadow" id="top-bar">
+			&nbsp;
 		</div>
 		<div class="mobile-div">
 			<button class="top-nav-button nav-button-start-left shadow" onclick="href('?page=portfolio')">PORTFOLIO</button>
@@ -100,7 +151,7 @@
 			</div>-->
 		</div>
 		<br />
-		<div class="paper paper-shadow">
+		<div class="paper paper-shadow" name="paper">
 			<img src="img/Scaled Symbol.png" class="si-symbol"/>
 			<br />
 			<div class="center-paper-contents">
@@ -129,7 +180,7 @@
 			</div>
 		</div>
 		<br />
-		<div class="ipad side-spacing-1">
+		<div class="ipad side-spacing-1" id="ipad">
 			<?php
 			
 			if(isset($_GET["ipad"])){
@@ -143,11 +194,11 @@
 			}			
 			?>
 		</div>
-		<div class="coffee side-spacing-1">
+		<div class="coffee side-spacing-1" id="coffee">
 			&nbsp;
 		</div>
 		<br />
-		<div class="buisness-card">
+		<!--<div class="buisness-card" id="buisness-card">
 			<div class="buisness-card-title">
 				SQUARE INFINITY TECH.
 			</div>
@@ -159,9 +210,9 @@
 				<i class="fa fa-building-o"></i>&nbsp;office: +1 (406) 281-2279<br />
 				<i class="fa fa-mobile-phone"></i>&nbsp;cell: +1 (999) 888-7777
 			</div>
-		</div>
+		</div>-->
 		
-		<div class="yellow-manila-folder">
+		<div class="yellow-manila-folder" id="folder">
 			<div>
 				<button id="skills-tab" class="yellow-manila-folder-tab" onclick="changeTabTo('skills');">Skills</button>
 				<button id="team-tab" class="yellow-manila-folder-tab tab-darkened" onclick="changeTabTo('team');">Team</button>
@@ -178,7 +229,7 @@
 			</div>
 		</div>
 		
-		<div class="blueprint">
+		<div class="blueprint" id="blueprint">
 			&nbsp;
 		</div>
 		
@@ -186,9 +237,5 @@
 		<div class="paper2 texture-clean">
 			paper2 information
 		</div>-->
-		
-		<div class="inset-information footer">
-			&copy; Square Infinity Technologies 2014
-		</div>
 	</body>
 </html>
