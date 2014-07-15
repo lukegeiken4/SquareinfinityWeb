@@ -117,51 +117,6 @@
 	margin-top: -400px;
 }
 
-.buisness-card{
-	width: 265px;
-	height: 140px;
-	background: #fefefe;
-	border: rgba(150,150,150, .60) solid 1px;
-	box-shadow: -2px 2px 5px rgba(125,125,125, .60);
-	overflow: hidden;
-	
-	float:right;
-	margin-right: 12%;
-	margin-top: -250px;
-}
-
-.buisness-card-title{
-	color: #000000;
-	font-size: 11pt;
-	margin-top: 10px;
-	margin-left: 10px;
-}
-
-.buisness-card-subtitle{
-	color: #444444;
-	font-size: 8pt;
-	margin-left: 10px;
-}
-
-.buisness-card-small-line{
-	height: 4px;
-	width: 100%;
-	background: #000000;
-	
-	margin-top: 20px;
-}
-
-.buisness-card-bottom{
-	margin-top: 3px;
-	background: #000000;
-	width: 100%;
-	height: 100px;
-	color: #aaaaaa;
-	font-size: 9pt;
-	padding-left: 5px;
-	padding-top: 30px;
-}
-
 .yellow-manila-folder{
 	background: url("img/yellow-manila-folder-base-back.png");
 	background-position: center;
