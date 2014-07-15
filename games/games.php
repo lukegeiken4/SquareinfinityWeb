@@ -7,7 +7,7 @@
 <body >
 <?php getMainBar('Entertainments'); ?>
 	
-	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
+	<div style="position: absolute; overflow: auto; width:100%; top:0; z-index: 0;">
 		<div class="games_div" id="travelquest">
 			<div class="games_div_opacity" style="position:absolute;">
 
