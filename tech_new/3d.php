@@ -156,8 +156,8 @@
 			<br />
 			<div class="center-paper-contents">
 				Square Infinity Tech.<br/>
-				2010 68th Street West<br />
-				Billings, MT, 59106-2222<br/ >
+				3945 Woodcreek Drive<br />
+				Billings, MT, 59106-9695<br/ >
 				<br />
 				Our Future Customer<br />
 				Anywhere<br />
@@ -165,18 +165,21 @@
 				<br />
 				To Whom it May Concern:<br />
 				&nbsp;&nbsp;&nbsp;
-				We are a really cool company that wants your money because money is cool and also allows us
-				to make cool things, so please give us your money and we will make you something cool,
-				like this site.<br />
+				At Square Infinity Technologies, we provide a wide array of software solutions customized to meet your needs.
+				With our small team and experience in the cutting edge of software design, Square Infinity Technologies offers
+				fast turnaround times while delivering a product that delivers a sleek user experience. For each project we take
+				an individual look at which elements provide the greatest value to the specific project. Square Infinity
+				Technologies is open to working on software projects of any scope, style, or genre. A few of our specialties
+				are listed below in more detail.<br />
 				<br />&nbsp;&nbsp;&nbsp;
-				In short, working with us is awesome because we are young, headstrong, and pretty smart, if
-				I do say so myself. We can make you cool tech things, including a site like this, cool apps,
-				<strike>doomsday weapons,</strike> and other tech stuff.<br />
+				If you want more information about what we do, including quotes on projects go to the Contact page. If you want
+				to see a few of the projects we have worked on, go to the Portfolio. There you can view screenshots and information
+				about projects we have finished.
 				<br />
 				<br />
-				Sincerely,<br /><br /><br /><br /><br /><br />
+				Sincerely,<br /><br />
 				Square Infinity Tech.<br />
-				& it's Team
+				& its Team
 			</div>
 		</div>
 		<br />
@@ -219,13 +222,53 @@
 				<button id="results-tab" class="yellow-manila-folder-tab tab-darkened" onclick="changeTabTo('results');">Results</button>
 			</div>
 			<div id="skills-information" class="texture-clean manila-content">
-				hello these are words about our skills
+				Our team has a wide variety of skills that keep us diverse and able to work well on any project.
+				We are always learning new things as well in order to keep us with any project that may be brought to us.
+				Our current specialties are below.
+				<br />
+				Software:<br />
+				Java<br />
+				C#<br />
+				C++<br />
+				Python<br />
+				<br />
+				Applications for any and all mobile platforms.
+				<br />
+				Web Development:<br />
+				PHP<br />
+				Html<br />
+				JavaScript<br />
+				Css<br />
+				
 			</div>
 			<div id="team-information" class="texture-clean manila-content">
-				hello these are words about our team
+				The Square Infinity Team brings together a diverse collection of skills to work for you. Each member of the team
+				brings different skills to the table and each is constantly learning new skills to stay at the cutting edge.
+				The team is young, but skilled, consisting of computer science and engineering majors from colleges around the
+				country. Below you can find more information regarding the team as individuals.<br />
+				Andrew Eagle, Founder:<br /> <!-- We will want a headshot of each of us... Preferably nice ones... We
+								should try to either do them well ourselves or find someone to do them for the
+								cheap or free... -->
+				One of the founders and partners of Square Infinity Technologies, LLP, Andrew is attending school at the University of Colorado
+				at Colorado Springs. Andrew is working toward two majors, a BI in Computer Security and a BI in Game Design and
+				Development. He is focused on the development of projects for Square Infinity Games as well as web development.
+				<br />
+				David Lindenbaum, Founder: <br /> <!-- Again, David's Headshot goes here -->
+				Remind David to write a professional toned bio and put that here.
+				<br />
+				Ivan Mattie, Founder: <br />
+				Remind Ivan to write a professional toned bio and put that here.
+				<br />
+				Garret Meier, Founder: <br />
+				Remind Garret to write a professional toned bio and put that here.
+				<br />
+				Luke Geiken, Head of Web Development: <br />
+				Remind Luke to write a professional toned bio and put that here.
+				<br />
 			</div>
 			<div id="results-information" class="texture-clean manila-content">
 				hello these are words about our results...I don't know, I wanted a third tab for god's sake.
+				WHAT DOES THIS TAB MEAN?????????? But seriously, think about what to put here.
 			</div>
 		</div>
 		
