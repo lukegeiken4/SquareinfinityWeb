@@ -1,6 +1,6 @@
 body{
 	/*background:#ffaa00;*/
-	background:url('../img/paperTex.jpg')no-repeat center center fixed;
+	background:url('../img/mainBack.jpg')no-repeat center center fixed;
 	background-size:100% auto;
 	overflow-y:scroll;
 	overflow-x:hidden;
@@ -273,6 +273,55 @@ body{
 	
 }
 
+.gamesTitle{
+	height:130px;
+	width:200px;
+	padding-left:20px;
+	padding-right:20px;
+	font-size:50px;
+	position:absolute;
+	left:10%;
+	top:110px;
+	line-height:90px;
+	vertical-align:center;
+	border-radius:2px;
+	z-index:9;
+}
+
+.gamesInfo{
+	position:absolute;
+	display:block;
+	left:10%;
+	margin-left:20px !important;
+	top:250px;
+	background-color:white;
+	padding:10px;
+	width:80%;
+	padding:20px;
+	border-radius:1px;
+	z-index:-1;
+	height:50%;
+}
+
+.button{
+	width:100px;
+	height:100px;
+	display:inline-block;
+	position:absolute;
+	cursor:pointer;
+	left:10%;
+	margin-top:-100px;
+}
+
+#one {
+	margin-left:360px;
+}
+#two{
+	margin-left:460px;
+}
+#three{
+	margin-left:560px;
+}
 .social{
 	position: absolute;
 	width:200px;
@@ -395,11 +444,7 @@ twitter-follow-button{
 	/*box-shadow:1px 1px 2px black;*/
 	z-index:7;
 	border-radius:2px;
-	text-align:center;F
-}
-
-.transparent{
-	opacity:1;
+	text-align:center;
 }
 
 .projTitle h1{
@@ -454,7 +499,7 @@ twitter-follow-button{
 	
 }
 
-#LostHopeDesc{
+.LostHopeDesc{
 	background-color:#058700;	
 }
 
@@ -478,9 +523,10 @@ twitter-follow-button{
 
 #TravelQuestTitle{
   background-color:#ab6e40;
+
 }
 
-#TravelQuestDesc{
+.TravelQuestDesc{
 	background-color:#c49570;
 }
 
@@ -576,10 +622,12 @@ uncomment this part if you haven't added this code anywhere else
 	background-position: center;
 	background-size: cover;
 	display: block;
+	position:relative;
+	z-index:-2;
 }
 
 #travelquest {
-	background-image: url('../img/travelQuestMap.png');
+	background-image: url('../img/paperTex.png');
 }
 
 #losthope {
@@ -602,6 +650,8 @@ uncomment this part if you haven't added this code anywhere else
 	background-position: center;
 	background-size: cover;
 	opacity: 0.6;
+	position:absolute;
+	z-index:-1;
 }
 
 /**

@@ -11,12 +11,41 @@
 
 */
 
+/* ===== PHYSICAL DESIGN ===== */
+
+.paper{
+	position:relative;
+	margin:0 auto;
+	background:#fff;
+	border:2px solid #ccc;
+	width:480px;
+	height:470px;
+}
+
+.paper_foo1, .paper_foo2{
+	position:absolute;
+	background:#fff;
+	bottom:-8px;
+	height:4px;
+	width:470;
+	margin-left:3px;
+	border-bottom:2px solid #ccc;
+	border-left:2px solid #ccc;
+	border-right:2px solid #ccc;
+}
+
+.paper_foo2{
+	width:460;
+	transform: rotateY(45deg);
+} 
+
 
 /* ===== GENERAL STYLING ===== */
 
 body{
 	margin: 0px 0px 0px 0px;
-	background: url("https://scontent-a-sea.xx.fbcdn.net/hphotos-xfa1/t31.0-8/10382354_4399896612323_7255393296708134168_o.jpg");
+	/*background: url("https://scontent-a-sea.xx.fbcdn.net/hphotos-xfa1/t31.0-8/10382354_4399896612323_7255393296708134168_o.jpg");*/
+	background: #F4EF79;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -227,12 +256,22 @@ h5{
 }
 
 .main-content{
-	background: #fefefe;
+	background-color:#fff;
+    border-width:1px;
+    border-style:solid;
+    border-bottom-color:#aaa;
+    border-right-color:#aaa;
+    border-top-color:#ddd;
+    border-left-color:#ddd;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+	
 	width: 75%;
 	padding: 10px 10px 10px 10px;
 	margin-left: auto;
 	margin-right: auto;
-	box-shadow: 2px 2px 5px #000000;
+	/*box-shadow: 2px 2px 5px #000000;*/
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -304,7 +343,6 @@ h5{
 		margin-right: 2.5%;
 		border-radius: 0px 0px 0px 0px;
 		float: none;
-		height: 100px;
 		
 		margin-bottom: 10px;
 	}
@@ -322,7 +360,7 @@ h5{
 		padding-top: 5px;
 		padding-bottom: 5px;
 		font-size: 12pt;
-		float: left;
+		display: inline-block;
 		
 		/*border: #000000 solid 4px;  I can't decide if this looks good or not*/
 		border-radius: 10px 10px 10px 10px;
@@ -378,13 +416,16 @@ h5{
 .skill-entry{
 	width: 300px;
 	display: inline-block;
+	margin-left: 15px;
+	margin-top: 10px;
 }
 
 .skill-entry-body{
 	color: #444444;
 	background: #fefefe;
-	padding: 5px 5px 5px 10px;
+	padding: 5px 5px 20px 15px;
 	border-radius: 5px 5px 5px 5px;
+	box-shadow: 3px 3px 2px #000000;
 }
 
 .skill-entry-header{
@@ -392,12 +433,14 @@ h5{
 	color: #000000;
 	margin-bottom: 10px;
 	font-size: 14pt;
+	margin-top: 3px;
 }
 
 .skill-icons{
 	color: #fefefe;
 	text-align: center;
 	margin-bottom: 3px;
+	text-shadow: 1px 1px 1px #000000;
 }
 
 h1{
@@ -444,6 +487,10 @@ a:hover{
 		margin-left: auto;
 		margin-right: auto;
 		float: none;
+	}
+	
+	.skill-entry{
+		width: 95%;
 	}
 	
 	body{

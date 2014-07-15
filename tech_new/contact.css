@@ -1,0 +1,79 @@
+.buisness-card{
+	width: 310px;
+	height: 160px;
+	background: #fefefe;
+	border: rgba(150,150,150, .60) solid 1px;
+	box-shadow: -2px 2px 5px rgba(125,125,125, .60);
+	overflow: hidden;
+	
+	margin-top: 5px;
+	margin-right: 5px;
+	float: none;
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.buisness-card-title{
+	color: #000000;
+	font-size: 12pt;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.buisness-card-subtitle{
+	color: #444444;
+	font-size: 9pt;
+	margin-left: 10px;
+}
+
+.buisness-card-small-line{
+	height: 4px;
+	width: 100%;
+	background: #000000;
+}
+
+.buisness-card-bottom{
+	margin-top: 3px;
+	background: #000000;
+	width: 100%;
+	height: 100px;
+	color: #aaaaaa;
+	font-size: 9pt;
+	padding-left: 5px;
+	padding-top: 30px;
+}
+
+.buisness-card-email{
+	font-size: 9pt;
+	padding-left: 5px;
+}
+
+.buisness-card-email a{
+	text-decoration: none;
+	color: #444444;
+}
+
+.buisness-card-email a:hover{
+	color: #000000;
+}
+
+.buisness-card-image{
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	display: inline-block;
+	float: left;
+	
+	box-shadow: -1px 1px 5px 0px rgba(100, 100, 100, .6);
+}
+
+.contact-content{
+	padding-top: 100px;
+	width: 70%;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}

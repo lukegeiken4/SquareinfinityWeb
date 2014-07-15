@@ -34,7 +34,8 @@
 				</div>
 				<div class="projDesc">
 				<p>
-					Lost Hope is a free form, world exploration RPG. 
+					Enter a desolate, broken world in this 2D, 16-bit game. Build, dig, and explore
+					to find what this world lost.
 				</p>
 				</div>
 				<div class="projButton hoverable" id="LostHopeButton">
@@ -53,12 +54,9 @@
 				</div>
 				<div class="projDesc">
 				<p>
-					Utter Dark is a horror-inspired first-person shooter.The pitch black
-					combat and constant threat of detection should make players think before acting,
-					slowing down and strategizing before leaping into the fray. All soldiers are equipped with sonar HUDs that translate nearby sound into visual input, 
-					however, the comfort (and danger) of a flashlight is only a button-press away. Players will experience round based combat across a variety of maps, 
-					each with unique objectives and features, each round players will earn money that can be spent on new weapons and equipment for the following rounds.
-
+					Plunged into darkness, you have only the sounds of footsteps and the
+					occasional flash of light to find your enemies.
+					Gear up and embrace the shadows.
 				</p>
 				</div>
 				<div class="projButton hoverable" id="UtterDarkButton">
@@ -72,11 +70,13 @@
 				<div class="projTitle">
 					<h1>TravelQuest</h1>
 				</div>
-				<div class="projDesc  transparent" id="TravelQuestDesc">
+				<div class="projDesc TravelQuestDesc" id="">
 				</div>
 				<div class="projDesc">
 					<p>
-					hey there travelquest!
+					Grab your friends and hit the road to explore the world or your home
+					town while taking on vicious Steampunk monsters in our upcoming mobile
+					adventure RPG.
 					</p>
 				</div>
 				<div class="projButton hoverable" id="TravelQuestButton">
@@ -94,7 +94,8 @@
 				</div>
 				<div class="projDesc">
 					<p>
-					ooh a snakey snake! look a snake!
+					A throw back to the Square Infinity of years past, our take on the classic snake
+					game complete with plenty of planned features.
 					</p>
 				</div>
 				<div class="projButton hoverable" id="DroidSnakeButton">
@@ -168,7 +169,7 @@
 	var currentProject = 0;
 	var prevProject = 4;
 	var nextProject = 1;
-	var projects = new Array("LostHope","UtterDark","TravelQuest","DroidSnake");
+	var projects = new Array("TravelQuest","LostHope","UtterDark","DroidSnake");
 	var time = Date.now();
 	var hasPressed = false;
 	
@@ -176,8 +177,8 @@
 	
 		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
-			$("#LostHope").siblings().css("left","100%");
-			$("#LostHope").siblings().hide();
+			$("#TravelQuest").siblings().css("left","100%");
+			$("#TravelQuest").siblings().hide();
 			
 			
 			$(".projectButton").hover(function() {
