@@ -8,20 +8,19 @@
 		
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script>
+			resizeEverything = function(){
+				var width = $(window).width();
+			}
+		
 			$(window).resize(function(){
 				resizeEverything();
 			});
 			
-			resizeEverything = function(){
-				var width = $(window).width();
-			}
-			
-			foldTop = function(){
-				$("#top-fold").transition({
-					perspective: '500px',
-					rotateX: 180
+			$(document).ready(function(){
+				$("#name-text").keyup(function(){
+					$("#name-area").text($("#name-text").val());
 				});
-			}
+			});
 		</script>
 		<script>		
 			function href(location){
@@ -50,6 +49,34 @@
 					}
 				}
 			}
+			
+			rotateFolds = function(){
+				rotateX("#top-fold", -45);
+				rotateX("#bottom-fold", 45);
+			}
+			
+			rotateX = function(objectName, amount){			
+				if(amount < 0){
+					for(var x=0; x>amount; x--){
+						var amountToWait = Math.abs(x * 500);
+						console.log(x + ", " + amountToWait);
+						
+						setTimeout(function(){
+							$(objectName).css("-webkit-transform", "rotateX(" + x + "deg)");
+						}, amountToWait);
+					}
+				}else if(amount > 0){
+					for(var x=0; x<amount; x++){
+						var amountToWait = Math.abs(x * 500);
+					
+						setTimeout(function(){
+							$(objectName).css("-webkit-transform", "rotateX(" + x + "deg)");
+						}, amountToWait);
+					}
+				}
+			
+				//$(objectName).css("-webkit-transform", "rotateX(" + amount + "deg)");
+			}
 		</script>
 		
 		<meta name="viewport" content="width=device-width, user-scalable=no">
@@ -57,7 +84,6 @@
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> <!-- FontAwesome stuff -->
 		
 		<link rel="shortcut icon" href="img/favicon.gif" />
-		<link href="css/sIGamesStylesheet.css" rel="stylesheet" type="text/css"/>
 		<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<meta name = "description" content="As an Independent game creator, the Square Infinity games team is looking to push the limits of storytelling and gameplay from where the best games are created, our parent's basement."/>
 		<meta property="og:image" content="http://www.squareinfinity.com/gmeier/images/stretchLogo3.png"/>
@@ -84,11 +110,30 @@
 		
 		<!-- CONTENT STARTS HERE -->
 	
+		<div class="top-info">
+			Send Us a Letter
+		</div>
+	
 		<div class="view">
-			<div>
-				Hello there
+			<div id="top-fold" class="top-fold fold-size fold-color-top">
+				<input type="text" id="name-text" placeholder="Your name" /><br />
+				<input type="text" id="email-text" placeholder="Your email" /><br />
+				<br />
+				Square Infinity Technologies<br />
+				The Internet<br />
+			</div>
+			<div id="center-fold" class="center-fold fold-size">
+				To Whom it May Concern:<br />
+				<textarea rows="10" columns="20" placeholder="Your message to us..." class="center-text-area"></textarea>
+			</div>
+			<div id="bottom-fold" class="bottom-fold fold-size fold-color-bottom">
+				Sincerely,
+				<br /><br />
+				<div id="name-area">
+					&nbsp;
+				</div>
 			</div>
 		</div>
-
+		<button onclick="rotateFolds();">Send Message</button>
 	</body>
 </html>
