@@ -9,7 +9,7 @@
 	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
 		<div style="width:100%; height:100%; position: relative;">
 			<div class="socialMedia" style="height:100%; width:50%;left:0px;position:absolute;">
-				<div style="width:50%;left:0px;margin-left:20%; margin-top: 30%; background: black; padding: 3%; padding-right: 5%; border: 5px solid white;">
+				<div style="width:50%;left:0px;margin-left:20%; margin-top: 30%; background: black; padding: 3%; padding-right: 5%; border: 5px solid white;  opacity: .8;">
 					<?php
 					// display form if user has not clicked submit
 					if (!isset($_POST["submit"])){
@@ -54,7 +54,7 @@
 				</div>
 			</div>
 			<div class="socialMedia" style="height:100%; width:50%;right:0px; position:absolute">
-				<div style="margin-top:20%; width:80%; height:70%; background: white; border: 5px solid black; margin-left:auto; margin-right:auto;">
+				<div style="margin-top:20%; width:80%; height:70%; background: white; border: 5px solid black; margin-left:auto; margin-right:auto; opacity: .8;">
 					<a href="https://www.facebook.com/squareInfinityTech" target="_blank"><div class="social" style="background-image: url(img/46-facebook.svg); top:20%; left:35%;"></div></a>
 					<a href="http://www.twitter.com/squareInfinity" target="_blank"><div class="social" style="background-image: url(img/45-twitter.svg); top:55%; left:10%;"></div></a>
 					<a href="https://plus.google.com/103430757959795440005" target="_blank"><div class="social" style="background-image: url(img/80-google-plus.svg); top:55%; left:60%;"></div></a>
