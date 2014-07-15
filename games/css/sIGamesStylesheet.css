@@ -100,7 +100,7 @@ body{
 .nav-headers:hover{
 	color:#000000;
 	background-color:#ffffff;
-		cursor: pointer;
+	cursor: pointer;
 }
 
 #home-head {	
@@ -294,6 +294,12 @@ body{
 	border:5px solid white;
 	font-size: 20px;
 	font-family: Copperplate;
+}
+
+#contact-submit:hover{
+	color: black;
+	background: white;
+	border:5px solid black;
 }
 
 #contact-submit:active {
@@ -655,6 +661,12 @@ uncomment this part if you haven't added this code anywhere else
 	border:5px solid white;
 	font-size: 20px;
 	font-family: Copperplate;
+}
+
+#newsletter-button:hover {
+	color: black;
+	background: white;
+	border:5px solid black;
 }
 
 #newletter-input {

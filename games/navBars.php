@@ -57,6 +57,9 @@ if ($name == 'Headquarters'){
 	<div class="main-navbar" style="position: fixed; z-index:1;">
 		<img class="main-navbar-back" src="img/gamebanner.png" style="width:100%; height:100%;" />
 	</div>
+	<div id="marker-div">
+		<img class="marker" id="hover-marker" src="img/marker.png" style="position: absolute; width:9%; min-width:100px; top:50px; left: 79%;" />	
+	</div>
 </html>
 <?php } ?>
 
