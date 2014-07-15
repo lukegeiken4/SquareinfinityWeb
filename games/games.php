@@ -20,13 +20,17 @@
 			</div>-->
 			
 			<div class="buttons">
-				<div class="button TravelQuestDesc " id="one"><i class="fa fa-bars fa-5x fa-fw" style="line-height:100px;vertical-align:center"></i></div>
-				<div class="button TravelQuestDesc " id="two"><i class="fa fa-book fa-5x fa-fw" style="line-height:100px;vertical-align:center"></i></div>
-				<div class="button TravelQuestDesc " id="three"><i class="fa fa-bookmark fa-5x fa-fw" style="line-height:100px;vertical-align:center"></i></div>
+				<div class="button TravelQuestDesc " id="one"><i class="fa fa-bookmark fa-2x fa-fw" style=""></i></div>
+				<div class="button TravelQuestDesc " id="two"><i class="fa fa-exclamation fa-2x fa-fw" style=""></i></div>
+				<div class="button TravelQuestDesc " id="three"><i class="fa fa-paw fa-2x fa-fw" style=""></i></div>
+			</div>
+			<div class="gamesQuick" id="TravelQuestTitle">
+				<strong>Release Date:</strong> A Wintry Eve 2014
+				<strong>Platforms:</strong> Android, iOS
 			</div>
 			<div class="contents">
 				<div class="gamesInfo TravelQuestDesc" id="one">
-					<div style="width:400px">
+					<div style="width:400px;">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Fill up on gas and find your sunglasses because you don't have to 
 						be near Chicago to get the full road trip experience with our latest project. With TravelQuest,
@@ -73,13 +77,13 @@
 			<div class="games_div_opacity">
 
 			</div>
-			<div style="z-index:10;width:100%;height:250px;background:url('./img/tqBanner.png') no-repeat center center;background-size:100% auto;">
+			<div style="z-index:10;width:100%;min-width:765px;height:250px;background:url('./img/tqBanner.png') no-repeat center center;background-size:100% auto;">
 				
 			</div>
 			<div class="buttons">
-				<div class="button LostHopeDesc " id="one"><i class="fa fa-bars fa-5x fa-fw" style="line-height:100px;vertical-align:center"></i></div>
-				<div class="button LostHopeDesc " id="two"><i class="fa fa-book fa-5x fa-fw" style="line-height:100px;vertical-align:center"></i></div>
-				<div class="button LostHopeDesc " id="three"><i class="fa fa-bookmark fa-5x fa-fw" style="line-height:100px;vertical-align:center"></i></div>
+				<div class="button LostHopeDesc " id="one"><i class="fa fa-bookmark fa-2x fa-fw" style=""></i></div>
+				<div class="button LostHopeDesc " id="two"><i class="fa fa-exclamation fa-2x fa-fw" style=""></i></div>
+				<div class="button LostHopeDesc " id="three"><i class="fa fa-paw fa-2x fa-fw" style=""></i></div>
 			</div>
 			<div class="contents">
 				<div class="gamesInfo LostHopeDesc" id="one">
@@ -163,30 +167,40 @@
 	});
 	
 	$('#hidden-link').click(function() {
-		window.location.href = "hidden.php";
-		
+		window.location.href = "hidden.php";		
 	});
 	
 	$(document).ready(function(){
-		$("#one").siblings().darken({'percent': 40});
+		$(".button").siblings("#one").siblings().darken({'percent': 40});
 		$(".gamesInfo" ).siblings("#one").siblings().hide();
 		$(".gamesInfo" ).siblings("#one").siblings().css({marginTop:'-200px',height:'200px'});
-		
+
 		$(".button").click(function(){
 			if (!$(this).is(lastClicked)){
-				$(this).lighten({'percent':66});
-				lastClicked.darken({'percent':40});
+				var descType =this.className.split(' ');
+				
+				if (lastClicked.attr('class').split(' ')[1] == descType[1]){
+					$(this).lighten({'percent':66});
+					lastClicked.darken({'percent':40});
+				}else {
+					if ( $(this).css("background-color") != $(".gamesInfo."+descType[1]).css("background-color")){
+						$(this).css({"background-color":$(".gamesInfo."+descType[1]).css("background-color")});
+						$(this).siblings().css({"background-color":$(".gamesInfo."+descType[1]).css("background-color")});
+						$(this).siblings().darken({'percent':40});
+					}
+				}
+				
 				lastClicked = $(this);
-				$(".gamesInfo" ).siblings('#'+$(this).attr('id')).show();
-				$(".gamesInfo" ).siblings('#'+$(this).attr('id')).css({zIndex:'-1'});
-				$(".gamesInfo" ).siblings('#'+$(this).attr('id')).siblings().css({zIndex:"-2"});
-				$(".gamesInfo" ).siblings('#'+$(this).attr('id')).animate({marginTop:'0px',height:'500px'},1000,function(){
-				$(".gamesInfo" ).siblings('#'+$(this).attr('id')).siblings().css({marginTop:"-200px",height:'200px'});
-				$(".gamesInfo" ).siblings('#'+$(this).attr('id')).siblings().hide();
+				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).show();
+				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).css({zIndex:'-1'});
+				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().stop();
+				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().css({zIndex:"-2"});
+				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).animate({marginTop:'0px',height:'500px'},1000,function(){
+					$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().css({marginTop:"-200px",height:'200px'});
+					$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().hide();
 				});
 			}
-		});
-		
+		});		
 	});
 	
 	
