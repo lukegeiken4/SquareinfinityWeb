@@ -60,10 +60,14 @@
 				</div>
 				<div class="team_member_desc">
 					<h2 style="padding-top:5%; padding-bottom:5%; color:white;">
-						&nbsp;&nbsp;&nbsp;&nbspI am currently studying Game Design as well as Computer Security in the University of Colorado at Colorado Springs' Bachelor of Innovation program. My goal with Square Infinity is to 
-						not only produce quality software for utility, but also to design and produce games that tell interesting, meaningful stories in new ways. I hope that I can change the way people think
-						about games for the better and help to hasten their acceptance into a wider range of arts. I met the rest of the team while attending Billings West High School and although we are now
-						spread across a country, we are more than capable of high quality work.
+						&nbsp;&nbsp;&nbsp;&nbspHello, IÕm Andrew Eagle, a co-founder and developer for Square Infinity.
+						I am currently pursuing two degrees: one in game design and development and the other in computer
+						security at the University of Colorado at Colorado Springs. My goal is to produce high-quality
+						software for both utility and fun. I wanted to make games ever since I met my other three co-founders:
+						Garret, Ivan and David, in high school. I am hoping to make meaningful games that can really have an
+						impact through both mechanics and storyline. As we entered college, the team expanded and I fully believe
+						that it could continue to grow. Other than programming, I spend most of my time gaming: board or video,
+						reading, playing guitar or climbing mountains, because why not?
 					</h2>
 				</div>
 			</div>
