@@ -78,6 +78,92 @@
 	margin-right: auto;
 }
 
+.quote-area{
+	background: #fefefe;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	box-shadow: -2px 2px 5px 0px rgba(100, 100, 100, .6);
+}
+
+.quote-selector{
+	padding: 10px;
+	font-size: 25pt;
+}
+
+.quote-selector-small{
+	padding: 10px;
+	font-size: 12pt;
+}
+
+.quote-selector-small:hover{
+	background: #eeeeee;
+}
+
+.quote-selector:hover{
+	background: #eeeeee;
+}
+
+.large-button{
+	background: #00cdcd;
+	color: #fefefe;
+	font-size: 18pt;
+	border: #00cdcd solid 5px;
+	border-radius: 15px;
+	padding: 10px;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 10px;
+	outline: none;
+	
+	box-shadow: -1px 1px 0px 0px #008080,
+				-2px 2px 0px 0px #008080,
+				-3px 3px 0px 0px #008080;
+}
+
+.large-button:hover{
+	background: #008b8b;
+}
+
+.large-button:active{
+	box-shadow: -1px 1px 0px 0px #008080;
+	-webkit-transform: translateX(-2px) translateY(2px);
+}
+
+.web-area-information-box{
+	width: 80%;
+	background: #fefefe;
+	box-shadow: -1px 1px 4px 0px rgba(100, 100, 100, .6);
+	margin-left: 10%;
+	padding: 5px;
+}
+
+.information-text{
+	font-size: 11pt;
+	color: #444444;
+	margin-top: 10px;
+}
+
+.information-small{
+	font-size: 9pt;
+	color: #444444;
+	width: 60%;
+	margin: 5px;
+}
+
+h1{
+	margin-top: 0px;
+	font-size: 20pt;
+	padding-left: 10px;
+}
+
+h2{
+	font-size: 15pt;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 h3{
 	text-align: center;
 	text-size: 15pt;

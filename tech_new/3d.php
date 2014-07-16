@@ -204,7 +204,7 @@
 				Remind David to write a professional toned bio and put that here.
 				<br />
 				Ivan Mattie, Founder: <br />
-				Remind Ivan to write a professional toned bio and put that here.
+				Ivan is a skilled programmer that has been programming for almost a decade throughout middle school, high school, and college, designing websites, apps, and programs to do a variety of things. He is passionate about programming and designing software, and loves challenges.
 				<br />
 				Garret Meier, Founder: <br />
 				Remind Garret to write a professional toned bio and put that here.
