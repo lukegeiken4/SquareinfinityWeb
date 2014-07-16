@@ -216,7 +216,7 @@
 	$(document).ready(function(){
 		$(".button").siblings("#one").siblings().darken({'percent': 40});
 		$(".gamesInfo" ).siblings("#one").siblings().hide();
-		$(".gamesInfo" ).siblings("#one").siblings().css({marginTop:'-200px',height:'200px'});
+		$(".gamesInfo" ).siblings("#one").siblings().css({marginTop:'-200px',height:'20px'});
 
 		$(".button").click(function(){
 			if (!$(this).is(lastClicked)){
@@ -239,7 +239,7 @@
 				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().stop();
 				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().css({zIndex:"-2"});
 				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).animate({marginTop:'0px',height:'500px'},1000,function(){
-					$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().css({marginTop:"-200px",height:'200px'});
+					$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().css({marginTop:"-200px",height:'20px'});
 					$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().hide();
 				});
 			}
