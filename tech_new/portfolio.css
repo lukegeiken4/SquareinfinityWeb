@@ -7,13 +7,18 @@
 
 .portfolio-entry{
 	display: inline-block;
-	width: 500px;
+	width: 450px;
 	height: 250px;
 	border-radius: 5px;
-	box-shadow: -1px 1px 5px rgba(100, 100, 100, .70);
-	-webkit-box-shadow: -1px 1px 5px rgba(100, 100, 100, .70);
+	box-shadow: -1px 1px 0px rgb(50, 50, 50),
+				-2px 2px 0px rgb(50, 50, 50),
+				-3px 3px 0px rgb(50, 50, 50);
+	-webkit-box-shadow: -1px 1px 0px rgb(50, 50, 50),
+						-2px 2px 0px rgb(50, 50, 50),
+						-3px 3px 0px rgb(50, 50, 50);
 	margin-right: 50px;
-	background-size: 500px 250px !important; /* need to fix this before release */
+	margin-bottom: 30px;
+	background-size: 450px 250px !important; /* need to fix this before release */
 }
 
 .portfolio-icon{
@@ -36,7 +41,7 @@
 
 .portfolio-entry:hover .portfolio-icon{
 	color: rgba(0, 0, 0, 1);
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, .6);
 }
 
 h1,h2{

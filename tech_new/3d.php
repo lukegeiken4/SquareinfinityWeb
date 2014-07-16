@@ -78,6 +78,10 @@
 					skillsInformation.style.display = 'block';
 				}
 			}
+			
+			$(document).ready(function(){
+				changeTabTo("skills");
+			});
 		</script>
 	</head>
 	<body onload="init();">	
