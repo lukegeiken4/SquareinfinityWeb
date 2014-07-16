@@ -98,6 +98,8 @@
 					
 					<div class="gamesInfoInner">
 					<img src='./img/ISpyderColor.png' style='max-height:500px;height:100%;'/>
+					</div>
+					<div class="gameInfoInner">
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;What is there to say? Nobody really knows where these ones came from. . . Probably the remnant of an ill-advised project 
 						from one of the mega-corporations. . . In any case, the eye-spiders were once friendly, helpful even. They would do math, send messages, and even 
 						play games. . . That was all before. . . A few years back they turned, and we were honestly lucky to fight them off into the wilderness. They're savage 
