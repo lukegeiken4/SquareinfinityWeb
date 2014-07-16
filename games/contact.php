@@ -6,10 +6,10 @@
 
 <body >
 	<?php getMainBar('Mail'); ?>
-	<div style="position: absolute; overflow: auto; width:100%; height:100%; top:0; z-index: 0;">
-		<div style="width:100%; height:100%; position: relative;">
-			<div class="socialMedia" style="height:100%; width:50%;left:0px;position:absolute;">
-				<div style="width:50%;left:0px;margin-left:20%; margin-top: 30%; background: black; padding: 3%; padding-right: 5%; border: 5px solid white;  opacity: .8;">
+	<div id="contact-main-div">
+		<div id="contact-mail-div">
+			<div class="socialMedia" id="contact-area">
+				<div id="contact-mail-form">
 					<?php
 					// display form if user has not clicked submit
 					if (!isset($_POST["submit"])){
@@ -25,13 +25,13 @@
 								<input style="position: absolute; margin-left:80%;  margin-top:15%; width: 100%;" type="text" name="from" required><br>
 							</div>
 							
-							<div style="width:50%; position: relative; margin-top: 10%;">
+							<div style="width:100%; position: relative; margin-top: 10%;">
 							  <h2 style="position: absolute; font-family: Copperplate;  color: white;">Message: </h2>
-							  <textarea style="margin-top:35%;" rows="10" cols="50" name="message" style="resize:vertical" ></textarea><br>
+							  <textarea style="margin-top:25%; width:100%;height:100px;" name="message" style="resize:vertical" ></textarea><br>
 							</div>
 							
 							<div style="width:50%; position: relative;  margin-top: 10%; margin-left: 30%;">
-								<input id="contact-submit" type="submit" name="submit" value="Message Us">
+								<input style="font-size:90%;" id="contact-submit" type="submit" name="submit" value="Message Us">
 							</div>
 						</form>
 					<?php 
@@ -53,13 +53,13 @@
 					}?>
 				</div>
 			</div>
-			<div class="socialMedia" style="height:100%; width:50%;right:0px; position:absolute">
-				<div style="margin-top:20%; width:80%; height:70%; background: white; border: 5px solid black; margin-left:auto; margin-right:auto; opacity: .8;">
-					<a href="https://www.facebook.com/squareInfinityTech" target="_blank"><div class="social" style="background-image: url(img/46-facebook.svg); top:20%; left:35%;"></div></a>
-					<a href="http://www.twitter.com/squareInfinity" target="_blank"><div class="social" style="background-image: url(img/45-twitter.svg); top:55%; left:10%;"></div></a>
-					<a href="https://plus.google.com/103430757959795440005" target="_blank"><div class="social" style="background-image: url(img/80-google-plus.svg); top:55%; left:60%;"></div></a>
+			<div class="socialMedia" id="social-media-div">
+				<div id="social-media-box">
+					<a href="https://www.facebook.com/squareInfinityTech" target="_blank"><div class="social" id="facebook-pic" style="background-image: url(img/46-facebook.svg) "></div></a>
+					<a href="http://www.twitter.com/squareInfinity" target="_blank"><div class="social" id="twitter-pic" style="background-image: url(img/45-twitter.svg);"></div></a>
+					<a href="https://plus.google.com/103430757959795440005" target="_blank"><div class="social" id="googleplus-pic" style="background-image: url(img/80-google-plus.svg);"></div></a>
 					<div style="position: relative; margin-left: 30%; margin-top:50%;">
-						<h2 style="font-family: Copperplate; font-size: 40px;">Follow Us!</h2>
+						<h2 id="follow-text" style="font-family: Copperplate; font-size: 40px;">Follow Us!</h2>
 					</div>
 				</div>
 			</div>

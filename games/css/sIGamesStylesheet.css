@@ -342,21 +342,90 @@ body{
 #three{
 	margin-left:410px;
 }
+/**
+ *Contact Page CSS
+ */
+#contact-main-div {
+	position: absolute;
+	overflow: auto;
+	width:100%;
+	height:100%;
+	top:0;
+	z-index: 0;
+}
+
+#contact-mail-div {
+	width:100%;
+	height:100%;
+	position: relative;
+}
+
+#contact-area {
+	height:100%;
+	width:50%;
+	left:0px;
+	position:absolute;
+}
+#contact-mail-form {
+	width:50%;
+	left:0px;
+	margin-left:20%;
+	margin-top: 30%;
+	background: black;
+	padding: 3%;
+	padding-right: 5%;
+	border: 5px solid white;
+	opacity: .8;
+}
+
+#social-media-div {
+	height:100%;
+	width:50%;
+	right:0px;
+	position:absolute	
+}
+
+#social-media-box {
+	margin-top:20%;
+	width:80%;
+	height:70%;
+	background: white;
+	border: 5px solid black;
+	margin-left:auto;
+	margin-right:auto;
+	opacity: .8;	
+}
+
 .social{
 	position: absolute;
-	width:200px;
-	height:200px;	
+	width:20%;
+	height:20%;	
 	margin:5px;
 	background-size: 100% 100%;
 	border-radius:100%;
 	float:left;
 }
 
+#facebook-pic {
+	top:20%;
+	left:40%;
+}
+
+#twitter-pic{
+	top:55%;
+	left:15%;
+}
+
+#googleplus-pic {
+	top:55%;
+	left:65%;
+}
+
 #contact-submit {
 	position: absolute;
 	border-radius:100%;
 	height: 150px;
-	width: 150px;
+	width: 85%;
 	border: 3px solid black;
 	color: white;
 	background: black;
@@ -797,3 +866,72 @@ uncomment this part if you haven't added this code anywhere else
 	background-size:auto 100% !important;
 
 }
+
+#contact-main-div {
+	width:100%;
+	height:100%;
+	top:0;
+	z-index: 0;
+	margin-left:auto;
+	margin-right:auto;
+	position: absolute;
+}
+
+#contact-mail-form {
+	width:100%;
+	right:0;
+	left:0;
+	background: black;
+	border: 5px solid white;
+	opacity: .8;
+}
+
+#contact-area {
+	position: static;
+	height:100%;
+	
+}
+
+#social-media-div {
+	background: transparent;
+	position: static;
+	border: 0px solid white;
+	top: 0;
+	position: absolute;
+}
+
+#social-media-box {
+	background: transparent;
+	opacity: 1;
+	border: 0px solid white;
+	top: 0;
+	position: absolute;
+}
+
+.social{
+	width:40%;
+	height:40%;	
+	margin:5px;
+	background-size: 100% 100%;
+	border-radius:100%;
+}
+
+#facebook-pic {
+	top:-30%;
+	left:50%;
+}
+
+#twitter-pic{
+	top:10%;
+	left:50%;
+}
+
+#googleplus-pic {
+	top:55%;
+	left:50%;
+}
+
+#follow-text {
+	display: none;
+}
+
