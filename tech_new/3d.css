@@ -161,6 +161,22 @@
 	background-size: 260px 42px;
 }
 
+@media screen and (max-width: 765px){
+	.yellow-manila-folder-tab{
+		width: 100px;
+		background-size: 100px 42px;
+		padding: 10px 20px 5px 15px;
+	}
+	
+	.tab-darkened{
+		background-size: 100px 42px;
+	}
+	
+	.tab-darkened:hover{
+		background-size: 100px 42px;
+	}
+}
+
 .inset-information{
 	background: url("img/plaque.png");
 	background-size: 350px 150px;

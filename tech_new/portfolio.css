@@ -10,12 +10,12 @@
 	width: 450px;
 	height: 250px;
 	border-radius: 5px;
-	box-shadow: -1px 1px 0px rgb(50, 50, 50),
-				-2px 2px 0px rgb(50, 50, 50),
-				-3px 3px 0px rgb(50, 50, 50);
-	-webkit-box-shadow: -1px 1px 0px rgb(50, 50, 50),
-						-2px 2px 0px rgb(50, 50, 50),
-						-3px 3px 0px rgb(50, 50, 50);
+	box-shadow: -1px 1px 0px rgb(0, 0, 0),
+				-2px 2px 0px rgb(0, 0, 0),
+				-3px 3px 0px rgb(0, 0, 0);
+	-webkit-box-shadow: -1px 1px 0px rgb(0, 0, 0),
+						-2px 2px 0px rgb(0, 0, 0),
+						-3px 3px 0px rgb(0, 0, 0);
 	margin-right: 50px;
 	margin-bottom: 30px;
 	background-size: 450px 250px !important; /* need to fix this before release */
@@ -60,4 +60,15 @@ h1{
 h2{
 	font-size: 9pt;
 	padding: 10px;
+}
+
+@media screen and (max-width: 600px){
+	.portfolio-entry{
+		width: 90%;
+		margin-left: 3%;
+	}
+	
+	.portfolio-container{
+		width: 100%;
+	}
 }
