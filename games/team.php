@@ -26,10 +26,10 @@
 				</div>
 				<div class="team_member_desc">
 					<h2 style="padding-top:5%; padding-bottom:5%; color:white;">
-						&nbsp;&nbsp;&nbsp&nbsp;Hello, I am a Computer Science major at the University of Colorado, at Colorado Springs. My major passions are telling stories and writing code, so naturally Square 
-						Infinity is an extension of of these passions. My goal is to design cool, interesting new software and applications, as well as design interesting games. I have a lot of ideas I would love
-						to share with the world, and with the team I'm with, I'm sure anything is possible. I hope to further games as a new, powerful medium for art and complex narrative. I also love the outdoors,
-						reading, writing, and generally being with cool people doing interesting things.
+						&nbsp;&nbsp;&nbsp&nbsp;Hey, I am a programmer and avid gamer who is really excited
+						to make a difference with the games I create. I love programming and design, and
+						have always been a fan of games that step outside of the expected and show us something
+						new and interesting. Hopefully I can also make games that follow a similar thread.
 					</h2>
 				</div>
 			</div>
@@ -60,7 +60,7 @@
 				</div>
 				<div class="team_member_desc">
 					<h2 style="padding-top:5%; padding-bottom:5%; color:white;">
-						&nbsp;&nbsp;&nbsp;&nbspHello, IÕm Andrew Eagle, a co-founder and developer for Square Infinity.
+						&nbsp;&nbsp;&nbsp;&nbspHello, I am Andrew Eagle, a co-founder and developer for Square Infinity.
 						I am currently pursuing two degrees: one in game design and development and the other in computer
 						security at the University of Colorado at Colorado Springs. My goal is to produce high-quality
 						software for both utility and fun. I wanted to make games ever since I met my other three co-founders:
