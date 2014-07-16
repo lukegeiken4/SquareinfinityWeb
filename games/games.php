@@ -28,9 +28,9 @@
 			<div class="contents">
 
 				<div class="gamesInfo TravelQuestDesc" id="one">
-					<h1>TravelQuest</h1>
+					<a href="http://travelquest.squareinfinity.com"style="text-decoration:none;color:black;"><h1 id="TravelQuestTitle" >TravelQuest</h1></a>
 					<div class="gamesInfoInner">
-						<img src="./img/ClockworkDragonTQWhite.png" style="height:100%;display:block;margin-left:auto;margin-right:auto;">
+						<img src="./img/ClockworkDragonTQWhite.png" style="height:100%;">
 					</div>
 					<div class="gamesInfoInner">
 					<p>
@@ -60,7 +60,7 @@
 				</div>
 				<div class="gamesInfo TravelQuestDesc" id="two">
 				<h1 style="">Quest Types</h1>
-					<div class="gamesInfoInner"style="">
+					<div class="gamesInfoInner">
 					
 					<p>
 						<strong>Battle Tower -</strong> You will venture forth to the tallest buildings and battle your way through - floor by floor - to reach the top! Many enemies stand in the way. . . See if you can survive the gauntlet.
