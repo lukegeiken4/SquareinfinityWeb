@@ -208,6 +208,23 @@
     transform: rotate(-30deg);
 }
 
+.pencil{
+	background: url("img/pencil.png");
+	background-size: 220px 12px;
+	width: 220px;
+	height: 36px;
+	background-position: center;
+	background-repeat: repeat;
+	float: right;
+	
+	margin-top: -300px;
+	margin-right: 400px;
+	
+	-ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
 /* ===== GENERAL ===== */
 
 .footer{
