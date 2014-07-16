@@ -30,9 +30,7 @@
 				<div class="projTitle">
 					<h1>Lost Hope</h1>
 				</div>
-				<div class="projDesc transparent LostHopeDesc"> 
-				</div>
-				<div class="projDesc">
+				<div class="projDesc LostHopeDesc">
 				<p>
 					Enter a desolate, broken world in this 2D, 16-bit game. Build, dig, and explore
 					to find what this world lost.

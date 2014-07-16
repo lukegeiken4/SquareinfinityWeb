@@ -12,25 +12,23 @@
 			<div class="games_div_opacity" style="position:absolute;">
 
 			</div>
-			<div style="z-index:10;width:100%;height:250px;background:url('./img/tqBanner.png') no-repeat center center;background-size:100% auto;">
+			<div style="min-width:1080px;z-index:10;width:100%;height:250px;background:url('./img/tqBanner.png') no-repeat center center;background-size:100% auto;">
 				
 			</div>
-			<!--<div class="gamesTitle" id="TravelQuestTitle">
-				TravelQuest
-			</div>-->
 			
 			<div class="buttons">
 				<div class="button TravelQuestDesc " id="one"><i class="fa fa-bookmark fa-2x fa-fw" style=""></i></div>
 				<div class="button TravelQuestDesc " id="two"><i class="fa fa-exclamation fa-2x fa-fw" style=""></i></div>
 				<div class="button TravelQuestDesc " id="three"><i class="fa fa-paw fa-2x fa-fw" style=""></i></div>
 			</div>
-			<div class="gamesQuick" id="TravelQuestTitle">
-				<strong>Release Date:</strong> A Wintry Eve 2014</vr>
-				<strong>Platforms:</strong> Android, iOS
-			</div>
+				<div class="gamesQuick" id="TravelQuestTitle">
+					<strong>Release Date:</strong> A Wintry Eve 2014</vr>
+					<strong>Platforms:</strong> Android, iOS
+				</div>
 			<div class="contents">
+
 				<div class="gamesInfo TravelQuestDesc" id="one">
-					<div style="width:25%;">
+					<div class="gamesInfoInner">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Fill up on gas and find your sunglasses because you don't have to 
 						be near Chicago to get the full road trip experience with our latest project. With TravelQuest,
@@ -54,8 +52,8 @@
 					</div>					
 				</div>
 				<div class="gamesInfo TravelQuestDesc" id="two">
-				<h1 style="text-align:center;margin-top:-50px;">Quest Types</h1>
-					<div style="position:absolute;display:inline-block;width:25%">
+				<h1 style="">Quest Types</h1>
+					<div class="gamesInfoInner"style="">
 					
 					<p>
 						<strong>Battle Tower -</strong> You will venture forth to the tallest buildings and battle your way through - floor by floor - to reach the top! Many enemies stand in the way. . . See if you can survive the gauntlet.
@@ -76,7 +74,7 @@
 						<strong>Hunt -</strong> You must travel far and wide to a new location to find your prey. Lucky for you, you know where they are! Go hunt those monsters.
 					</p>
 					</div>
-					<div style="position:absolute;display:inline-block;width:25%;left:27%">
+					<div class="gamesInfoInner">
 					<p>
 						<strong>Journey -</strong> When your heart is filled with the desire to get away - it is time for a journey. So go, you will see may things and you will face great danger but you will be the better for it.
 					</p>
@@ -96,9 +94,10 @@
 					
 				</div>
 				<div class="gamesInfo TravelQuestDesc" id="three">
-				<h1 style="text-align:center;margin-top:-50px;">Enemy of the Month: August</h1>
-					<img src='./img/ISpyderColor.png' style='display:inline-block;height:100%;'/>
-					<div style="position:absolute;width:25%;left:27%;display:inline-block;">
+					<h1 >Enemy of the Month: August</h1>
+					
+					<div class="gamesInfoInner">
+					<img src='./img/ISpyderColor.png' style='max-height:500px;height:100%;'/>
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;What is there to say? Nobody really knows where these ones came from. . . Probably the remnant of an ill-advised project 
 						from one of the mega-corporations. . . In any case, the eye-spiders were once friendly, helpful even. They would do math, send messages, and even 
 						play games. . . That was all before. . . A few years back they turned, and we were honestly lucky to fight them off into the wilderness. They're savage 
@@ -114,7 +113,7 @@
 			<div class="games_div_opacity">
 
 			</div>
-			<div style="z-index:10;width:100%;min-width:765px;height:250px;background:url('./img/LHBanner.png') no-repeat center center;background-size:100% auto;">
+			<div style="z-index:10;width:100%;min-width:1080px;height:250px;background:url('./img/LHBanner.png') no-repeat center center;background-size:100% auto;">
 				
 			</div>
 			
@@ -130,7 +129,7 @@
 			</div>
 			<div class="contents">
 				<div class="gamesInfo LostHopeDesc" id="one">
-					<div style="width:400px">
+					<div class="gamesInfoInner">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;In a world without hope, you can be either a savior or a destroyer.
 						Armed with nothing except your own creativity, explore a world filled with danger and dread.
@@ -158,8 +157,8 @@
 					
 				</div>
 				<div class="gamesInfo LostHopeDesc" id="two">
-					<h1 style="text-align:center;margin-top:-50px;">Screenshots</h1>
-					<div style="width:400px">
+					<h1 >Screenshots</h1>
+					<div class="gamesInfoInner">
 
 					</div>
 					
@@ -171,7 +170,7 @@
 			<div class="games_div_opacity">
 
 			</div>
-			<div style="z-index:10;width:100%;min-width:765px;height:250px;background:url('./img/UDBanner.png') no-repeat center center;background-size:100% auto;">
+			<div style="z-index:10;width:100%;min-width:1080px;height:250px;background:url('./img/UDBanner.png') no-repeat center center;background-size:100% auto;">
 				
 			</div>
 				
@@ -184,7 +183,7 @@
 			</div>
 			<div class="contents">
 				<div class="gamesInfo UtterDarkDesc" id="one">
-					<div style="width:400px">
+					<div class="gamesInfoInner">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Grab a flashlight and your favorite assault rifle,
 						it’s time for war games to go dark. In Utterdark you will be thrown into high
@@ -217,7 +216,7 @@
 			<div class="games_div_opacity">
 
 			</div>
-			<div style="z-index:10;width:100%;min-width:765px;height:250px;background:url('./img/DSbanner.png') no-repeat center center;background-size:100% auto;">
+			<div style="z-index:10;width:100%;min-width:1080px;height:250px;background:url('./img/DSbanner.png') no-repeat center center;background-size:100% auto;">
 				
 			</div>
 			
@@ -233,7 +232,7 @@
 			</div>
 			<div class="contents">
 				<div class="gamesInfo DroidSnakeDesc" id="one">
-					<div style="width:400px">
+					<div class="gamesInfoInner">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Our first game, Droid Snake has a small corner of our hearts here at Square Infinity all to itself.
 						Made simply for Android, Droid Snake is our take on the classic Snake arcade game. With the addition of
@@ -278,7 +277,7 @@
 			if (!$(this).is(lastClicked)){
 				var descType =this.className.split(' ');
 				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).css({marginTop:"-200px",height:'20px'});
-				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().css({marginTop:'0px',height:'500px'});
+				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().css({marginTop:'0px',height:'100%'});
 				if (lastClicked.attr('class').split(' ')[1] == descType[1]){
 					$(this).lighten({'percent':66});
 					lastClicked.darken({'percent':40});
@@ -295,7 +294,7 @@
 				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).css({zIndex:'-1'});
 				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().stop();
 				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().css({zIndex:"-2"});
-				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).animate({marginTop:'0px',height:'500px'},1000,function(){
+				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).animate({marginTop:'0px',height:'100%'},1000,function(){
 					$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().hide();
 				});
 				

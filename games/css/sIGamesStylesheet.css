@@ -292,7 +292,7 @@ body{
 	margin-top:20px;
 	width:290px;
 	padding-left:10px;
-	margin-left:175px;
+	margin-left:8%;
 	box-shadow:0px 5px 10px black;
 	line-height:30px;
 }
@@ -300,8 +300,8 @@ body{
 .gamesInfo{
 	position:absolute;
 	display:block;
-	left:10%;
-	margin-left:20px !important;
+	margin-left:10%;
+	margin-right:10%;
 	top:250px;
 	background-color:white;
 	padding:10px;
@@ -310,9 +310,9 @@ body{
 	padding-top:110px;
 	border-radius:0px 0px 5px 5px;
 	z-index:-1;
-	height:500px;
-	overflow:hidden;
-	min-width:500px;
+	/*overflow-y:scroll;*/
+	min-width:612px;
+	max-height:500px;
 	
 }
 
@@ -336,15 +336,25 @@ body{
 	text-align:center
 }
 
-#one {
+.button#one{
 	margin-left:310px;
 }
-#two{
+.button#two{
 	margin-left:360px;
 }
-#three{
+.button#three{
 	margin-left:410px;
 }
+.contents h1{
+text-align:center;
+margin-top:-50px;
+}
+
+	.gamesInfoInner{
+		width:400px;
+		height:500px;
+		float:left;
+	}
 /**
  *Contact Page CSS
  */
@@ -713,7 +723,7 @@ uncomment this part if you haven't added this code anywhere else
  */
 .games_div {
 	width:100%;
-	height:1080px;
+	min-height:1080px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -856,57 +866,111 @@ uncomment this part if you haven't added this code anywhere else
 }
 /* MEDIA MODE! */
 @media (max-width:765px){
-.top-navbar-bdiv{
-	margin:0px !important;
-}
+	.top-navbar-bdiv{
+		margin:0px !important;
+	}
 
-#about-head{
-	display:none;
-}
+	#about-head{
+		display:none;
+	}
 
-.main-navbar-back{
-	display:none;
-}
+	.main-navbar-back{
+		display:none;
+	}
 
-.main-navbar{
-	background-color:black;
-}
+	.main-navbar{
+		background-color:black;
+	}
 
-.nav-headers{
-	width:20%;
-	height:40px;
-	line-height:40px;
-	font-size:2.5vw;
-}
+	.nav-headers{
+		width:20%;
+		height:40px;
+		line-height:40px;
+		font-size:2.5vw;
+	}
 
-#home-head{
-	left:0px;
-}
+	#home-head{
+		left:0px;
+	}
 
-#games-head{
-	left:20%;
-}
+	#games-head{
+		left:20%;
+	}
 
-#team-head{
-	left:60%;
-}
+	#team-head{
+		left:60%;
+	}
 
-#contact-head{
- left:80%;
-}
+	#contact-head{
+	 left:80%;
+	}
 
-.marker{
-	display:none;
-}
+	.marker{
+		display:none;
+	}
 
-.newsWrapper{
-	width:100%;
-}
+	.newsWrapper{
+		width:100%;
+	}
 
-.projContent{
-	background-position:center center !important;
-	background-size:auto 100% !important;
+	.projContent{
+		background-position:center center !important;
+		background-size:auto 100% !important;
 
+	}
+	
+	.gamesInfo{
+		width:100%;
+		height:100%;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		padding-left:0px;
+		max-height:1080px;
+	}
+	
+	.gamesInfoInner{
+		position:relative;
+		width:90%;
+		height:auto;
+		min-height:0px;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+
+	}
+	
+	.games_div{
+		height:auto;
+		padding-bottom:20px;
+	}
+	
+	.gamesInfoInner img{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.gamesQuick{
+		position:relative;
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	.contents h1{
+		margin-top:0px;
+	}
+	.button#one{
+		margin-left:0px;
+	}
+	.button#two{
+		margin-left:50px;
+	}
+	.button#three{
+		margin-left:100px;
+	}
 }
 
 #contact-main-div {
