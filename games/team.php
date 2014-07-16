@@ -81,7 +81,7 @@
 				</div>
 				<div class="team_member_desc">
 					<h2 style="padding-top:5%; padding-bottom:5%; color:white;">
-						&nbsp;&nbsp;&nbsp;&nbsp;Hi, I'm currently a freshman studying Software Engineering and Philosophy at Iowa State University. If you want to learn more about me personally have a look at 
+						&nbsp;&nbsp;&nbsp;&nbsp;Hi, I am currently a freshman studying Software Engineering and Philosophy at Iowa State University. If you want to learn more about me personally have a look at 
 						<a href="http://ghmeier.public.iastate.edu" target="_blank">my website</a>. I can't wait to see what the team can do with Square Infinity. Right now, helping other
 						companies express themselves through technology really makes me excited to get to work on every unique project. I am currently working mostly on web design and Android
 						projects for Square Infinity. My passion for the future comes from the amazing ability to utilize games as an art form to influence players through our story. Other than programming, I
