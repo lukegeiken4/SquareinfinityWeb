@@ -71,9 +71,14 @@
 }
 
 .contact-content{
-	padding-top: 100px;
+	padding-top: 50px;
 	width: 70%;
 	height: 500px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+h3{
+	text-align: center;
+	text-size: 15pt;
 }
