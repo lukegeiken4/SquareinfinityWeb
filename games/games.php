@@ -28,6 +28,10 @@
 			<div class="contents">
 
 				<div class="gamesInfo TravelQuestDesc" id="one">
+					<h1>TravelQuest</h1>
+					<div class="gamesInfoInner">
+						<img src="./img/ClockworkDragonTQWhite.png" style="height:100%;display:block;margin-left:auto;margin-right:auto;">
+					</div>
 					<div class="gamesInfoInner">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Fill up on gas and find your sunglasses because you don't have to 
@@ -49,7 +53,10 @@
 						&nbsp;&nbsp;&nbsp;&nbsp;Take your mobile gaming to the road with TravelQuest, where the game world
 						is the one we live in.
 					</p>
-					</div>					
+					</div>		
+					<div class="gamesInfoInner">
+						<img src="./img/ClockworkDragonTQBlack.png" style="height:100%;display:block;margin-left:auto;margin-right:auto;">
+					</div>
 				</div>
 				<div class="gamesInfo TravelQuestDesc" id="two">
 				<h1 style="">Quest Types</h1>
@@ -131,6 +138,7 @@
 			</div>
 			<div class="contents">
 				<div class="gamesInfo LostHopeDesc" id="one">
+				<h1>Lost Hope</h1>
 					<div class="gamesInfoInner">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;In a world without hope, you can be either a savior or a destroyer.
@@ -185,10 +193,11 @@
 			</div>
 			<div class="contents">
 				<div class="gamesInfo UtterDarkDesc" id="one">
+				<h1>UtterDark</h1>
 					<div class="gamesInfoInner">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Grab a flashlight and your favorite assault rifle,
-						it’s time for war games to go dark. In Utterdark you will be thrown into high
+						it's time for war games to go dark. In Utterdark you will be thrown into high
 						intensity combat in the near pitch-black environments of the world post-sun.
 						Using powerful machines, the Earth lives on, but not as it once was.
 					</p>
@@ -209,7 +218,9 @@
 						the darkness get to you, it’s not the most dangerous thing out there with you.
 					</p>
 					</div>
-					
+					<div class="gamesInfoInner">
+						<img src="./img/UDLogo2.png" style="height:100%;margin-left:20px;margin-right:20px">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -234,6 +245,7 @@
 			</div>
 			<div class="contents">
 				<div class="gamesInfo DroidSnakeDesc" id="one">
+				<h1>Droid Snake</h1>
 					<div class="gamesInfoInner">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Our first game, Droid Snake has a small corner of our hearts here at Square Infinity all to itself.
