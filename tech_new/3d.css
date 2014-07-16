@@ -161,6 +161,22 @@
 	background-size: 260px 42px;
 }
 
+@media screen and (max-width: 765px){
+	.yellow-manila-folder-tab{
+		width: 100px;
+		background-size: 100px 42px;
+		padding: 10px 20px 5px 15px;
+	}
+	
+	.tab-darkened{
+		background-size: 100px 42px;
+	}
+	
+	.tab-darkened:hover{
+		background-size: 100px 42px;
+	}
+}
+
 .inset-information{
 	background: url("img/plaque.png");
 	background-size: 350px 150px;
@@ -190,6 +206,23 @@
 	-ms-transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
     transform: rotate(-30deg);
+}
+
+.pencil{
+	background: url("img/pencil.png");
+	background-size: 220px 12px;
+	width: 220px;
+	height: 36px;
+	background-position: center;
+	background-repeat: repeat;
+	float: right;
+	
+	margin-top: -300px;
+	margin-right: 400px;
+	
+	-ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 /* ===== GENERAL ===== */

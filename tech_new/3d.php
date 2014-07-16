@@ -78,6 +78,10 @@
 					skillsInformation.style.display = 'block';
 				}
 			}
+			
+			$(document).ready(function(){
+				changeTabTo("skills");
+			});
 		</script>
 	</head>
 	<body onload="init();">	
@@ -138,6 +142,9 @@
 			?>
 		</div>
 		<div class="coffee side-spacing-1" id="coffee">
+			&nbsp;
+		</div>
+		<div class="pencil">
 			&nbsp;
 		</div>
 		<br />
