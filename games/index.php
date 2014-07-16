@@ -30,7 +30,7 @@
 				<div class="projTitle">
 					<h1>Lost Hope</h1>
 				</div>
-				<div class="projDesc transparent" id="LostHopeDesc"> 
+				<div class="projDesc transparent LostHopeDesc"> 
 				</div>
 				<div class="projDesc">
 				<p>
@@ -50,7 +50,7 @@
 				<div class="projTitle">
 					<h1>Utter Dark</h1>
 				</div>
-				<div class="projDesc " id="UtterDarkDesc">
+				<div class="projDesc UtterDarkDesc">
 				</div>
 				<div class="projDesc">
 				<p>
@@ -70,7 +70,7 @@
 				<div class="projTitle">
 					<h1>TravelQuest</h1>
 				</div>
-				<div class="projDesc TravelQuestDesc" id="">
+				<div class="projDesc TravelQuestDesc">
 				</div>
 				<div class="projDesc">
 					<p>
@@ -90,7 +90,7 @@
 				<div class="projTitle">
 					<h1>Droid Snake</h1>
 				</div>
-				<div class="projDesc transparent" id="DroidSnakeDesc">
+				<div class="projDesc transparent DroidSnakeDesc">
 				</div>
 				<div class="projDesc">
 					<p>

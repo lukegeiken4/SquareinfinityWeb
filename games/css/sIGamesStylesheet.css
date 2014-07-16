@@ -589,7 +589,7 @@ twitter-follow-button{
 }
 
 .LostHopeDesc{
-	background-color:#058700;	
+	background-color:#058700 ;	
 }
 
 #LostHope{
@@ -601,13 +601,17 @@ twitter-follow-button{
 	background-color:#666666;
 }
 
-#UtterDarkDesc{
+.UtterDarkDesc{
 	background-color:#ffffff;
 }
 
 #UtterDark{
 	background: url('../img/utterDarkBanner.png') no-repeat left top fixed;
 	background-size:100% auto ;
+}
+
+#UtterDarkButton {
+	background-color:#777777;	
 }
 
 #TravelQuestTitle{
@@ -628,7 +632,7 @@ twitter-follow-button{
 	background-color:#1c8eff;
 }
 
-#DroidSnakeDesc{
+.DroidSnakeDesc{
  background-color:#4a9bff;
 }
 

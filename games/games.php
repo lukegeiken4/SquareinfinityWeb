@@ -132,24 +132,27 @@
 				<div class="gamesInfo LostHopeDesc" id="one">
 					<div style="width:400px">
 					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;Fill up on gas and find your sunglasses because you don't have to 
-						be near Chicago to get the full road trip experience with our latest project. With TravelQuest,
-						we aim to give mobile gaming a touch of community. 
+						&nbsp;&nbsp;&nbsp;&nbsp;In a world without hope, you can be either a savior or a destroyer.
+						Armed with nothing except your own creativity, explore a world filled with danger and dread.
+						Craft completely unique weapons from the ground up and build immense structures…
+						But it doesn’t end there. Discover, adapt and create powerful magical abilities that can truly
+						sculpt the world itself into what you want. Venture into the past of a ravaged world and find
+						what it is that happened… or don’t and just find your way in this new world.
 					</p>
 					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;TravelQuest takes the formula of a traditional 2D roleplaying-game with
-						the exception that instead of moving your character with a joystick, your position in game
-						corresponds to your geographical location. With over 200 enemies tailored to appear in specific
-						regions around the globe, TravelQuest offers a different experience no matter your location. 
+						&nbsp;&nbsp;&nbsp;&nbsp;We aim to bring a breath of new life to the sandbox genre.
+						With an entirely new way to craft and a whole wide world of magic that you can build
+						as you play we give immense power to you to sculpt the world as you see fit. But beware,
+						there are others out there with the same power and it’s up to you whether your cooperation
+						will bring the world to new heights or whether your clashes will destroy what’s left. 
 					</p>
 					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;Whether you're in your home town or halfway across the world, the randomly
-						generated quests aim to get you to walk down the street and check out your local coffee shop or 
-						make a weekend trip through the countryside. 
+						&nbsp;&nbsp;&nbsp;&nbsp;Explore a 2D world done in the style of 16-bit games
+						filled with enemies that grow and change, villages that expand and build, and
+						make it your own.
 					</p>
 					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;Take your mobile gaming to the road with TravelQuest, where the game world
-						is the one we live in.
+						&nbsp;&nbsp;&nbsp;&nbsp;The world has nothing left to lose when it has already lost hope.
 					</p>
 					</div>
 					
@@ -175,19 +178,118 @@
 		
 		<div class="games_div" id="utterdark">
 			<div class="games_div_opacity">
+
+			</div>
+			<div style="z-index:10;width:100%;min-width:765px;height:250px;background:url('./img/LHBanner.png') no-repeat center center;background-size:100% auto;">
 				
 			</div>
-			<div class="gamesContent" id="UtterDarkContent">
-				utter dark
+			
+
+			
+			<div class="buttons">
+				<div class="button UtterDarkDesc" id="one"><i class="fa fa-bookmark fa-2x fa-fw" style=""></i></div>
+				<div class="button UtterDarkDesc" id="two"><i class="fa fa-exclamation fa-2x fa-fw" style=""></i></div>
+				<div class="button UtterDarkDesc" id="three"><i class="fa fa-paw fa-2x fa-fw" style=""></i></div>
+			</div>
+			<div class="gamesQuick" id="UtterDarkTitle">
+				<strong>Release Date:</strong> When it &#768;s meant to be</br>
+				<strong>Platforms:</strong> PC
+			</div>
+			<div class="contents">
+				<div class="gamesInfo UtterDarkDesc" id="one">
+					<div style="width:400px">
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;Grab a flashlight and your favorite assault rifle,
+						it’s time for war games to go dark. In Utterdark you will be thrown into high
+						intensity combat in the near pitch-black environments of the world post-sun.
+						Using powerful machines, the Earth lives on, but not as it once was.
+					</p>
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;In the ruins of an old world and in the tunnels of the new,
+						war rages. Pick a side and engage in combat unlike anything you’ve ever experienced.
+						Fight in the dark using nothing but sound to navigate, or take the risk and click on
+						your flashlight for a few minutes of respite, but beware, there is nothing easier to
+						see in the dark than a bright light. 
+					</p>
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;In fully rendered 3D environments, utilize an immense array
+						of equipment and specialties to get to better positions, disrupt the enemy and gain
+						the upper hand in the war for Underearth. 
+					</p>
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;Think before acting, hunt by sound and don’t let
+						the darkness get to you, it’s not the most dangerous thing out there with you.
+					</p>
+					</div>
+					
+				</div>
+				<div class="gamesInfo UtterDarkDesc" id="two">
+					<div style="width:400px">
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;Oooh more info.
+					</p>
+					</div>
+					
+				</div>
+				<div class="gamesInfo UtterDarkDesc" id="three">
+					<div style="width:400px">
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;Added this real slick like
+					</p>
+					</div>
+					
+				</div>
 			</div>
 		</div>
 		
 		<div class="games_div" id="droidsnake">
 			<div class="games_div_opacity">
+
+			</div>
+			<div style="z-index:10;width:100%;min-width:765px;height:250px;background:url('./img/LHBanner.png') no-repeat center center;background-size:100% auto;">
 				
 			</div>
-			<div class="gamesContent" id="DroidSnakeContent">
-				droidsnake
+			
+
+			
+			<div class="buttons">
+				<div class="button DroidSnakeDesc" id="one"><i class="fa fa-bookmark fa-2x fa-fw" style=""></i></div>
+				<div class="button DroidSnakeDesc" id="two"><i class="fa fa-exclamation fa-2x fa-fw" style=""></i></div>
+				<div class="button DroidSnakeDesc" id="three"><i class="fa fa-paw fa-2x fa-fw" style=""></i></div>
+			</div>
+			<div class="gamesQuick" id="DroidSnakeTitle">
+				<strong>Release Date:</strong> In good time</br>
+				<strong>Platforms:</strong> PC
+			</div>
+			<div class="contents">
+				<div class="gamesInfo DroidSnakeDesc" id="one">
+					<div style="width:400px">
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;Our first game, Droid Snake has a small corner of our hearts here at Square Infinity all to itself.
+						Made simply for Android, Droid Snake is our take on the classic Snake arcade game. With the addition of
+						different maps to change the gameplay as well as all sorts of power-ups this is Snake made modern.
+						We planned all sorts of features for Droid Snake that we will implement over time, because in spite
+						of it being kind of silly, we enjoy it.
+					</p>
+					</div>
+					
+				</div>
+				<div class="gamesInfo DroidSnakeDesc" id="two">
+					<div style="width:400px">
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;Oooh more info.
+					</p>
+					</div>
+					
+				</div>
+				<div class="gamesInfo DroidSnakeDesc" id="three">
+					<div style="width:400px">
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;Added this real slick like
+					</p>
+					</div>
+					
+				</div>
 			</div>
 		</div>
 		<?php getFooter(); ?>
