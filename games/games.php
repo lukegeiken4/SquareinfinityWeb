@@ -96,6 +96,7 @@
 					
 				</div>
 				<div class="gamesInfo TravelQuestDesc" id="three">
+				<h1 style="text-align:center;margin-top:-50px;">Enemy of the Month: August</h1>
 					<img src='./img/ISpyderColor.png' style='display:inline-block;height:100%;'/>
 					<div style="position:absolute;width:25%;left:27%;display:inline-block;">
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;What is there to say? Nobody really knows where these ones came from. . . Probably the remnant of an ill-advised project 
@@ -121,8 +122,7 @@
 			
 			<div class="buttons">
 				<div class="button LostHopeDesc " id="one"><i class="fa fa-bookmark fa-2x fa-fw" style=""></i></div>
-				<div class="button LostHopeDesc " id="two"><i class="fa fa-exclamation fa-2x fa-fw" style=""></i></div>
-				<div class="button LostHopeDesc " id="three"><i class="fa fa-paw fa-2x fa-fw" style=""></i></div>
+				<div class="button LostHopeDesc " id="two"><i class="fa fa-picture-o fa-2x fa-fw" style=""></i></div>
 			</div>
 			<div class="gamesQuick" id="LostHopeTitle">
 				<strong>Release Date:</strong> In good time</br>
@@ -158,18 +158,9 @@
 					
 				</div>
 				<div class="gamesInfo LostHopeDesc" id="two">
+					<h1 style="text-align:center;margin-top:-50px;">Screenshots</h1>
 					<div style="width:400px">
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;Oooh more info.
-					</p>
-					</div>
-					
-				</div>
-				<div class="gamesInfo LostHopeDesc" id="three">
-					<div style="width:400px">
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;Added this real slick like
-					</p>
+
 					</div>
 					
 				</div>
@@ -180,16 +171,12 @@
 			<div class="games_div_opacity">
 
 			</div>
-			<div style="z-index:10;width:100%;min-width:765px;height:250px;background:url('./img/LHBanner.png') no-repeat center center;background-size:100% auto;">
+			<div style="z-index:10;width:100%;min-width:765px;height:250px;background:url('./img/UDBanner.png') no-repeat center center;background-size:100% auto;">
 				
 			</div>
-			
-
-			
+				
 			<div class="buttons">
 				<div class="button UtterDarkDesc" id="one"><i class="fa fa-bookmark fa-2x fa-fw" style=""></i></div>
-				<div class="button UtterDarkDesc" id="two"><i class="fa fa-exclamation fa-2x fa-fw" style=""></i></div>
-				<div class="button UtterDarkDesc" id="three"><i class="fa fa-paw fa-2x fa-fw" style=""></i></div>
 			</div>
 			<div class="gamesQuick" id="UtterDarkTitle">
 				<strong>Release Date:</strong> When it &#768;s meant to be</br>
@@ -223,22 +210,6 @@
 					</div>
 					
 				</div>
-				<div class="gamesInfo UtterDarkDesc" id="two">
-					<div style="width:400px">
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;Oooh more info.
-					</p>
-					</div>
-					
-				</div>
-				<div class="gamesInfo UtterDarkDesc" id="three">
-					<div style="width:400px">
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;Added this real slick like
-					</p>
-					</div>
-					
-				</div>
 			</div>
 		</div>
 		
@@ -246,7 +217,7 @@
 			<div class="games_div_opacity">
 
 			</div>
-			<div style="z-index:10;width:100%;min-width:765px;height:250px;background:url('./img/LHBanner.png') no-repeat center center;background-size:100% auto;">
+			<div style="z-index:10;width:100%;min-width:765px;height:250px;background:url('./img/DSbanner.png') no-repeat center center;background-size:100% auto;">
 				
 			</div>
 			
@@ -254,12 +225,11 @@
 			
 			<div class="buttons">
 				<div class="button DroidSnakeDesc" id="one"><i class="fa fa-bookmark fa-2x fa-fw" style=""></i></div>
-				<div class="button DroidSnakeDesc" id="two"><i class="fa fa-exclamation fa-2x fa-fw" style=""></i></div>
-				<div class="button DroidSnakeDesc" id="three"><i class="fa fa-paw fa-2x fa-fw" style=""></i></div>
 			</div>
 			<div class="gamesQuick" id="DroidSnakeTitle">
-				<strong>Release Date:</strong> In good time</br>
-				<strong>Platforms:</strong> PC
+				<a href="https://play.google.com/store/apps/details?id=com.squareinfinity.snake" target="_blank">
+				  <img alt="Get it on Google Play" src="./img/en_generic_rgb_wo_60.png" style="padding-top:10px;padding-bottom:10px;display:block;margin:auto;float:center; line-height:100%;vertical-align:center"/>
+				</a>
 			</div>
 			<div class="contents">
 				<div class="gamesInfo DroidSnakeDesc" id="one">
@@ -270,22 +240,6 @@
 						different maps to change the gameplay as well as all sorts of power-ups this is Snake made modern.
 						We planned all sorts of features for Droid Snake that we will implement over time, because in spite
 						of it being kind of silly, we enjoy it.
-					</p>
-					</div>
-					
-				</div>
-				<div class="gamesInfo DroidSnakeDesc" id="two">
-					<div style="width:400px">
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;Oooh more info.
-					</p>
-					</div>
-					
-				</div>
-				<div class="gamesInfo DroidSnakeDesc" id="three">
-					<div style="width:400px">
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;Added this real slick like
 					</p>
 					</div>
 					
@@ -323,7 +277,8 @@
 		$(".button").click(function(){
 			if (!$(this).is(lastClicked)){
 				var descType =this.className.split(' ');
-				
+				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).css({marginTop:"-200px",height:'20px'});
+				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().css({marginTop:'0px',height:'500px'});
 				if (lastClicked.attr('class').split(' ')[1] == descType[1]){
 					$(this).lighten({'percent':66});
 					lastClicked.darken({'percent':40});
@@ -341,9 +296,9 @@
 				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().stop();
 				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().css({zIndex:"-2"});
 				$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).animate({marginTop:'0px',height:'500px'},1000,function(){
-					$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().css({marginTop:"-200px",height:'20px'});
 					$(".gamesInfo."+descType[1]).siblings('#'+$(this).attr('id')).siblings().hide();
 				});
+				
 			}
 		});		
 	});
