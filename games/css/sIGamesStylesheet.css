@@ -270,7 +270,6 @@ body{
 .newsContent h1{
 	display:block;
 	text-align:center;
-	
 }
 
 .gamesTitle{
@@ -304,14 +303,15 @@ body{
 	margin-right:10%;
 	top:250px;
 	background-color:white;
-	padding:10px;
 	width:80%;
-	padding:20px;
+	padding-left:50px;
+	padding-right:50px;
 	padding-top:110px;
 	border-radius:0px 0px 5px 5px;
 	z-index:-1;
 	/*overflow-y:scroll;*/
 	min-width:612px;
+	display:flex;
 	
 }
 
@@ -344,16 +344,24 @@ body{
 .button#three{
 	margin-left:410px;
 }
-.contents h1{
+.gamesInfo h1{
 text-align:center;
+display:block;
+width:80%;
+position:absolute;
+margin-left:10%;
+height:40px;
 margin-top:-50px;
+line-height:40px;
+vertical-align:middle;;
 }
 
 	.gamesInfoInner{
-		width:400px;
+
 		height:500px;
-		float:left;
+		float:center;
 	}
+
 /**
  *Contact Page CSS
  */
@@ -920,28 +928,29 @@ uncomment this part if you haven't added this code anywhere else
 	
 	.gamesInfo{
 		width:100%;
-		height:100%;
-		display:block;
+		display:flex;
+		position:relative;
+		flex-direction:column;
 		margin-left:auto;
 		margin-right:auto;
 		padding-left:0px;
-		max-height:1080px;
+		min-width:0px;
+		line-height:100%;
+		vertical-align:middle;
 	}
 	
 	.gamesInfoInner{
-		position:relative;
 		width:90%;
-		height:auto;
 		min-height:0px;
 		display:block;
 		margin-left:auto;
 		margin-right:auto;
-		float:none;
-
+		min-width:0px;
 	}
 	
 	.games_div{
-		height:auto;
+		overflow:hidden;
+		height:100%;
 		padding-bottom:20px;
 	}
 	
