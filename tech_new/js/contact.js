@@ -17,18 +17,21 @@ selectQuoteType = function(){
 
 // switches site type to final question area
 selectSiteType = function(){
+	console.log("switching site type");
 	var wordpress = document.getElementById("webquote_wordpress");
 	var laravel = document.getElementById("webquote_laravel");
 	var other = document.getElementById("webquote_other");
 	var custom = document.getElementById("webquote_custom");
 	var notSure = document.getElementById("webquote_notsure");
-
-	var header = $("#quote-web-area-final-header");
 	
 	$("#quote-web-area").hide(animSpeed);
 	
 	if(wordpress.checked){
+		console.log("switching to wordpress");
 		$("#quote-web-area-final_wordpress").show(animSpeed);
+	}else if(notSure.checked){
+		console.log("switching to notsure");
+		$("#quote-web-area-final_notsure").show(animSpeed);
 	}
 }
 

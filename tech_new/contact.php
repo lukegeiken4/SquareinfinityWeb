@@ -105,7 +105,69 @@
 				</div>
 				
 				<div id="quote-web-area-final_notsure" hidden>
-					
+					<h1>I Want a Website</h1>
+					<div class="information-small">
+						Not sure what website type you want? That's fine,
+						we'll figure that out for you. Just enter some
+						basic information about what sort of site you want
+						and we will do the rest. Not sure what some of these
+						are, or whether you want them? That's fine too, we can
+						talk that over as well.
+					</div>
+					<div class="information-small">
+						Note: It is assumed your site will
+						potentially have video, image, and
+						textural content. All features below
+						are merely extra features on top
+						of a basic site design.
+					</div>
+					<h2>This Site Will Have...</h2>
+					<div class="quote-selector-small">
+						<input type="checkbox" />eCommerce
+					</div>
+					<div class="quote-selector-small">
+						<input type="checkbox" />User Accounts/Logins
+					</div>
+					<div class="quote-selector-small">
+						<input type="checkbox" />CMS
+						<div class="information-small tab">
+							A CMS, or Content Management System, is
+							a backend website or program that you can
+							use to update content on the site without
+							having to directly edit its raw code.
+						</div>
+					</div>
+					<div class="quote-selector-small">
+						<input type="checkbox" />Media Storage & Retrieval
+					</div>
+					<div class="quote-selector-small">
+						<input type="checkbox" />Social Media Integration
+						<div class="information-small tab">
+							This can range from a Twitter icon on the website
+							to integrated Twitter feeds, like buttons, and other
+							features.
+						</div>
+					</div>
+					<div class="quote-selector-small">
+						<input type="checkbox" />Live Content from Separate Site
+						<div class="information-small tab">
+							Check this box if you want the site to 
+							load information live from a separate site.
+						</div>
+					</div>
+					<div class="quote-selector-small">
+						<input type="checkbox" />A Search System
+					</div>
+					<hr width="40%" />
+					<div class="quote-selector-small">
+						<input type="checkbox" />This is An Upgrade
+						<div class="information-small tab">
+							Check this box if the site design you
+							are requesting is an upgrade on an existing
+							site you aleady have that you want modified.
+						</div>
+					</div>
+					<button class="large-button" id="submit-type-button">Get Quote</button>
 				</div>
 				
 				<div id="quote-web-area-final_wordpress" hidden>
