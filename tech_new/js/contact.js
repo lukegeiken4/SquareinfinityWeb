@@ -96,6 +96,14 @@ updateWordpressPricing = function(){
 	var contentSetup = document.getElementById("wordpress_content-setup-check");
 	var domainNeeded = document.getElementById("wordpress_domain-needed");
 	var siHost = document.getElementById("wordpress_si-host");
+	var googleMapsIntegration = document.getElementById("google-maps-integration");
+	var mailServerIntegration = document.getElementById("mail-server-integration");
+	var liveContentIntegration = document.getElementById("live-content-integration");
+	var searchIntegration = document.getElementById("wordpress_checkbox4");
+	var socialMediaIntegration = document.getElementById("wordpress_checkbox3");
+	var mediaStorageIntegration = document.getElementById("wordpress_checkbox2");
+	var cmsIntegration = document.getElementById("wordpress_checkbox1");
+	var userIntegration = document.getElementById("wordpress_checkbox0");
 	
 	priceArea.innerHTML = "";
 	priceArea2.innerHTML = "";
@@ -116,6 +124,29 @@ updateWordpressPricing = function(){
 		
 		addPrice(priceArea2, "Site Setup", "$100-200");
 		addPrice(priceArea2, "Site Design", "$100-200");
+		
+		if(searchIntegration.checked){
+			addPrice(priceArea, "Search", "By Request");
+		}if(socialMediaIntegration.checked){
+			finalHighPrice += 100;
+			
+			addPrice(priceArea, "Social Media", "$0-100");
+		}if(mediaStorageIntegration.checked){
+			finalLowPrice += 800;
+			finalHighPrice += 1000;
+			
+			addPrice(priceArea, "Media Storage", "$800-1000, &cent;10/GiB");
+		}if(cmsIntegration.checked){
+			finalLowPrice += 700;
+			finalHighPrice += 700;
+			
+			addPrice(priceArea, "CMS", "By Request (>700)");
+		}if(userIntegration.checked){
+			finalLowPrice += 500;
+			finalHighPrice += 700;
+			
+			addPrice(priceArea, "Users", "$500-700");
+		}
 	}
 	
 	if(ecommerce.checked){
@@ -132,6 +163,21 @@ updateWordpressPricing = function(){
 		finalHighPrice += 50;
 		
 		addPrice(priceArea, "Domain Registration", "$10-50");
+	}if(googleMapsIntegration.checked){
+		finalLowPrice += 500;
+		finalHighPrice += 700;
+		
+		addPrice(priceArea, "Google Maps", "$500-700");
+	}if(mailServerIntegration.checked){
+		finalLowPrice += 200;
+		finalHighPrice += 400;
+		
+		addPrice(priceArea, "Mail Server", "$200-400");
+	}if(liveContentIntegration.checked){
+		finalLowPrice += 400;
+		finalHighPrice += 600;
+		
+		addPrice(priceArea, "Live Content", "$400-600");
 	}if(siHost.checked){
 		addPrice(priceArea, "Hosting (Alpha Tier)", "$3/mo");
 	}

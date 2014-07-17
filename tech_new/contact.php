@@ -164,21 +164,21 @@
 						<input type="checkbox" id="wordpress_checkbox4" />A Search System
 					</div>
 					<div class="quote-selector-small">
-						<input type="checkbox" />Live Content from Separate Site
+						<input type="checkbox" id="live-content-integration" />Live Content from Separate Site
 						<div class="information-small tab">
 							Check this box if you want the site to 
 							load information live from a separate site.
 						</div>
 					</div>
 					<div class="quote-selector-small">
-						<input type="checkbox" />A Mail Server
+						<input type="checkbox" id="mail-server-integration" />A Mail Server
 						<div class="information-small tab">
 							Want emails @ your domain for you
 							and/or your users? Check this box.
 						</div>
 					</div>
 					<div class="quote-selector-small">
-						<input type="checkbox" />Google Maps Integration
+						<input type="checkbox" id="google-maps-integration"/>Google Maps Integration
 						<div class="information-small tab">
 							Need a map of locations? We can set up
 							a dynamic embedded Google Map interface

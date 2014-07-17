@@ -176,14 +176,14 @@
 
 .price-entry-name{
 	display: inline-block;
-	width: 70%;
+	width: 60%;
 	font-size: 14pt;
 }
 
 .price-entry{
 	color: #009900;
 	display: inline-block;
-	width: 20%;
+	width: 30%;
 	font-size: 14pt;
 	text-align: right;
 }
