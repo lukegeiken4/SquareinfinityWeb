@@ -1,4 +1,5 @@
 var animSpeed = 500;
+var wordpress = false;
 
 // auto chooses the right div to display
 // from original description
@@ -11,7 +12,45 @@ selectQuoteType = function(){
 	if(contractTypeApp.checked){
 		$("#quote-app-area").show(animSpeed);
 	}else if(contractTypeWeb.checked){
-		$("#quote-web-area").show(animSpeed);
+		//$("#quote-web-area").show(animSpeed);
+		swapToWebForm();
+		updateWordpressPricing();
+	}
+}
+
+toggleWordpress = function(){
+	wordpress = !wordpress;
+	
+	if(wordpress){
+		$("#wordpress-options").show(animSpeed);
+		$("#wordpress-options2").show(animSpeed);
+		$("#wordpress-options3").show(animSpeed);
+		
+		$("#wordpress_checkbox0").prop('checked', true);
+		$("#wordpress_checkbox1").prop('checked', true);
+		$("#wordpress_checkbox2").prop('checked', true);
+		$("#wordpress_checkbox3").prop('checked', true);
+		$("#wordpress_checkbox4").prop('checked', true);
+		$("#wordpress_checkbox0").prop('disabled', true);
+		$("#wordpress_checkbox1").prop('disabled', true);
+		$("#wordpress_checkbox2").prop('disabled', true);
+		$("#wordpress_checkbox3").prop('disabled', true);
+		$("#wordpress_checkbox4").prop('disabled', true);
+	}else{
+		$("#wordpress-options").hide(animSpeed);
+		$("#wordpress-options2").hide(animSpeed);
+		$("#wordpress-options3").hide(animSpeed);
+		
+		$("#wordpress_checkbox0").prop('checked', false);
+		$("#wordpress_checkbox1").prop('checked', false);
+		$("#wordpress_checkbox2").prop('checked', false);
+		$("#wordpress_checkbox3").prop('checked', false);
+		$("#wordpress_checkbox4").prop('checked', false);
+		$("#wordpress_checkbox0").prop('disabled', false);
+		$("#wordpress_checkbox1").prop('disabled', false);
+		$("#wordpress_checkbox2").prop('disabled', false);
+		$("#wordpress_checkbox3").prop('disabled', false);
+		$("#wordpress_checkbox4").prop('disabled', false);
 	}
 }
 
@@ -35,6 +74,11 @@ selectSiteType = function(){
 	}
 }
 
+swapToWebForm = function(){
+	$("#quote-web-area").hide(animSpeed);
+	$("#quote-web-area-final_wordpress").show(animSpeed);
+}
+
 showPersonalInformation = function(caller){
 	$("#" + caller).hide(animSpeed);
 	
@@ -42,7 +86,10 @@ showPersonalInformation = function(caller){
 }
 
 updateWordpressPricing = function(){
+	var wordpressToggle = document.getElementById("wordpress_toggle");
+
 	var priceArea = document.getElementById("wordpress_price-area");
+	var priceArea2 = document.getElementById("price-area-final");
 	var finalPriceArea = document.getElementById("wordpress_price-area-final");
 	
 	var ecommerce = document.getElementById("wordpress_ecommerce-check");
@@ -51,9 +98,25 @@ updateWordpressPricing = function(){
 	var siHost = document.getElementById("wordpress_si-host");
 	
 	priceArea.innerHTML = "";
+	priceArea2.innerHTML = "";
 	
-	var finalLowPrice = 225;
-	var finalHighPrice = 900;
+	var finalLowPrice = 0;
+	var finalHighPrice = 0;
+	
+	if(wordpressToggle.checked){
+		var finalLowPrice = 225;
+		var finalHighPrice = 900;
+		
+		addPrice(priceArea2, "WordPress Setup", "$25-100");
+		addPrice(priceArea2, "Theme Construction/Modification", "$200-800");
+		addPrice(priceArea2, "WordPress Essentials", "Free!");
+	}else{
+		var finalLowPrice = 200;
+		var finalHighPrice = 400;
+		
+		addPrice(priceArea2, "Site Setup", "$100-200");
+		addPrice(priceArea2, "Site Design", "$100-200");
+	}
 	
 	if(ecommerce.checked){
 		finalLowPrice += 400;
@@ -73,7 +136,9 @@ updateWordpressPricing = function(){
 		addPrice(priceArea, "Hosting (Alpha Tier)", "$3/mo");
 	}
 	
-	finalPriceArea.innerHTML = "Total: $" + finalLowPrice + "-" + finalHighPrice;
+	var average = (finalLowPrice + finalHighPrice) / 2;
+	
+	finalPriceArea.innerHTML = "Total: $" + average;
 }
 
 addPrice = function(div, name, price){

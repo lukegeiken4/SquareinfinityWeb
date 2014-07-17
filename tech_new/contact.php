@@ -104,32 +104,44 @@
 					<button class="large-button" id="submit-type-button" onclick="selectSiteType();">Continue</button>
 				</div>
 				
-				<div id="quote-web-area-final_notsure" hidden>
-					<h1>I Want a Website</h1>
+				<div id="quote-web-area-final_wordpress" hidden>
+					<h1 id="quote-web-area-final-header">I Want a Website</h1>
 					<div class="information-small">
-						Not sure what website type you want? That's fine,
-						we'll figure that out for you. Just enter some
-						basic information about what sort of site you want
-						and we will do the rest. Not sure what some of these
-						are, or whether you want them? That's fine too, we can
-						talk that over as well.
+						Alright, perfect. We just need a little more information
+						about what features your website will have. If you are
+						unsure whether your site needs something listed below,
+						we can always recommend features to you or discuss them
+						with you.
 					</div>
-					<div class="information-small">
-						Note: It is assumed your site will
-						potentially have video, image, and
-						textural content. All features below
-						are merely extra features on top
-						of a basic site design.
-					</div>
-					<h2>This Site Will Have...</h2>
+					<h2>I want it with...</h2>
 					<div class="quote-selector-small">
-						<input type="checkbox" />eCommerce
+						<input type="checkbox" id="wordpress_toggle" onclick="toggleWordpress();updateWordpressPricing();" />WordPress
+						<div class="information-small tab">
+							<a href="http://wordpress.org/">WordPress</a> is a popular
+							Content Management System used for everything from blogging
+							to country-wide sides. It's flexible system of themes and
+							plugins makes it easy to manage and update.
+						</div>
+					</div>
+					<div id="wordpress-options" hidden>
+						<div class="quote-selector-small">
+							<input type="checkbox" />This Theme:
+							<input type="text" placeholder="theme name" />
+						</div>
+						<div class="quote-selector-small">
+							<input type="checkbox" />These Plugins:
+							<input type="text" placeholder="list of some plugins" />
+						</div>
+					</div>
+					<hr width="40%" />
+					<div class="quote-selector-small">
+						<input type="checkbox" id="wordpress_ecommerce-check" /> eCommerce
 					</div>
 					<div class="quote-selector-small">
-						<input type="checkbox" />User Accounts/Logins
+						<input type="checkbox" id="wordpress_checkbox0" />User Accounts/Logins
 					</div>
 					<div class="quote-selector-small">
-						<input type="checkbox" />CMS
+						<input type="checkbox" id="wordpress_checkbox1" />CMS
 						<div class="information-small tab">
 							A CMS, or Content Management System, is
 							a backend website or program that you can
@@ -138,15 +150,18 @@
 						</div>
 					</div>
 					<div class="quote-selector-small">
-						<input type="checkbox" />Media Storage & Retrieval
+						<input type="checkbox" id="wordpress_checkbox2" />Media Storage & Retrieval
 					</div>
 					<div class="quote-selector-small">
-						<input type="checkbox" />Social Media Integration
+						<input type="checkbox" id="wordpress_checkbox3" />Social Media Integration
 						<div class="information-small tab">
 							This can range from a Twitter icon on the website
 							to integrated Twitter feeds, like buttons, and other
 							features.
 						</div>
+					</div>
+					<div class="quote-selector-small">
+						<input type="checkbox" id="wordpress_checkbox4" />A Search System
 					</div>
 					<div class="quote-selector-small">
 						<input type="checkbox" />Live Content from Separate Site
@@ -156,7 +171,19 @@
 						</div>
 					</div>
 					<div class="quote-selector-small">
-						<input type="checkbox" />A Search System
+						<input type="checkbox" />A Mail Server
+						<div class="information-small tab">
+							Want emails @ your domain for you
+							and/or your users? Check this box.
+						</div>
+					</div>
+					<div class="quote-selector-small">
+						<input type="checkbox" />Google Maps Integration
+						<div class="information-small tab">
+							Need a map of locations? We can set up
+							a dynamic embedded Google Map interface
+							for your users.
+						</div>
 					</div>
 					<hr width="40%" />
 					<div class="quote-selector-small">
@@ -166,28 +193,6 @@
 							are requesting is an upgrade on an existing
 							site you aleady have that you want modified.
 						</div>
-					</div>
-					<button class="large-button" id="submit-type-button">Get Quote</button>
-				</div>
-				
-				<div id="quote-web-area-final_wordpress" hidden>
-					<h1 id="quote-web-area-final-header">I Want a Website Made With Wordpress</h1>
-					<div class="information-small">
-						<a href="http://wordpress.org/">WordPress</a>? Awesome! We just need a little more information from you
-						to try and make a quote for you. If you don't specify an option, we
-						can always discuss or suggest one for you.
-					</div>
-					<h2>I want it with...</h2>
-					<div class="quote-selector-small">
-						<input type="checkbox" />This Theme:
-						<input type="text" placeholder="theme name" />
-					</div>
-					<div class="quote-selector-small">
-						<input type="checkbox" />These Plugins:
-						<input type="text" placeholder="list of some plugins" />
-					</div>
-					<div class="quote-selector-small">
-						<input type="checkbox" id="wordpress_ecommerce-check"/> eCommerce
 					</div>
 					<hr width="40%"/>
 					<div class="quote-selector-small">
@@ -200,13 +205,15 @@
 							would take a lot of our time to do.
 						</div>
 					</div>
-					<div class="quote-selector-small">
-						<input type="checkbox" /> I Need Help With WordPress
-						<div class="information-small tab">
-							Checking this means you are not familar with
-							WordPress, or just want some more training
-							on how to use it, which we will provide free
-							of charge.
+					<div id="wordpress-options3">
+						<div class="quote-selector-small">
+							<input type="checkbox" /> I Need Help With WordPress
+							<div class="information-small tab">
+								Checking this means you are not familar with
+								WordPress, or just want some more training
+								on how to use it, which we will provide free
+								of charge.
+							</div>
 						</div>
 					</div>
 					<hr width="40%"/>
@@ -236,7 +243,7 @@
 						</div>
 					</div>
 					<hr width="40%"/>
-					<div class="quote-selector-small">
+					<div class="quote-selector-small" id="wordpress-options2" hidden>
 						<input type="checkbox" checked disabled/> WordPress Essentials
 						<div class="information-small">
 							WordPress and Square Infinity provide some features free of charge with
@@ -284,7 +291,7 @@
 						if necessary to accommodate your needs.
 					</div>
 					<div>
-						<div class="price-entry-name">
+						<!--<div class="price-entry-name">
 							WordPress Setup
 						</div>
 						<div class="price-entry">
@@ -299,13 +306,19 @@
 						</div>
 						<br />
 						<div id="wordpress_price-area">
-							<!-- this will be autofilled -->
+							&nbsp;
 						</div>
 						<div class="price-entry-name">
 							WordPress Essentials
 						</div>
 						<div class="price-entry">
 							Free!
+						</div>-->
+						<div id="price-area-final">
+							&nbsp;
+						</div>
+						<div id="wordpress_price-area">
+							&nbsp;
 						</div>
 						<hr width="50%" />
 						<div id="wordpress_price-area-final" class="final-price">
