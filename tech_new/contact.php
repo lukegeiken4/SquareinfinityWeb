@@ -29,10 +29,51 @@
 				</div>
 				
 				<div id="quote-app-area" hidden>
-					app woo
+					<h1>I Want an App</h1>
+					<div class="information-small">
+						Perfect. Everyone says that there
+						is an app for everything, but we 
+						both know that's not the case,
+						and you are here to fill that gap.
+					</div>
+					<h2>I Want It on These Platforms:</h2>
+					<div class="quote-selector-small">
+						<input type="checkbox" />iOS
+					</div>
+					<div class="quote-selector-small">
+						<input type="checkbox" />Android
+					</div>
+					<div class="quote-selector-small">
+						<input type="checkbox" />Blackberry
+					</div>
+					<div class="quote-selector-small">
+						<input type="checkbox" />Windows Store
+					</div>
+					<h2>And It Will Be A...</h2>
+					<div class="quote-selector">
+						<input type="radio" name="app-type" value="game" onclick="switchAppType('game');" />Game
+					</div>
+					<div id="game-form" hidden>
+						<h2>With the Following Features...</h2>
+						<div class="quote-selector-small">
+							App Category: <input type="text" />
+							<div class="information-small tab">
+								This is the type of game you want it to be,
+								examples include: strategy, RPG, action, etc.
+							</div>
+						</div>
+					</div>
+					<div class="quote-selector">
+						<input type="radio" name="app-type" value="utility" onclick="switchAppType('utility');" />Utility
+					</div>
+					<div id="utility-form" hidden>
+					
+					</div>
+					
+					<button class="large-button" onclick="">Get Quote</button>
 				</div>
 				
-				<div id="quote-web-area" hidden>
+				<!--<div id="quote-web-area" hidden>
 					<h1>I Want a Website Made With...</h1>
 					<div class="quote-selector">
 						<input type="radio" name="site-type" value="wordpress" id="webquote_wordpress" onclick="show('wordpress');" /> WordPress
@@ -102,7 +143,7 @@
 					</div>
 					
 					<button class="large-button" id="submit-type-button" onclick="selectSiteType();">Continue</button>
-				</div>
+				</div>-->
 				
 				<div id="quote-web-area-final_wordpress" hidden>
 					<h1 id="quote-web-area-final-header">I Want a Website</h1>

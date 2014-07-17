@@ -201,6 +201,17 @@ addPrice = function(div, name, price){
 	div.appendChild(document.createElement("br"));
 }
 
+switchAppType = function(type){
+	$("#game-form").hide(animSpeed);
+	$("#utility-form").hide(animSpeed);
+	
+	if(type == 'game'){
+		$("#game-form").show(animSpeed);
+	}else if(type == 'utility'){
+		$("#utility-form").show(animSpeed);
+	}
+}
+
 show = function(name){
 	var wordpressArea = $("#quote-wordpress-area");
 	var laravelArea = $("#quote-laravel-area");
