@@ -99,7 +99,13 @@
 				</div>
 				<div class="team_member_desc">
 					<h2 style="padding-top:5%; padding-bottom:5%; color:white;">
-						&nbsp;&nbsp;&nbsp;&nbsp;I love lamp.
+						&nbsp;&nbsp;&nbsp;&nbsp;Hey! My name is Luke Geiken. I currently am enrolled at Iowa State University
+						and I love lamp... and programming. My specialty is web design but working at Square Infinity has had
+						me using C++ more and more for game design. Being able to program is extremely interesting
+						to me and sparks all of my interests since I am able to fabricate technology for any field of work that needs
+						it. Outside of the workplace, I love to play music, sports, and watch Netflix. I can somewhat speak French
+						and am planning on studying abroad in France in order to become fluent, and to go watch my favorite soccer
+						club, Paris Saint-Germain.
 					</h2>
 				</div>
 			</div>
