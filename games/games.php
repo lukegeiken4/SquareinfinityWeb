@@ -244,7 +244,7 @@
 			<div class="contents">
 				<div class="gamesInfo DroidSnakeDesc" id="one">
 				<a href="http://droidsnake.squareinfinity.com"style="text-decoration:none;color:black;"><h1 id="DroidSnakeTitle" >Droid Snake</h1></a>
-					<div class="gamesInfoInner margin-top-div" id="droid-snake-content" style="flex:1;"></div>
+					<div class="gamesInfoInner margin-top-div" id="droid-snake-content" style="">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Our first game, Droid Snake has a small corner of our hearts here at Square Infinity all to itself.
 						Made simply for Android, Droid Snake is our take on the classic Snake arcade game. With the addition of
@@ -255,6 +255,7 @@
 					</div>
 					
 				</div>
+			</div>
 			
 		</div>
 		<?php getFooter(); ?>

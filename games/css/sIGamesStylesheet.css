@@ -289,7 +289,7 @@ body{
 }
 
 #droid-snake-content {
-	margin-top: -500px;
+	/*margin-top: -500px;*/
 }
 	
 @media (max-width:1200px){
@@ -991,7 +991,6 @@ uncomment this part if you haven't added this code anywhere else
 	}
 	
 	#droid-snake-content {
-		margin-top: -450px;
 	}
 	
 	.gamesInfo{
