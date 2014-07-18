@@ -277,17 +277,17 @@
 					</div>
 					<div id="wordpress-options" hidden>
 						<div class="quote-selector-small">
-							<input type="checkbox" />This Theme:
-							<input type="text" placeholder="theme name" />
+							<input type="checkbox" id="wp_theme" />This Theme:
+							<input type="text" id="wp_theme-text" placeholder="theme name" />
 						</div>
 						<div class="quote-selector-small">
-							<input type="checkbox" />These Plugins:
-							<input type="text" placeholder="list of some plugins" />
+							<input type="checkbox" id="wp_plugins" />These Plugins:
+							<input type="text" id="wp_plugins-text" placeholder="list of some plugins" />
 						</div>
 					</div>
 					<hr width="40%" />
 					<div class="quote-selector-small">
-						<input type="checkbox" id="wordpress_ecommerce-check" /> eCommerce
+						<input type="checkbox" id="wordpress_ecommerce-check" id="web_ecommerce" /> eCommerce
 					</div>
 					<div class="quote-selector-small">
 						<input type="checkbox" id="wordpress_checkbox0" />User Accounts/Logins
@@ -339,7 +339,7 @@
 					</div>
 					<hr width="40%" />
 					<div class="quote-selector-small">
-						<input type="checkbox" />This is An Upgrade
+						<input type="checkbox" id="web_upgrade"/>This is An Upgrade
 						<div class="information-small tab">
 							Check this box if the site design you
 							are requesting is an upgrade on an existing
@@ -359,7 +359,7 @@
 					</div>
 					<div id="wordpress-options3">
 						<div class="quote-selector-small">
-							<input type="checkbox" /> I Need Help With WordPress
+							<input type="checkbox" id="wp_help-with-wordpress"/> I Need Help With WordPress
 							<div class="information-small tab">
 								Checking this means you are not familar with
 								WordPress, or just want some more training
@@ -425,13 +425,13 @@
 						What is this site design for?
 					</div>
 					<div class="quote-selector-small">
-						<textarea class="final-information" placeholder="My site design is for my company XYZ Co. and..."></textarea>
+						<textarea class="final-information" id="web_design" placeholder="My site design is for my company XYZ Co. and..."></textarea>
 					</div>
 					<div class="information-medium">
 						Is there anything specific you need or want this site to do?
 					</div>
 					<div class="quote-selector-small">
-						<textarea class="final-information" placeholder="Well I do need it to have..."></textarea>
+						<textarea class="final-information" id="web_functionality" placeholder="Well I do need it to have..."></textarea>
 					</div>
 					<h2>Estimated Pricing</h2>
 					<div class="information-small">

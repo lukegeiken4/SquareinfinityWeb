@@ -5,6 +5,8 @@ var APP_CONTRACT = 2;
 var animSpeed = 500;
 var contractType = -1;
 
+var wordpress = false;
+
 // auto chooses the right div to display
 // from original description
 selectQuoteType = function(){
@@ -41,8 +43,14 @@ getQuote = function(){
 		finalOutput += "Company Website: " + $("#company-website-text").val() + "\n\n";
 		
 		if(contractType == WEB_CONTRACT){
-			finalOutput += $("#name-text").val() + " wanted a website.\n\n";
+			if($("#web_upgrade").prop("checked")){
+				finalOutput += $("#name-text").val() + " wanted a website, which is an upgrade on a site they already have.\n\n";
+			}else{
+				finalOutput += $("#name-text").val() + " wanted a website.\n\n";
+			}
 			finalOutput += "They wanted it to have " + indexCheckboxes('web') + ".\n\n";
+			finalOutput += "They described it as:\n" + $("#web_design").val() + "\n\n";
+			finalOutput += "And specified the following functionality:\n" + $("#web_functionality").val() + "\n";
 			
 		}else if(contractType == APP_CONTRACT){
 			finalOutput += $("#name-text").val() + " wanted an app on " + indexAppPlatforms() + ".\n";
@@ -101,7 +109,26 @@ indexCheckboxes = function(type){
 	var checkedEntries = new Array();
 	
 	if(type == 'web'){ // ------------- WEB ------- //
+		if($("#wordpress_toggle").prop("checked")){ // wordpress
+			append("#wordpress_toggle", checkedEntries, "WordPress");
+			append("#wp_theme", checkedEntries, "the theme '" + $("#wp_theme-text").val() + "'");
+			append("#wp_plugins", checkedEntries, "the plugin(s) '" + $("#wp_plugins-text").val() + "'");
+			append("#wp_help-with-wordpress", checkedEntries, "Square Infinity to help them with WordPress");
+		}else{ // normal site
+			append("#web_ecommerce", checkedEntries, "eCommerce");
+			append("#wordpress_checkbox0", checkedEntries, "user accounts & logins");
+			append("#wordpress_checkbox1", checkedEntries, "a CMS");
+			append("#wordpress_checkbox2", checkedEntries, "media storage/retrieval");
+			append("#wordpress_checkbox3", checkedEntries, "social media integration");
+			append("#wordpress_checkbox4", checkedEntries, "a search system");
+		}
 		
+		append("#live-content-integration", checkedEntries, "live content integration");
+		append("#mail-server-integration", checkedEntries, "a mail server");
+		append("#google-maps-integration", checkedEntries, "Google Maps integration");
+		append("#wordpress_content-setup-check", checkedEntries, "Square Infinity to setup their content");
+		append("#wordpress_domain-needed", checkedEntries, "a domain or domain(s)");
+		append("#wordpress_si-host", checkedEntries, "Square Infinity to host their site");
 	}else if(type == 'app'){ // ------- APP ------- //
 		if($("#app-type-game").is(":checked")){ // game
 			append("#game_social-media-integ", checkedEntries, "social media integration");
