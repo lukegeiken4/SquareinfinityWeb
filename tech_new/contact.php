@@ -25,7 +25,14 @@
 					<div class="quote-selector">
 						<input type="radio" name="contract-type" value="website" id="contract-type-website" /> I Want a Website
 					</div>
+					<div class="quote-selector" hidden> <!-- finish this later -->
+						<input type="radio" name="contract-type" value="hosting" id="contract-type-hosting" /> I Want Web Hosting
+					</div>
 					<button class="large-button" id="submit-type-button" onclick="selectQuoteType();">Continue</button>
+				</div>
+				
+				<div id="quote-web-hosting-area" hidden>
+					<h1>I Want Web Hosting</h1>
 				</div>
 				
 				<div id="quote-app-area" hidden>
@@ -38,39 +45,143 @@
 					</div>
 					<h2>I Want It on These Platforms:</h2>
 					<div class="quote-selector-small">
-						<input type="checkbox" />iOS
+						<input type="checkbox" id="ios-checkbox" />iOS
+						<div class="information-small">
+							Note that the Apple App
+							Store has a $100 per year
+							fee to register your company/name
+							on the store to publish apps.
+						</div>
 					</div>
 					<div class="quote-selector-small">
-						<input type="checkbox" />Android
+						<input type="checkbox" id="android-checkbox" />Android
+						<div class="information-small">
+							Note that the Google Play
+							Marketplace has a one time
+							developer registration fee
+							of $24 to register your company/name
+							on the store to publish apps.
+						</div>
 					</div>
 					<div class="quote-selector-small">
-						<input type="checkbox" />Blackberry
+						<input type="checkbox" id="blackberry-checkbox" />Blackberry
 					</div>
 					<div class="quote-selector-small">
-						<input type="checkbox" />Windows Store
+						<input type="checkbox" id="windows-store-checkbox" />Windows Store
 					</div>
 					<h2>And It Will Be A...</h2>
 					<div class="quote-selector">
-						<input type="radio" name="app-type" value="game" onclick="switchAppType('game');" />Game
+						<input type="radio" id="app-type-game" name="app-type" value="game" onclick="switchAppType('game');" />Game
 					</div>
 					<div id="game-form" hidden>
 						<h2>With the Following Features...</h2>
+						<div class="information-small tab">
+							Keep in mind if you don't know
+							what options to choose or whether
+							you want these options, we can
+							always add those features later.
+						</div>
 						<div class="quote-selector-small">
-							App Category: <input type="text" />
+							App Category: <input type="text" id="game-category" />
 							<div class="information-small tab">
 								This is the type of game you want it to be,
 								examples include: strategy, RPG, action, etc.
 							</div>
 						</div>
+						<div class="quote-selector-small">
+							<input type="checkbox" id="game_social-media-integ" />Social Media Integration
+						</div>
+						<div class="quote-selector-small">
+							<input type="checkbox" id="game_service-integration"/>Gaming Service Integration
+							<div class="information-small tab">
+								Want your game to have achievements and stat
+								tracking? Check this box, and we can choose
+								whether to set it up with the Google Play
+								Games service and/or Apple's Games system.
+							</div>
+						</div>
+						
+						<div class="quote-selector-small">
+							<input type="checkbox" id="game_3d" />3D Gaming
+							<div class="information-small tab">
+								Checking this means your main
+								gameplay will be in 3D, as opposed
+								to 2D or pseudo-2D.
+							</div>
+						</div>
+						<div class="information-medium">
+							Describe Your Game:
+						</div>
+						<div class="information-small tab">
+							Try to include key gameplay elements,
+							any theme you want to incorporate, and
+							any important features.
+						</div>
+						<div class="quote-selector-small">
+							<textarea class="final-information" placeholder="It'll be like Skyrim but on mobile and..." id="game_description"></textarea>
+						</div>
 					</div>
 					<div class="quote-selector">
-						<input type="radio" name="app-type" value="utility" onclick="switchAppType('utility');" />Utility
+						<input type="radio" id="app-type-util" name="app-type" value="utility" onclick="switchAppType('utility');" />Utility
 					</div>
 					<div id="utility-form" hidden>
-					
+						<h2>With the Following Features...</h2>
+						<div class="information-small tab">
+							Keep in mind if you don't know
+							what options to choose or whether
+							you want these options, we can
+							always add those features later.
+						</div>
+						<div class="quote-selector-small">
+							App Category: <input type="text" id="util-category"/>
+							<div class="information-small tab">
+								This is the type of utility you want it to be,
+								examples include: photography, utility, news, etc.
+							</div>
+						</div>
+						<div class="quote-selector-small">
+							<input type="checkbox" />Social Media Integration
+						</div>
+						<div class="quote-selector-small">
+							<input type="checkbox" />Use of Camera
+						</div>
+						<div class="quote-selector-small">
+							<input type="checkbox" />Image Editing Capabilities
+						</div>
+						<div class="quote-selector-small">
+							<input type="checkbox" />Server Interface
+							<div class="information-small tab">
+								Does your app need to interface
+								with an outside server/cloud to
+								work properly?
+							</div>
+						</div>
+						<div class="quote-selector-small">
+							<input type="checkbox" />Push Notifications
+						</div>
+						<div class="quote-selector-small">
+							<input type="checkbox" />Hardware Access
+							<div class="information-small tab">
+								Does your app need access to hardware
+								devices such as the accelerometer, GPS,
+								gyroscope, microphone, bluetooth or other 
+								devices to work properly?
+							</div>
+						</div>
+						<div class="information-medium">
+							Describe Your App:
+						</div>
+						<div class="information-small tab">
+							Try to include key features,
+							uses of hardware, color schemes,
+							and anything else you can think of.
+						</div>
+						<div class="quote-selector-small">
+							<textarea class="final-information" placeholder="It'll be a camera app that the user can..."></textarea>
+						</div>
 					</div>
 					
-					<button class="large-button" onclick="">Get Quote</button>
+					<button class="large-button" onclick="showPersonalInformation('quote-app-area');">Get Quote</button>
 				</div>
 				
 				<!--<div id="quote-web-area" hidden>
@@ -416,16 +527,16 @@
 						quote.
 					</div>
 					<div class="quote-selector-small">
-						Name*: <input type="text" />
+						Name*: <input type="text" id="name-text"/>
 					</div>
 					<div class="quote-selector-small">
-						Phone: <input type="text" />
+						Phone: <input type="text" id="phone-text" />
 					</div>
 					<div class="quote-selector-small">
-						Email*: <input type="text" />
+						Email*: <input type="text" id="email-text" />
 					</div>
 					<div class="quote-selector-small">
-						Contact Hours: <input type="text" />
+						Contact Hours: <input type="text" id="contact-hours-text" />
 						<div class="information-small tab">
 							If you fill this in, we will only
 							contact you via telephone or email
@@ -438,13 +549,13 @@
 					</div>
 					<h2>Association Information</h2>
 					<div class="quote-selector-small">
-						Company/Assoc Name: <input type="text" />
+						Company/Assoc Name: <input type="text" id="company-name-text" />
 					</div>
 					<div class="quote-selector-small">
-						Website/Domain: <input type="text" />
+						Website/Domain: <input type="text" id="company-website-text" />
 					</div>
 					
-					<button class="large-button">
+					<button class="large-button" onclick="getQuote();">
 						Get Quote
 					</button>
 				</div>
