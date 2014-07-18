@@ -100,10 +100,10 @@
 				<div class="gamesInfo TravelQuestDesc" id="three">
 					<h1 style="flex:4;">Enemy of the Month: August</h1>
 					
-					<div class="gamesInfoInner" style="flex:1;">
+					<div class="gamesInfoInner" style="">
 					<img src='./img/ISpyderColor.png' id="monster-of-month"/>
 					</div>
-					<div class="gamesInfoInner margin-top-div" id="monster-of-month-content" style="flex:2;">
+					<div class="gamesInfoInner margin-top-div" id="monster-of-month-content" style="">
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;What is there to say? Nobody really knows where these ones came from. . . Probably the remnant of an ill-advised project 
 						from one of the mega-corporations. . . In any case, the eye-spiders were once friendly, helpful even. They would do math, send messages, and even 
 						play games. . . That was all before. . . A few years back they turned, and we were honestly lucky to fight them off into the wilderness. They're savage 

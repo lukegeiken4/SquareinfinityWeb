@@ -347,6 +347,7 @@ body{
 	min-width:612px;
 	height:100%;
 	display:flex;
+	flex:1;
 	
 }
 
@@ -395,6 +396,7 @@ vertical-align:middle;;
 
 		height:500px;
 		float:center;
+		flex:1;
 	}
 
 /**
