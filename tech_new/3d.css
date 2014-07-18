@@ -113,6 +113,36 @@
 	float: right;
 }
 
+#sticky-notes{
+	z-index: 5;
+	width: 270px;
+	height: 213.75px;
+	border: 0px solid black;
+}
+
+#sticky-note{
+	width: 150px;
+	height: 145px;
+	z-index: 5;
+	position: absolute;
+	background: url('img/papernote.png');
+	background-size: contain;
+	margin-top:-700px;
+	border: none;
+}
+
+#sticky-note:hover{
+	background: url('img/papernote-select.png');
+	background-size: contain;
+}
+
+.note-interior{
+	-webkit-transform: rotateZ(-10deg);
+	padding: 0px 50px 10px 20px;
+	text-align: center;
+	font-size: 16pt;
+}
+
 .side-spacing-1{
 	margin-top: -400px;
 }
