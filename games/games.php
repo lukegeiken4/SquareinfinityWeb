@@ -193,7 +193,7 @@
 			<div class="contents">
 				<div class="gamesInfo UtterDarkDesc" id="one">
 				<a href="http://utterdark.squareinfinity.com"style="text-decoration:none;color:black;"><h1 id="UtterDarkTitle" >Utter Dark</h1></a>
-					<div class="gamesInfoInner margin-top-div" style="flex:1;">
+					<div class="gamesInfoInner margin-top-div" style="flex:1; ">
 
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Grab a flashlight and your favorite assault rifle,
