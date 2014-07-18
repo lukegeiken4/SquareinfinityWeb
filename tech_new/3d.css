@@ -137,6 +137,7 @@
 
 .sticky-angle{
 	right: 200px;
+	-webkit-transform: rotateZ(20deg);
 }
 
 #sticky-note:hover{
