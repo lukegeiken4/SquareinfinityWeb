@@ -77,6 +77,8 @@ getQuote = function(){
 		quoteButton.html("Sending...");
 		quoteButton.attr("onclick", "");
 		
+		$("#main-information").hide(250);
+		
 		$.ajax({
 			type: "GET",
 			url: "send-email.php",
@@ -93,9 +95,8 @@ getQuote = function(){
 			}
 			
 			$("#after-quote-text").show(250);
+			$("#return-button").show(animSpeed);
 		});
-		
-		//alert(finalOutput);
 	}
 }
 

@@ -510,57 +510,63 @@
 				</div>
 				
 				<div id="quote-personal-information" hidden>
-					<h1>Your Information</h1>
-					<div class="information-medium">
-						Before we look over your quote request,
-						we need some information about you, so 
-						we can contact you when we get you a quote.
-					</div>
-					<div class="information-small">
-						Fields marked with a (*) are required.
-					</div>
-					<h2>Personal Information</h2>
-					<div class="information-small">
-						Below is the information of the person
-						we will contact when we finish the quote,
-						or if we have any questions about your
-						quote.
-					</div>
-					<div class="quote-selector-small">
-						Name*: <input type="text" id="name-text"/>
-					</div>
-					<div class="quote-selector-small">
-						Phone: <input type="text" id="phone-text" />
-					</div>
-					<div class="quote-selector-small">
-						Email*: <input type="text" id="email-text" />
-					</div>
-					<div class="quote-selector-small">
-						Contact Hours: <input type="text" id="contact-hours-text" />
-						<div class="information-small tab">
-							If you fill this in, we will only
-							contact you via telephone or email
-							within the time restriction listed.
+					<div id="main-information">
+						<h1>Your Information</h1>
+						<div class="information-medium">
+							Before we look over your quote request,
+							we need some information about you, so 
+							we can contact you when we get you a quote.
 						</div>
-						<div class="information-small tab">
-							In most cases, we will never contact
-							you outside of normal business hours.
+						<div class="information-small">
+							Fields marked with a (*) are required.
 						</div>
-					</div>
-					<h2>Association Information</h2>
-					<div class="quote-selector-small">
-						Company/Assoc Name: <input type="text" id="company-name-text" />
-					</div>
-					<div class="quote-selector-small">
-						Website/Domain: <input type="text" id="company-website-text" />
+						<h2>Personal Information</h2>
+						<div class="information-small">
+							Below is the information of the person
+							we will contact when we finish the quote,
+							or if we have any questions about your
+							quote.
+						</div>
+						<div class="quote-selector-small">
+							Name*: <input type="text" id="name-text"/>
+						</div>
+						<div class="quote-selector-small">
+							Phone: <input type="text" id="phone-text" />
+						</div>
+						<div class="quote-selector-small">
+							Email*: <input type="text" id="email-text" />
+						</div>
+						<div class="quote-selector-small">
+							Contact Hours: <input type="text" id="contact-hours-text" />
+							<div class="information-small tab">
+								If you fill this in, we will only
+								contact you via telephone or email
+								within the time restriction listed.
+							</div>
+							<div class="information-small tab">
+								In most cases, we will never contact
+								you outside of normal business hours.
+							</div>
+						</div>
+						<h2>Association Information</h2>
+						<div class="quote-selector-small">
+							Company/Assoc Name: <input type="text" id="company-name-text" />
+						</div>
+						<div class="quote-selector-small">
+							Website/Domain: <input type="text" id="company-website-text" />
+						</div>
 					</div>
 					
 					<button class="large-button" id="final-get-quote-button" onclick="getQuote();">
 						Get Quote
 					</button>
-					<div id="after-quote-text" class="information-small" hidden>
+					<div id="after-quote-text" class="information-medium" hidden>
 					
 					</div>
+					
+					<button class="large-button" id="return-button" onclick="href('contact.php');" hidden>
+						Get New Quote
+					</button>
 				</div>
 			</div>
 			
