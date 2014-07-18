@@ -27,12 +27,12 @@
 				</div>
 			<div class="contents" style="height:auto;">
 				
-				<div class="gamesInfo TravelQuestDesc" id="one">
+				<div class="gamesInfo TravelQuestDesc" id="one" style="padding-bottom:20px;">
 					<a href="http://travelquest.squareinfinity.com"style="text-decoration:none;color:black;"><h1 id="TravelQuestTitle" >TravelQuest</h1></a>
-					<div class="gamesInfoInner" style="flex:1;">
-						<img src="./img/ClockworkDragonTQWhite.png" style="display:block;margin-left:auto;margin-right:auto;height:100%;">						
+					<div class="gamesInfoInner" id="go-away-div" >
+						<img src="./img/ClockworkDragonTQWhite.png" id="dragon-pic">	
 					</div>
-					<div class="gamesInfoInner" style="flex:1;">
+					<div class="gamesInfoInner margin-top-div">
 					
 					<p>
 					
@@ -60,7 +60,7 @@
 				</div>
 				<div class="gamesInfo TravelQuestDesc" id="two">
 					<h1 style="">Quest Types</h1>
-					<div class="gamesInfoInner" style="flex:1;">
+					<div class="gamesInfoInner margin-top-div" style="flex:1;">
 					
 					<p>
 						<strong>Battle Tower -</strong> You will venture forth to the tallest buildings and battle your way through - floor by floor - to reach the top! Many enemies stand in the way. . . See if you can survive the gauntlet.
@@ -80,8 +80,6 @@
 					<p>
 						<strong>Hunt -</strong> You must travel far and wide to a new location to find your prey. Lucky for you, you know where they are! Go hunt those monsters.
 					</p>
-					</div>
-					<div class="gamesInfoInner" style="flex:1;">
 					<p>
 						<strong>Journey -</strong> When your heart is filled with the desire to get away - it is time for a journey. So go, you will see may things and you will face great danger but you will be the better for it.
 					</p>
@@ -106,7 +104,7 @@
 					<div class="gamesInfoInner" style="flex:1;">
 					<img src='./img/ISpyderColor.png' style='max-height:500px;height:100%;'/>
 					</div>
-					<div class="gamesInfoInner" style="flex:2;">
+					<div class="gamesInfoInner margin-top-div" style="flex:2;">
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;What is there to say? Nobody really knows where these ones came from. . . Probably the remnant of an ill-advised project 
 						from one of the mega-corporations. . . In any case, the eye-spiders were once friendly, helpful even. They would do math, send messages, and even 
 						play games. . . That was all before. . . A few years back they turned, and we were honestly lucky to fight them off into the wilderness. They're savage 
@@ -140,7 +138,7 @@
 				<div class="gamesInfo LostHopeDesc" id="one">
 				<a href="http://losthope.squareinfinity.com"style="text-decoration:none;color:black;"><h1 id="LostHopeTitle" >Lost Hope</h1></a>
 
-					<div class="gamesInfoInner" style="flex:1">
+					<div class="gamesInfoInner margin-top-div" style="flex:1">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;In a world without hope, you can be either a savior or a destroyer.
 						Armed with nothing except your own creativity, explore a world filled with danger and dread.
@@ -169,7 +167,7 @@
 						<img src="./img/LostHopeScreen2.png" style ="margin-left:10px;width:100%;">
 					</div>
 				</div>
-				<div class="gamesInfo LostHopeDesc" id="two">
+				<div class="gamesInfo LostHopeDesc margin-top-div" id="two">
 					<h1 >Screenshots</h1>
 					<div class="gamesInfoInner">
 
@@ -197,7 +195,7 @@
 			<div class="contents">
 				<div class="gamesInfo UtterDarkDesc" id="one">
 				<a href="http://utterdark.squareinfinity.com"style="text-decoration:none;color:black;"><h1 id="UtterDarkTitle" >Utter Dark</h1></a>
-					<div class="gamesInfoInner" style="flex:1">
+					<div class="gamesInfoInner margin-top-div" style="flex:1">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Grab a flashlight and your favorite assault rifle,
 						it's time for war games to go dark. In Utterdark you will be thrown into high
@@ -221,9 +219,7 @@
 						the darkness get to you, it’s not the most dangerous thing out there with you.
 					</p>
 					</div>
-					<div class="gamesInfoInner" style="flex:1">
-						<img src="./img/UDLogo2.png" style="height:100%;margin-left:20px;margin-right:20px">
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -249,7 +245,7 @@
 			<div class="contents">
 				<div class="gamesInfo DroidSnakeDesc" id="one">
 				<a href="http://droidsnake.squareinfinity.com"style="text-decoration:none;color:black;"><h1 id="DroidSnakeTitle" >Droid Snake</h1></a>
-					<div class="gamesInfoInner" style="flex:1;">
+					<div class="gamesInfoInner margin-top-div" style="flex:1;">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Our first game, Droid Snake has a small corner of our hearts here at Square Infinity all to itself.
 						Made simply for Android, Droid Snake is our take on the classic Snake arcade game. With the addition of

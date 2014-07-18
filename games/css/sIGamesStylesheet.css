@@ -272,6 +272,17 @@ body{
 	text-align:center;
 }
 
+/**
+ * CSS for the games page
+ */
+#dragon-pic {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	height:100%;
+	
+}
+
 .gamesTitle{
 	height:130px;
 	width:200px;
@@ -926,10 +937,14 @@ uncomment this part if you haven't added this code anywhere else
 
 	}
 	
+	#dragon-pic {
+		display: none;
+	}
+	
 	.gamesInfo{
 		width:100%;
 		display:flex;
-		position:relative;
+		position:absolute;
 		flex-direction:column;
 		margin-left:auto;
 		margin-right:auto;
@@ -937,6 +952,14 @@ uncomment this part if you haven't added this code anywhere else
 		min-width:0px;
 		line-height:100%;
 		vertical-align:middle;
+	}
+	
+	#go-away-div {
+		position: absolute;	
+	}
+	
+	.margin-top-div {
+		margin-top:50px;	
 	}
 	
 	.gamesInfoInner{
@@ -949,8 +972,7 @@ uncomment this part if you haven't added this code anywhere else
 	}
 	
 	.games_div{
-		overflow:hidden;
-		height:100%;
+		
 		padding-bottom:20px;
 	}
 	
