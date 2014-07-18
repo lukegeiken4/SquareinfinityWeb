@@ -141,6 +141,12 @@
 			}			
 			?>
 		</div>
+		<div id="sticky-notes" style="position: absolute;background: url(img/papernotes.png); background-size: contain; margin-top:-700px;">
+			&nbsp;
+		</div>
+		<div id="sticky-notes" style="position: absolute;background: url(img/papernotes3.png); background-size: contain; margin-top:-700px; right:100px;">
+			&nbsp;
+		</div>
 		<div class="coffee side-spacing-1" id="coffee">
 			&nbsp;
 		</div>
