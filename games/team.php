@@ -21,10 +21,11 @@
 			<div class="team_content">
 				<img src="img/ivanMattie.jpg" class="profile_image"/>
 				<div class="team_name_div">
-					<h1 id="fname">Ivan </h1><h1 id="lname">Mattie</h1>
+					<h1 id="fname">Ivan </h1><h1 id="lname">Mattie, Level 6 Sorceror</h1>
 					<span id="twitter-follower"><a href="https://twitter.com/aeolingamenfel" class="twitter-follow-button" style="left:10px;" data-related="Ivan" data-show-count="true">Follow Ivan</a></span>
 				</div>
-				<div class="team_member_desc">
+				<div class="team_member_desc" style="color:white">
+					<h1 style="padding-top:5%;">Class:</h1>
 					<h2 style="padding-top:5%; padding-bottom:5%; color:white;">
 						&nbsp;&nbsp;&nbsp&nbsp;Hey, I am a programmer and avid gamer who is really excited
 						to make a difference with the games I create. I love programming and design, and
@@ -38,7 +39,7 @@
 			<div class="team_content">
 				<img src="img/davidLindenbaum.jpg" class="profile_image"/>
 				<div class="team_name_div">
-					<h1 id="fname">David <h1 id="lname">Lindenbaum</h1>
+					<h1 id="fname">David <h1 id="lname">Lindenbaum, Level 6 Wizard</h1>
 					<span id="twitter-follower"><a href="https://twitter.com/Da5id2701" class="twitter-follow-button" style="left:10px" data-related="David" data-show-count="true">Follow David</a></span>
 				</div>
 				<div class="team_member_desc">
@@ -55,7 +56,7 @@
 			<div class="team_content">
 				<img src="img/andrewEagle.jpg"  class="profile_image"/>
 				<div class="team_name_div">
-					<h1 id="fname">Andrew <h1 id="lname">Eagle</h1>
+					<h1 id="fname">Andrew <h1 id="lname">Eagle, Level 6 Bard</h1>
 					<span id="twitter-follower"><a href="https://twitter.com/ace_the_eagle" class="twitter-follow-button" style="left:10px" data-related="Andrew" data-show-count="true">Follow Andrew</a></span>				
 				</div>
 				<div class="team_member_desc">
@@ -76,16 +77,16 @@
 				<div class="team_content">
 				<img src="img/garretMeier.jpg"  class="profile_image"/>
 				<div class="team_name_div">
-					<h1 id="fname">Garret <h1 id="lname">Meier</h1>
+					<h1 id="fname">Garret <h1 id="lname">Meier, Level 5 Paladin</h1>
 					<span id="twitter-follower"><a href="https://twitter.com/headin_thecloud" class="twitter-follow-button" style="left:10px" data-related="Garret" data-show-count="true">Follow Garret</a></span>
 				</div>
 				<div class="team_member_desc">
 					<h2 style="padding-top:5%; padding-bottom:5%; color:white;">
-						&nbsp;&nbsp;&nbsp;&nbsp;Hi, I am currently a freshman studying Software Engineering and Philosophy at Iowa State University. If you want to learn more about me personally have a look at 
-						<a href="http://ghmeier.public.iastate.edu" target="_blank">my website</a>. I can't wait to see what the team can do with Square Infinity. Right now, helping other
-						companies express themselves through technology really makes me excited to get to work on every unique project. I am currently working mostly on web design and Android
-						projects for Square Infinity. My passion for the future comes from the amazing ability to utilize games as an art form to influence players through our story. Other than programming, I
-						really enjoy spending my time enjoying great clouds, blogging, and reading.
+						&nbsp;&nbsp;&nbsp;&nbsp;What's good? I'm a founder of Square Infinity and I even work up the energy to code sometimes. I'm an avid gamer, with a special love for tabletop games 
+						(up until a few months ago I had almost a year long streak of wins at Settlers of Catan, 'twas a dark day indeed). I really enjoy climbing, adventuring, and writing when I'm not busy
+						trying to make this dream of Square Infinity a reality. My goal is to create games that make an influence and hopefully give game design more credibility as an art form. So I
+						can't wait to play some awesome games. Other than games, some people know me as the cloud guy, because as a lifelong member of the Cloud Appreciation Society, I love clouds.
+						
 					</h2>
 				</div>
 			</div>
@@ -94,7 +95,7 @@
 				<div class="team_content">
 				<img src="img/luke_pic.png"  class="profile_image"/>
 				<div class="team_name_div">
-					<h1 id="fname">Lucas <h1 id="lname">Geiken</h1>
+					<h1 id="fname">Lucas <h1 id="lname">Geiken, Level 1 Ranger</h1>
 					<!--<span style="padding-left:15%;"><a href="https://twitter.com/headin_thecloud" class="twitter-follow-button" style="left:10px" data-related="Garret" data-show-count="true">Follow Garret</a></span>-->
 				</div>
 				<div class="team_member_desc">
@@ -114,7 +115,7 @@
 				<div class="team_content">
 				<img src="img/taylor_pic.png"  class="profile_image"/>
 				<div class="team_name_div">
-					<h1 id="fname">Taylor <h1 id="lname">Brown</h1>
+					<h1 id="fname">Taylor <h1 id="lname">Brown, Level 1 Druid</h1>
 					<span style="padding-left:15%;"><a href="https://twitter.com/headin_thecloud" class="twitter-follow-button" style="left:10px" data-related="Garret" data-show-count="true">Follow Garret</a></span>
 				</div>
 				<div class="team_member_desc">

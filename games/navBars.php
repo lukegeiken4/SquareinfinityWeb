@@ -11,7 +11,7 @@
 	<meta property="og:image" content="http://www.squareinfinity.com/gmeier/images/stretchLogo3.PNG"/>
 	<meta property="og:site_name" content="Square Infinity Games"/>
 	<meta property="og:title" content="Square Infinity Games"/>
-	<meta property="og:url" content = "http://www.squareinfinity.com/"/>
+	<meta property="og:url" content = "http://games.squareinfinity.com/"/>
 	<!-- Magnific Popup core CSS file -->
 	<link rel="stylesheet" href="magnificPopup/magnificPopup.css"> 
 	<script src="jqueryDarken.js"></script>
