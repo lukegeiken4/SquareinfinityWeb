@@ -4,34 +4,36 @@
 <html>
 <?php getHead('Mail') ?>
 
-<body >
-	<?php getMainBar('Mail'); ?>
-	<div id="contact-main-div">
+<body style="overflow-y:visible;">
+	
+	<div id="contact-main-div" style="overflow-x:hidden;overflow-y:visible;">
+		<?php getMainBar('Mail'); ?>
 		<div id="contact-mail-div">
 			<div class="socialMedia" id="contact-area">
-				<div id="contact-mail-form">
+				<div id="contact-mail-form" >
 					<?php
 					// display form if user has not clicked submit
 					if (!isset($_POST["submit"])){
 					?>			
 						<form name="contactform" method="post" action="" autocomplete="off" onsubmit="return validateForm()">
+							<h1 style="color:white;text-align:center;">Questions? Suggestions?</h1>
 							<div style="width:50%; position: relative;  margin-top: 10%;">
-								<h2 style="position: absolute; font-family: Copperplate; color: white;" >Name: </h2>
-								<input style="position: absolute; margin-left:80%; margin-top:15%; width: 100%;" type="text" name="name" required/><br>
+								<h2 style="position: absolute; font-family: 'Ubuntu',sans-serif; color: white;" >Name: </h2>
+								<input style="position: absolute; margin-left:80%;  margin-top:22px; width: 100%;" type="text" name="name" required/><br>
 							</div>
 							
 							<div style="width:50%; position: relative; margin-top: 10%;">
-								<h2 style="position: absolute; font-family: Copperplate;  color: white;">Email: </h2>
-								<input style="position: absolute; margin-left:80%;  margin-top:15%; width: 100%;" type="text" name="from" required><br>
+								<h2 style="position: absolute; font-family: 'Ubuntu',sans-serif;  color: white;">Email: </h2>
+								<input style="position: absolute; margin-left:80%; margin-top:22px; width: 100%;" type="text" name="from" required><br>
 							</div>
 							
 							<div style="width:100%; position: relative; margin-top: 10%;">
-							  <h2 style="position: absolute; font-family: Copperplate;  color: white;">Message: </h2>
-							  <textarea style="margin-top:25%; width:100%;height:100px;" name="message" style="resize:vertical" ></textarea><br>
+							  <h2 style="position: absolute; font-family: 'Ubuntu',sans-serif;  color: white;">Message: </h2>
+							  <textarea style="margin-top:65px; width:100%;height:100px;" name="message" style="resize:vertical" ></textarea><br>
 							</div>
 							
 							<div style="width:50%; position: relative;  margin-top: 10%; margin-left: 30%;">
-								<input style="font-size:90%;" id="contact-submit" type="submit" name="submit" value="Message Us">
+								<input style="font-size:30px;" id="contact-submit" type="submit" name="submit" value="Send It!">
 							</div>
 						</form>
 					<?php 
@@ -54,18 +56,33 @@
 				</div>
 			</div>
 			<div class="socialMedia" id="social-media-div">
+				
 				<div id="social-media-box">
-					<a href="https://www.facebook.com/squareInfinityTech" target="_blank"><div class="social" id="facebook-pic" style="background-image: url(img/46-facebook.svg) "></div></a>
-					<a href="http://www.twitter.com/squareInfinity" target="_blank"><div class="social" id="twitter-pic" style="background-image: url(img/45-twitter.svg);"></div></a>
-					<a href="https://plus.google.com/103430757959795440005" target="_blank"><div class="social" id="googleplus-pic" style="background-image: url(img/80-google-plus.svg);"></div></a>
-					<div style="position: relative; margin-left: 30%; margin-top:50%;">
-						<h2 id="follow-text" style="font-family: Copperplate; font-size: 40px;">Follow Us!</h2>
+					<h1 style="text-align:center">Connect</h1>
+					<a href="https://www.facebook.com/squareInfinityTech" target="_blank" style="color:white;text-decoration:none">
+						<div class="socialIndividual" style=""> 
+							<i class="fa fa-facebook-square fa-5x"></i>
+							<h1>Let's be friends</h1>
+						</div>
+					</a>
+					<a href="http://www.twitter.com/squareInfinity" target="_blank" style="color:white;text-decoration:none">
+						<div class="socialIndividual" style=""> 
+							<i class="fa fa-twitter-square fa-5x"></i>
+							<h1>#getUpdates</h1>
+						</div>
+					</a>
+					<a href="https://plus.google.com/103430757959795440005" target="_blank" style="color:white;text-decoration:none">
+					<div class="socialIndividual" style=""> 
+						<i class="fa fa-google-plus-square fa-5x"></i>
+						<h1>You and a tumbleweed.</h1>
 					</div>
+					</a>
 				</div>
 			</div>
 		</div>	
 		<?php getFooter(); ?>
 	</div>
+	
 </body>
 <script>
 	$('#home-head').click(function() {
