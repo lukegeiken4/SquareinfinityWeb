@@ -1,4 +1,10 @@
+var CONTRACT = 0;
+var WEB_CONTRACT = 1;
+var APP_CONTRACT = 2;
+
 var animSpeed = 500;
+var contractType = -1;
+
 var wordpress = false;
 
 // auto chooses the right div to display
@@ -6,15 +12,172 @@ var wordpress = false;
 selectQuoteType = function(){
 	var contractTypeApp = document.getElementById("contract-type-app");
 	var contractTypeWeb = document.getElementById("contract-type-website");
+	var contractTypeHosting = document.getElementById("contract-type-hosting");
 	
-	$("#quote-main-form").hide(animSpeed);
+	if(contractTypeApp.checked || contractTypeWeb.checked || contractTypeHosting.checked){
+		$("#quote-main-form").hide(animSpeed);
+		
+		if(contractTypeApp.checked){
+			contractType = APP_CONTRACT;
+			$("#quote-app-area").show(animSpeed);
+		}else if(contractTypeWeb.checked){
+			contractType = WEB_CONTRACT;
+			swapToWebForm();
+			updateWordpressPricing();
+		}else if(contractTypeHosting.checked){
+			$("#quote-web-hosting-area").show(animSpeed);
+		}
+	}
+}
+
+getQuote = function(){
+	var finalOutput = "New Quote Request:\n\n";
 	
-	if(contractTypeApp.checked){
-		$("#quote-app-area").show(animSpeed);
-	}else if(contractTypeWeb.checked){
-		//$("#quote-web-area").show(animSpeed);
-		swapToWebForm();
-		updateWordpressPricing();
+	if(isReadyForQuote()){
+		finalOutput += "Name: " + $("#name-text").val() + "\n";
+		finalOutput += "Phone: " + $("#phone-text").val() + "\n";
+		finalOutput += "Email: " + $("#email-text").val() + "\n";
+		finalOutput += "Contact Hours: " + $("#contact-hours-text").val() + "\n";
+		
+		finalOutput += "Company: " + $("#company-name-text").val() + "\n";
+		finalOutput += "Company Website: " + $("#company-website-text").val() + "\n\n";
+		
+		if(contractType == WEB_CONTRACT){
+			if($("#web_upgrade").prop("checked")){
+				finalOutput += $("#name-text").val() + " wanted a website, which is an upgrade on a site they already have.\n\n";
+			}else{
+				finalOutput += $("#name-text").val() + " wanted a website.\n\n";
+			}
+			finalOutput += "They wanted it to have " + indexCheckboxes('web') + ".\n\n";
+			finalOutput += "They described it as:\n" + $("#web_design").val() + "\n\n";
+			finalOutput += "And specified the following functionality:\n" + $("#web_functionality").val() + "\n";
+			
+		}else if(contractType == APP_CONTRACT){
+			finalOutput += $("#name-text").val() + " wanted an app on " + indexAppPlatforms() + ".\n";
+			finalOutput += "This app was to be a ";
+			if($("#app-type-game").prop("checked")){
+				finalOutput += "game of type " + $("#game-category").val();
+			}else if($("#app-type-util").prop("checked")){
+				finalOutput += "utility of type " + $("#util-category").val();
+			}
+			finalOutput += ".\n\n";
+			
+			finalOutput += "They wanted it to have " + indexCheckboxes('app') + ".\n";
+			
+			if($("#app-type-game").prop("checked")){
+				finalOutput += "They described it as follows:\n" + $("#game_description").val() + "\n";
+			}else{
+				finalOutput += "They described it as follows:\n" + $("#util_description").val() + "\n";
+			}
+		}else{
+			finalOutput += "An Error Occurred.";
+		}
+		
+		alert(finalOutput);
+	}
+}
+
+indexAppPlatforms = function(){
+	var checkedEntries = new Array();
+	
+	if($("#ios-checkbox").prop("checked")){
+		checkedEntries[checkedEntries.length] = "iOS";
+	}if($("#android-checkbox").prop("checked")){
+		checkedEntries[checkedEntries.length] = "Android";
+	}if($("#blackberry-checkbox").prop("checked")){
+		checkedEntries[checkedEntries.length] = "BlackBerry";
+	}if($("#windows-store-checkbox").prop("checked")){
+		checkedEntries[checkedEntries.length] = "Windows Store";
+	}
+	
+	var finalOutput = "";
+	
+	for(var x=0; x<checkedEntries.length - 1; x++){
+		finalOutput += checkedEntries[x] + ", ";
+	}
+	
+	if(finalOutput.length > 1){
+		finalOutput += "and " + checkedEntries[checkedEntries.length - 1];
+	}else{
+		finalOutput += checkedEntries[checkedEntries.length - 1];
+	}
+	
+	return finalOutput;
+}
+
+indexCheckboxes = function(type){
+	var checkedEntries = new Array();
+	
+	if(type == 'web'){ // ------------- WEB ------- //
+		if($("#wordpress_toggle").prop("checked")){ // wordpress
+			append("#wordpress_toggle", checkedEntries, "WordPress");
+			append("#wp_theme", checkedEntries, "the theme '" + $("#wp_theme-text").val() + "'");
+			append("#wp_plugins", checkedEntries, "the plugin(s) '" + $("#wp_plugins-text").val() + "'");
+			append("#wp_help-with-wordpress", checkedEntries, "Square Infinity to help them with WordPress");
+		}else{ // normal site
+			append("#web_ecommerce", checkedEntries, "eCommerce");
+			append("#wordpress_checkbox0", checkedEntries, "user accounts & logins");
+			append("#wordpress_checkbox1", checkedEntries, "a CMS");
+			append("#wordpress_checkbox2", checkedEntries, "media storage/retrieval");
+			append("#wordpress_checkbox3", checkedEntries, "social media integration");
+			append("#wordpress_checkbox4", checkedEntries, "a search system");
+		}
+		
+		append("#live-content-integration", checkedEntries, "live content integration");
+		append("#mail-server-integration", checkedEntries, "a mail server");
+		append("#google-maps-integration", checkedEntries, "Google Maps integration");
+		append("#wordpress_content-setup-check", checkedEntries, "Square Infinity to setup their content");
+		append("#wordpress_domain-needed", checkedEntries, "a domain or domain(s)");
+		append("#wordpress_si-host", checkedEntries, "Square Infinity to host their site");
+	}else if(type == 'app'){ // ------- APP ------- //
+		if($("#app-type-game").is(":checked")){ // game
+			append("#game_social-media-integ", checkedEntries, "social media integration");
+			append("#game_service-integration", checkedEntries, "games service(s)");
+			append("#game_3d", checkedEntries, "3D gameplay");
+		}else{ // utility
+			append("#util_social-media", checkedEntries, "social media integration");
+			append("#util_camera", checkedEntries, "camera access");
+			append("#util_image-editing", checkedEntries, "image editing");
+			append("#util_server-interface", checkedEntries, "server interfacing");
+			append("#util_push-notifications", checkedEntries, "push notifications");
+			append("#util_hardware-access", checkedEntries, "hardware access");
+		}
+	}else{
+		return "nothing";
+	}
+	
+	var finalOutput = "";
+	
+	for(var x=0; x<checkedEntries.length - 1; x++){
+		finalOutput += checkedEntries[x] + ", ";
+	}
+	
+	if(finalOutput.length > 1){
+		finalOutput += "and " + checkedEntries[checkedEntries.length - 1];
+	}else{
+		finalOutput += checkedEntries[checkedEntries.length - 1];
+	}
+	
+	return finalOutput;
+}
+
+append = function(area, array, value){
+	if($(area).prop("checked")){
+		array[array.length] = value;
+	}
+}
+
+isReadyForQuote = function(){
+	if(!$("#name-text").val().trim() == ""){
+		if(!$("#email-text").val().trim() == ""){
+			return true;
+		}else{
+			alert("please enter an email");
+			return false;
+		}
+	}else{
+		alert("please enter a name");
+		return false;
 	}
 }
 

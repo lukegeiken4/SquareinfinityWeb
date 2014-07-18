@@ -272,6 +272,39 @@ body{
 	text-align:center;
 }
 
+/**
+ * CSS for the games page
+ */
+#dragon-pic {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	height:100%;
+	
+}
+
+#monster-of-month {
+	max-height:500px;
+	height:100%;
+}
+
+#droid-snake-content {
+	margin-top: -500px;
+}
+	
+@media (max-width:1200px){
+	#dragon-pic {
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+		height: 400px;
+	
+	}
+	
+	#travelquest-top {
+		margin-top: -80px;
+	}
+}
 
 .gamesTitle{
 	height:130px;
@@ -942,10 +975,27 @@ uncomment this part if you haven't added this code anywhere else
 
 	}
 	
+	#dragon-pic {
+		display: none;
+	}
+	
+	#monster-of-month {
+		height:300px;
+		margin-top:100px;
+	}
+	
+	#monster-of-month-content {
+		margin-top:-200px;
+	}
+	
+	#droid-snake-content {
+		margin-top: -450px;
+	}
+	
 	.gamesInfo{
 		width:100%;
 		display:flex;
-		position:relative;
+		position:absolute;
 		flex-direction:column;
 		margin-left:auto;
 		margin-right:auto;
@@ -953,6 +1003,26 @@ uncomment this part if you haven't added this code anywhere else
 		min-width:0px;
 		line-height:100%;
 		vertical-align:middle;
+	}
+	
+	#travelquest-top {
+		margin-top: 50px;
+	}
+	
+	#quest-types {
+		display: none;
+	}
+	
+	#quest-type-descriptons {
+		margin-top:-30px;
+	}
+	
+	#go-away-div {
+		position: absolute;	
+	}
+	
+	.margin-top-div {
+		margin-top:50px;	
 	}
 	
 	.gamesInfoInner{
@@ -965,8 +1035,7 @@ uncomment this part if you haven't added this code anywhere else
 	}
 	
 	.games_div{
-		overflow:hidden;
-		height:100%;
+		
 		padding-bottom:20px;
 	}
 	
@@ -1109,6 +1178,9 @@ uncomment this part if you haven't added this code anywhere else
 	#fname {
 		font-size: 80px;
 	}
-
+	
+	#footer-id {
+		display: none;
+	}
 }
 

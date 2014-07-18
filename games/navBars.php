@@ -66,7 +66,7 @@ if ($name == 'Headquarters'){
 
 <?php function getFooter(){ ?>
 <html>
-	<div style="width:100%; height:200px; background: black;">
+	<div style="width:100%; height:200px; background: black;" id="footer-id">
 		<div style="position: absolute; right: 10px;">
 			<form method="post" action="http://scripts.dreamhost.com/add_list.cgi">
 				<input type="hidden" name="list" value="lexicon" />
