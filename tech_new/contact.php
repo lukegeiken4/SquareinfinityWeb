@@ -555,9 +555,12 @@
 						Website/Domain: <input type="text" id="company-website-text" />
 					</div>
 					
-					<button class="large-button" onclick="getQuote();">
+					<button class="large-button" id="final-get-quote-button" onclick="getQuote();">
 						Get Quote
 					</button>
+					<div id="after-quote-text" class="information-small" hidden>
+					
+					</div>
 				</div>
 			</div>
 			

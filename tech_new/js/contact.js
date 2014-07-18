@@ -73,7 +73,29 @@ getQuote = function(){
 			finalOutput += "An Error Occurred.";
 		}
 		
-		alert(finalOutput);
+		var quoteButton = $("#final-get-quote-button");
+		quoteButton.html("Sending...");
+		quoteButton.attr("onclick", "");
+		
+		$.ajax({
+			type: "GET",
+			url: "send-email.php",
+			data: {email: $("#email-text").val(), message: finalOutput}
+		}).done(function(msg){
+			var quoteButton = $("#final-get-quote-button");
+		
+			if(msg == 'success'){
+				quoteButton.html("Sent!");
+				$("#after-quote-text").html("Thanks! We'll get back to you shortly!");
+			}else{
+				quoteButton.html("Send Failure");
+				$("#after-quote-text").html("The monkeys have been dispatched! Your problem will be solved shortly, so please try again soon. We apologies for the inconvenience.");
+			}
+			
+			$("#after-quote-text").show(250);
+		});
+		
+		//alert(finalOutput);
 	}
 }
 
