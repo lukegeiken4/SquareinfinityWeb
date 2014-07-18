@@ -61,7 +61,8 @@
 			<div class="top-bar shadow" id="top-bar">
 				&nbsp;
 			</div>
-			<div class="mobile-div">
+			<br />
+			<div class="mobile-div" hidden>
 				<button class="top-nav-button nav-button-start-left shadow" onclick="href('portfolio.php')">PORTFOLIO</button>
 				<button class="top-nav-button shadow" onclick="href('contact.php')">CONTACT</button>
 			</div>
@@ -70,6 +71,18 @@
 					<img class="center-image" src="http://squareinfinity.com/images/stretchLogo3.png" />
 				</a>
 			</div>
+			
+			<button id="sticky-note" class="sticky-tab" onclick="href('portfolio.php');">
+				<div class="note-interior">
+					Our Portfolio
+				</div>
+			</button>
+			
+			<button id="sticky-note" class="sticky-angle" onclick="href('contact.php');">
+				<div class="note-interior">
+					Contact Us
+				</div>
+			</button>
 		<?php
 	}
 ?>
