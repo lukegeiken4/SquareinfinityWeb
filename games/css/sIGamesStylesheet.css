@@ -283,6 +283,29 @@ body{
 	
 }
 
+#monster-of-month {
+	max-height:500px;
+	height:100%;
+}
+
+#droid-snake-content {
+	margin-top: -500px;
+}
+	
+@media (max-width:1200px){
+	#dragon-pic {
+		display: block;
+		margin-left:auto;
+		margin-right:auto;
+		height: 400px;
+	
+	}
+	
+	#travelquest-top {
+		margin-top: -80px;
+	}
+}
+
 .gamesTitle{
 	height:130px;
 	width:200px;
@@ -322,6 +345,7 @@ body{
 	z-index:-1;
 	/*overflow-y:scroll;*/
 	min-width:612px;
+	height:100%;
 	display:flex;
 	
 }
@@ -748,6 +772,7 @@ uncomment this part if you haven't added this code anywhere else
 	display: block;
 	position:relative;
 	z-index:-2;
+	overflow:hidden;
 }
 
 #travelquest {
@@ -941,6 +966,19 @@ uncomment this part if you haven't added this code anywhere else
 		display: none;
 	}
 	
+	#monster-of-month {
+		height:300px;
+		margin-top:100px;
+	}
+	
+	#monster-of-month-content {
+		margin-top:-200px;
+	}
+	
+	#droid-snake-content {
+		margin-top: -450px;
+	}
+	
 	.gamesInfo{
 		width:100%;
 		display:flex;
@@ -952,6 +990,18 @@ uncomment this part if you haven't added this code anywhere else
 		min-width:0px;
 		line-height:100%;
 		vertical-align:middle;
+	}
+	
+	#travelquest-top {
+		margin-top: 50px;
+	}
+	
+	#quest-types {
+		display: none;
+	}
+	
+	#quest-type-descriptons {
+		margin-top:-30px;
 	}
 	
 	#go-away-div {
@@ -1096,6 +1146,9 @@ uncomment this part if you haven't added this code anywhere else
 	#fname {
 		font-size: 80px;
 	}
-
+	
+	#footer-id {
+		display: none;
+	}
 }
 
