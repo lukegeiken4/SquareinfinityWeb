@@ -138,7 +138,7 @@
 				<?php
 			}else{
 				echo "&nbsp;";
-			}			
+			}
 			?>
 		</div>
 		<div id="sticky-notes" style="position: absolute;background: url(img/papernotes.png); background-size: contain; margin-top:-700px;">
