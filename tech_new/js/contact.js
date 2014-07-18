@@ -42,7 +42,8 @@ getQuote = function(){
 		
 		if(contractType == WEB_CONTRACT){
 			finalOutput += $("#name-text").val() + " wanted a website.\n\n";
-			finalOutput += "They wanted it to have " + indexCheckboxes('web') + ".";
+			finalOutput += "They wanted it to have " + indexCheckboxes('web') + ".\n\n";
+			
 		}else if(contractType == APP_CONTRACT){
 			finalOutput += $("#name-text").val() + " wanted an app on " + indexAppPlatforms() + ".\n";
 			finalOutput += "This app was to be a ";
@@ -54,7 +55,12 @@ getQuote = function(){
 			finalOutput += ".\n\n";
 			
 			finalOutput += "They wanted it to have " + indexCheckboxes('app') + ".\n";
-			finalOutput += "They described it as follows:\n" + $("#game_description").val() + "\n";
+			
+			if($("#app-type-game").prop("checked")){
+				finalOutput += "They described it as follows:\n" + $("#game_description").val() + "\n";
+			}else{
+				finalOutput += "They described it as follows:\n" + $("#util_description").val() + "\n";
+			}
 		}else{
 			finalOutput += "An Error Occurred.";
 		}
@@ -102,7 +108,12 @@ indexCheckboxes = function(type){
 			append("#game_service-integration", checkedEntries, "games service(s)");
 			append("#game_3d", checkedEntries, "3D gameplay");
 		}else{ // utility
-		
+			append("#util_social-media", checkedEntries, "social media integration");
+			append("#util_camera", checkedEntries, "camera access");
+			append("#util_image-editing", checkedEntries, "image editing");
+			append("#util_server-interface", checkedEntries, "server interfacing");
+			append("#util_push-notifications", checkedEntries, "push notifications");
+			append("#util_hardware-access", checkedEntries, "hardware access");
 		}
 	}else{
 		return "nothing";

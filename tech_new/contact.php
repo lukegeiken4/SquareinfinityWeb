@@ -140,16 +140,16 @@
 							</div>
 						</div>
 						<div class="quote-selector-small">
-							<input type="checkbox" />Social Media Integration
+							<input type="checkbox" id="util_social-media" />Social Media Integration
 						</div>
 						<div class="quote-selector-small">
-							<input type="checkbox" />Use of Camera
+							<input type="checkbox" id="util_camera" />Use of Camera
 						</div>
 						<div class="quote-selector-small">
-							<input type="checkbox" />Image Editing Capabilities
+							<input type="checkbox" id="util_image-editing" />Image Editing Capabilities
 						</div>
 						<div class="quote-selector-small">
-							<input type="checkbox" />Server Interface
+							<input type="checkbox" id="util_server-interface" />Server Interface
 							<div class="information-small tab">
 								Does your app need to interface
 								with an outside server/cloud to
@@ -157,10 +157,10 @@
 							</div>
 						</div>
 						<div class="quote-selector-small">
-							<input type="checkbox" />Push Notifications
+							<input type="checkbox" id="util_push-notifications" />Push Notifications
 						</div>
 						<div class="quote-selector-small">
-							<input type="checkbox" />Hardware Access
+							<input type="checkbox" id="util_hardware-access" />Hardware Access
 							<div class="information-small tab">
 								Does your app need access to hardware
 								devices such as the accelerometer, GPS,
@@ -177,7 +177,7 @@
 							and anything else you can think of.
 						</div>
 						<div class="quote-selector-small">
-							<textarea class="final-information" placeholder="It'll be a camera app that the user can..."></textarea>
+							<textarea class="final-information" id="util_description" placeholder="It'll be a camera app that the user can..."></textarea>
 						</div>
 					</div>
 					
