@@ -48,9 +48,7 @@
 							mail("contact@squareinfinity.com",$subject,$message,$from);
 						}
 						?>
-						<div>
-							<img src="img/thankyou.png" style="width:90%; height:75%; margin-left:10px;" />
-						</div>
+
 						<?php
 					}?>
 				</div>

@@ -8,7 +8,7 @@
 <?php getMainBar('The Party'); ?>
 	
 	<div style="position: absolute; width:100%; height:100%; top:0; z-index: 0;">
-		<div class="team_collage-div"  style="z-index: -5;">
+		<!--<div class="team_collage-div"  style="z-index: -5;">
 			<div style="position: absolute;  background: black; width:70%; height:80%; left: 0; right: 0; margin-top:10%; z-index: -3; margin-left: auto; margin-right: auto; opacity: .8;"></div>
 			<div style="position: absolute; width:100%; height:25%; background-color: white; margin-top:5%; z-index: -2;">
 				<h1 style="text-align: center; font-size: 100px; margin-top:3%;">Meet The Team</h1>
@@ -16,8 +16,8 @@
 			<div style="width:100%; height:100%; ">
 				<img src="img/team_collage.png" id="team-collage" style="padding-top:12%; display: block; margin-left:auto; margin-right:auto;"/>
 			</div>
-		</div>
-		<div class="team_profile" id="first_profile">
+		</div>-->
+		<div class="team_profile" id="first_profile" style="margin-top:100px;">
 			<div class="team_content">
 				<img src="img/ivanMattie.jpg" class="profile_image"/>
 				<div class="team_name_div">
@@ -110,12 +110,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="team_profile" style="">
+		<!--<div class="team_profile" style="">
 				<div class="team_content">
 				<img src="img/taylor_pic.png"  class="profile_image"/>
 				<div class="team_name_div">
 					<h1 id="fname">Taylor <h1 id="lname">Brown</h1>
-					<!--<span style="padding-left:15%;"><a href="https://twitter.com/headin_thecloud" class="twitter-follow-button" style="left:10px" data-related="Garret" data-show-count="true">Follow Garret</a></span>-->
+					<span style="padding-left:15%;"><a href="https://twitter.com/headin_thecloud" class="twitter-follow-button" style="left:10px" data-related="Garret" data-show-count="true">Follow Garret</a></span>
 				</div>
 				<div class="team_member_desc">
 					<h2 style="padding-top:5%; padding-bottom:5%; color:white;">
@@ -123,7 +123,7 @@
 					</h2>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<?php getFooter(); ?>
 	</div>
 </body>
