@@ -7,7 +7,7 @@
 <body >
 <?php getMainBar('Entertainments'); ?>
 	
-	<div style="position: absolute; overflow: auto; width:100%; top:0; z-index: 0;">
+	<div style="position: absolute; overflow: hide; width:100%; top:0; z-index: 0;">
 		<div class="games_div" id="travelquest">
 			<div class="games_div_opacity" style="position:absolute;">
 
@@ -28,7 +28,7 @@
 			<div class="contents" style="height:auto;">
 				
 				<div class="gamesInfo TravelQuestDesc" id="one">
-					<a href="http://travelquest.squareinfinity.com"style="text-decoration:none;color:black;"><h1 id="TravelQuestTitle" >TravelQuest</h1></a>
+					<a href="http://travelquest.squareinfinity.com"style="text-decoration:none;color:black;" target="_blank"><h1 id="TravelQuestTitle" >TravelQuest</h1></a>
 					<div class="gamesInfoInner" style="flex:1;">
 						<img src="./img/ClockworkDragonTQWhite.png" style="display:block;margin-left:auto;margin-right:auto;height:100%;">						
 					</div>
@@ -138,7 +138,7 @@
 			</div>
 			<div class="contents">
 				<div class="gamesInfo LostHopeDesc" id="one">
-				<a href="http://losthope.squareinfinity.com"style="text-decoration:none;color:black;"><h1 id="LostHopeTitle" >Lost Hope</h1></a>
+				<a href="http://losthope.squareinfinity.com"style="text-decoration:none;color:black;" target="_blank"><h1 id="LostHopeTitle" >Lost Hope</h1></a>
 
 					<div class="gamesInfoInner" style="flex:1">
 					<p>
@@ -196,7 +196,7 @@
 			</div>
 			<div class="contents">
 				<div class="gamesInfo UtterDarkDesc" id="one">
-				<a href="http://utterdark.squareinfinity.com"style="text-decoration:none;color:black;"><h1 id="UtterDarkTitle" >Utter Dark</h1></a>
+				<a href="http://utterdark.squareinfinity.com"style="text-decoration:none;color:black;" target="_blank"><h1 id="UtterDarkTitle" >Utter Dark</h1></a>
 					<div class="gamesInfoInner" style="flex:1">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Grab a flashlight and your favorite assault rifle,
@@ -248,7 +248,7 @@
 			</div>
 			<div class="contents">
 				<div class="gamesInfo DroidSnakeDesc" id="one">
-				<a href="http://droidsnake.squareinfinity.com"style="text-decoration:none;color:black;"><h1 id="DroidSnakeTitle" >Droid Snake</h1></a>
+				<a href="http://droidsnake.squareinfinity.com"style="text-decoration:none;color:black;" target="_blank"><h1 id="DroidSnakeTitle" >Droid Snake</h1></a>
 					<div class="gamesInfoInner" style="flex:1;">
 					<p>
 						&nbsp;&nbsp;&nbsp;&nbsp;Our first game, Droid Snake has a small corner of our hearts here at Square Infinity all to itself.

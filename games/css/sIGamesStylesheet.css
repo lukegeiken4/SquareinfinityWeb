@@ -272,6 +272,7 @@ body{
 	text-align:center;
 }
 
+
 .gamesTitle{
 	height:130px;
 	width:200px;
@@ -311,6 +312,7 @@ body{
 	z-index:-1;
 	/*overflow-y:scroll;*/
 	min-width:612px;
+	height:100%;
 	display:flex;
 	
 }
@@ -737,6 +739,7 @@ uncomment this part if you haven't added this code anywhere else
 	display: block;
 	position:relative;
 	z-index:-2;
+	overflow:hidden;
 }
 
 #travelquest {
