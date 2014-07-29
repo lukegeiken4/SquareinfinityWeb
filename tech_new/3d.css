@@ -120,7 +120,7 @@
 	border: 0px solid black;
 }
 
-#sticky-note{
+.sticky-note{
 	width: 150px;
 	height: 145px;
 	z-index: 5;
@@ -131,16 +131,16 @@
 	border: none;
 }
 
-.sticky-tab{
+#sticky-tab{
 	left: 200px;
 }
 
-.sticky-angle{
+#sticky-angle{
 	right: 200px;
 	-webkit-transform: rotateZ(20deg);
 }
 
-#sticky-note:hover{
+.sticky-note:hover{
 	background: url('img/papernote-select.png');
 	background-size: contain;
 }
@@ -150,6 +150,37 @@
 	padding: 0px 50px 10px 20px;
 	text-align: center;
 	font-size: 16pt;
+}
+
+@media screen and (max-width: 975px){
+	.sticky-note{
+		background: url('img/papernote.png');
+		width: 85px;
+		height: 82px;
+		z-index: 5;
+		position: absolute;
+		background-size: contain;
+		margin-top: -100px;
+		border: none;
+	}
+	
+	.note-interior{
+		-webkit-transform: rotateZ(-10deg);
+		padding: 0px 50px 10px 5px;
+		text-align: center;
+		font-size: 11pt;
+	}
+	
+	#sticky-tab{
+		right: 20px;
+		left: auto;
+		-webkit-transform: rotateZ(20deg);
+	}
+	
+	#sticky-angle{
+		top: 250px;
+		right: 20px;
+	}
 }
 
 .side-spacing-1{
@@ -171,6 +202,10 @@
 	-webkit-box-shadow:	0px	3px 5px -1px rgba(100, 100, 100, .39);
 	-moz-box-shadow:	0px 3px 5px -1px rgba(100, 100, 100, .39);
 	box-shadow:			0px 3px 5px -1px rgba(100, 100, 100, .39);
+}
+@-webkit-keyframes pageflip {
+	from {-webkit-transform: translateX(0px);}
+	to {-webkit-transform: translateX(-700px);}
 }
 
 .yellow-manila-folder-tab{
@@ -200,7 +235,7 @@
 	background-size: 260px 42px;
 }
 
-@media screen and (max-width: 765px){
+@media screen and (max-width: 805px){
 	.yellow-manila-folder-tab{
 		width: 100px;
 		background-size: 100px 42px;
@@ -213,6 +248,57 @@
 	
 	.tab-darkened:hover{
 		background-size: 100px 42px;
+	}
+}
+
+.team-info-tabs{
+	width: inherit;
+	height: 30px;
+	margin-top: 30px;
+	margin-left: 35px;
+	margin-bottom: -10px;
+}
+.team-info-tab{
+	color: rgba(255, 255, 255, 1);
+	height: 40px;
+	width: 150px;
+	background-color: rgba(100, 100, 100, .6);
+	border-color: #000000;
+	border-style: solid;
+
+}
+.team-info-tab:hover{
+	border-color: #0066CC;
+}
+
+.services-info-tabs{
+	width: inherit;
+	height: 30px;
+	margin-top: 30px;
+	margin-left: 35px;
+	margin-bottom: -10px;
+}
+.services-info-tab{
+	color: rgba(255, 255, 255, 1);
+	height: 40px;
+	width: 150px;
+	background-color: rgba(100, 100, 100, .6);
+	border-color: #000000;
+	border-style: solid;
+
+}
+.services-info-tab:hover{
+	border-color: #0066CC;
+}
+
+@media screen and (max-width: 805px){
+	.team-info-tab{
+		width: 100px;
+		height: 25px;
+	}
+	.services-info-tab{
+		width: 100px;
+		height: 40px;
 	}
 }
 
@@ -276,12 +362,122 @@
 	height: 75%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 60px;
+	margin-top: 40px;
 	padding: 10px;
 	
 	-webkit-box-shadow:	0px 2px 5px 0px rgba(100, 100, 100, .39);
 	-moz-box-shadow:	0px 2px 5px 0px rgba(100, 100, 100, .39);
 	box-shadow:			0px 2px 5px 0px rgba(100, 100, 100, .39);
+}
+
+.manila-content-team-page{
+	width:90%;
+	height: 525px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	padding: 10px;
+	
+	-webkit-box-shadow:	0px 2px 5px 0px rgba(100, 100, 100, .39);
+	-moz-box-shadow:	0px 2px 5px 0px rgba(100, 100, 100, .39);
+	box-shadow:			0px 2px 5px 0px rgba(100, 100, 100, .39);
+}
+
+.manila-content-team{
+	width:90%;
+	height: 55%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	padding: 10px;
+	
+	-webkit-box-shadow:	0px 2px 5px 0px rgba(100, 100, 100, .39);
+	-moz-box-shadow:	0px 2px 5px 0px rgba(100, 100, 100, .39);
+	box-shadow:			0px 2px 5px 0px rgba(100, 100, 100, .39);
+	
+}
+.manila-content-service-page{
+	width:90%;
+	height: 525px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	padding: 10px;
+	
+	-webkit-box-shadow:	0px 2px 5px 0px rgba(100, 100, 100, .39);
+	-moz-box-shadow:	0px 2px 5px 0px rgba(100, 100, 100, .39);
+	box-shadow:			0px 2px 5px 0px rgba(100, 100, 100, .39);
+}
+.manila-content-services{
+	width:90%;
+	height: 55%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	padding: 10px;
+	
+	-webkit-box-shadow:	0px 2px 5px 0px rgba(100, 100, 100, .39);
+	-moz-box-shadow:	0px 2px 5px 0px rgba(100, 100, 100, .39);
+	box-shadow:			0px 2px 5px 0px rgba(100, 100, 100, .39);
+}
+
+.manila-content-skills{
+	display: inline-block;
+	width: 35%;
+	height: 400px;
+	text-align: center;
+	margin-left: 50px;
+	margin-top: 25px;
+	
+	padding: 0px;
+	
+	border: solid;
+	border-color: #000000;
+	border-width: 1px;
+}
+
+.manila-content-web-skills{
+	display: inline-block;
+	width: 35%;
+	height: 400px;
+	text-align: center;
+	margin-left: 100px;
+	position: relative;
+	top: -66px;
+	
+	padding: 0px;
+	
+	border: solid;
+	border-color: #000000;
+	border-width: 1px;
+}
+
+@media screen and (max-width: 975px){
+	.manila-content-skills{
+		display: inline-block;
+		width: 75%;
+		height: auto;
+		text-align: center;
+		margin-left:0px;
+		margin-top: 15px;
+		padding: 0px;
+		
+		border: solid;
+		border-color: #000000;
+		border-width: 1px;
+	}
+	.manila-content-web-skills{
+		display: inline-block;
+		width: 75%;
+		height: auto;
+		text-align: center;
+		margin-left:0px;
+		margin-top: 25px;
+		
+		border: solid;
+		border-color: #000000;
+		border-width: 1px;
+	}
 }
 
 .si-symbol{

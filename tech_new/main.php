@@ -67,18 +67,18 @@
 				<button class="top-nav-button shadow" onclick="href('contact.php')">CONTACT</button>
 			</div>
 			<div class="center-image-container shadow">
-				<a href="3d.php">
+				<a href="index.php">
 					<img class="center-image" src="http://squareinfinity.com/images/stretchLogo3.png" />
 				</a>
 			</div>
 			
-			<button id="sticky-note" class="sticky-tab" onclick="href('portfolio.php');">
+			<button id="sticky-tab" class="sticky-note" onclick="href('portfolio.php');">
 				<div class="note-interior">
 					Our Portfolio
 				</div>
 			</button>
 			
-			<button id="sticky-note" class="sticky-angle" onclick="href('contact.php');">
+			<button id="sticky-angle" class="sticky-note" onclick="href('contact.php');">
 				<div class="note-interior">
 					Contact Us
 				</div>

@@ -589,7 +589,7 @@
 				</div>
 				<div class="buisness-card-small-line">&nbsp;</div>
 				<div class="buisness-card-bottom">
-					<i class="fa fa-building-o"></i>&nbsp;office: +1 (406) 281-2279<br />
+					<i class="fa fa-building-o"></i>&nbsp;office: +1 (406) 247-0163<br />
 					<i class="fa fa-mobile-phone"></i>&nbsp;cell: +1 (406) 281-2279
 				</div>
 			</div>
@@ -610,8 +610,8 @@
 				</div>
 				<div class="buisness-card-small-line">&nbsp;</div>
 				<div class="buisness-card-bottom">
-					<i class="fa fa-building-o"></i>&nbsp;office: +1 (222) 333-4444<br />
-					<i class="fa fa-mobile-phone"></i>&nbsp;cell: +1 (999) 888-7777
+					<i class="fa fa-building-o"></i>&nbsp;office: +1 (406) 247-0163<br />
+					<i class="fa fa-mobile-phone"></i>&nbsp;cell: +1 (406) 855-7184
 				</div>
 			</div>
 			
@@ -631,8 +631,8 @@
 				</div>
 				<div class="buisness-card-small-line">&nbsp;</div>
 				<div class="buisness-card-bottom">
-					<i class="fa fa-building-o"></i>&nbsp;office: +1 (222) 333-4444<br />
-					<i class="fa fa-mobile-phone"></i>&nbsp;cell: +1 (999) 888-7777
+					<i class="fa fa-building-o"></i>&nbsp;office: +1 (406) 247-0163<br />
+					<i class="fa fa-mobile-phone"></i>&nbsp;cell: +1 (406) 839-0906
 				</div>
 			</div>
 			
@@ -652,8 +652,8 @@
 				</div>
 				<div class="buisness-card-small-line">&nbsp;</div>
 				<div class="buisness-card-bottom">
-					<i class="fa fa-building-o"></i>&nbsp;office: +1 (222) 333-4444<br />
-					<i class="fa fa-mobile-phone"></i>&nbsp;cell: +1 (999) 888-7777
+					<i class="fa fa-building-o"></i>&nbsp;office: +1 (406) 247-0163<br />
+					<i class="fa fa-mobile-phone"></i>&nbsp;cell: +1 (406) 690-0864
 				</div>
 			</div>
 			
@@ -673,8 +673,8 @@
 				</div>
 				<div class="buisness-card-small-line">&nbsp;</div>
 				<div class="buisness-card-bottom">
-					<i class="fa fa-building-o"></i>&nbsp;office: +1 (222) 333-4444<br />
-					<i class="fa fa-mobile-phone"></i>&nbsp;cell: +1 (999) 888-7777
+					<i class="fa fa-building-o"></i>&nbsp;office: +1 (406) 247-0163<br />
+					<i class="fa fa-mobile-phone"></i>&nbsp;cell: +1 (402) 214-8577
 				</div>
 			</div>
 			
@@ -689,13 +689,12 @@
 				<br />
 				<div class="buisness-card-email">
 					<a href="#">
-						luke.geiken@squareinfinity.com
+						taylor.brown@squareinfinity.com
 					</a>
 				</div>
 				<div class="buisness-card-small-line">&nbsp;</div>
 				<div class="buisness-card-bottom">
-					<i class="fa fa-building-o"></i>&nbsp;office: +1 (222) 333-4444<br />
-					<i class="fa fa-mobile-phone"></i>&nbsp;cell: +1 (999) 888-7777
+					<i class="fa fa-building-o"></i>&nbsp;office: +1 (406) 247-0163<br />
 				</div>
 			</div>
 		</div>
